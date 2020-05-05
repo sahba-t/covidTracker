@@ -32,21 +32,19 @@ def fixJSON(outputfiles):
         df = pd.read_json(item)
         if 'JHU' in item:
             df = pd.DataFrame(df['data']['table'])
-            print(df.head())
         elif 'USTests' in item:
             df = pd.DataFrame(df['tests']['table'])
             df['CDCLabs'] = df['CDCLabs'].str.encode('ascii', 'ignore').str.decode('ascii')
             df['USPublicHealthLabs'] = df['USPublicHealthLabs'].str.encode('ascii', 'ignore').str.decode('ascii')
-
-            print(df.head())
         elif 'Fatality' in item:
-            df = pd.DataFrame(df['table'])
-            print(df.head())
+            df = pd.DataFrame(df['table'].tolist())
         elif 'USMedAid' or 'FacilityCapacity' or 'USCases' in item:
             df = pd.DataFrame(df['data'][0]['table'])
-            print(df.head())
 
-        output = df.to_json(orient='records')
+        output = df.to_csv()
+
+        item = item.split('.')[0] + '.csv'
+
         with open(item, 'w') as f:
             f.write(output)
 

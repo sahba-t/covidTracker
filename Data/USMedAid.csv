@@ -1,0 +1,1257 @@
+,recipient_Name,city,county,state,first_shipment,last_shipment,weight_lbs,country,facility_type,number_of_deliveries,cost
+0,1st Choice Healthcare- Administration,Corning,Clay County,AR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1,2nd Story Associates Housing Authority of the City of Santa Barbara,Santa Barbara,Santa Barbara County,CA,Fri Apr 17 2020,Fri Apr 17 2020,178.0,US,Social Services,1,"$1,527.88"
+2,A Step from Home,Windsor Mill,Baltimore County,MD,Thu Apr 23 2020,Thu Apr 23 2020,106.0,US,Unknown,1,$918.64
+3,A+ Counseling Center and A+ Health Center,Dunkirk,Calvert County,MD,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+4,Aaron E Henry Community Health Services Center,Clarksdale,Coahoma County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+5,"ABClinic Family Cares, Inc.",Saraland,Mobile County,AL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.02
+6,Acacia Medical Mission,Spring Branch,Comal County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.02
+7,Access Carroll,Westminister,Carroll County,MD,Thu Mar 26 2020,Mon May 04 2020,143.0,US,Community Clinic,3,"$1,244.80"
+8,Access Family Care Administration,Neosho,Newton County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+9,Access Family Health Services,Smithville,Monroe County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+10,ADAMS Compassionate Healthcare Network,Chantilly,Fairfax County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+11,Administracion de Servicios Medicos de Puerto Rico Suministros y Despacho de Drogas (Almacen de Farmicia),Rio Piedras,San Juan,PR,Fri Apr 17 2020,Fri Apr 17 2020,25.0,US,Public Health Department,1,$109.03
+12,Advantage Care Health Centers,Brookville,Nassau County,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+13,Affinia Healthcare,St. Louis,St Louis City,MO,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+14,Agape Clinic,Dallas,Dallas County,TX,Thu Mar 26 2020,Mon May 04 2020,101.0,US,Free Clinic,3,"$2,553.07"
+15,Aghaby Comprehensive Community Health Center,Compton,Los Angeles County,CA,Tue Jan 28 2020,Tue Jan 28 2020,10.0,US,Community Clinic,1,$170.02
+16,"AIDS Project Los Angeles, Inc. APLA Health & Wellness",Los Angeles,Los Angeles County,CA,Mon Mar 23 2020,Mon Mar 23 2020,25.0,US,FQHC/Look-Alike,1,$109.48
+17,AIDS Service Center of Lower Manhattan DBA Alliance for Positive Change,New York,New York County,NY,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Social Services,1,$109.01
+18,Alameda County Health Care  for Homeless Program,Oakland,Alameda County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+19,Alameda County Health Care for the Homeless Program,Oakland,Alameda County,CA,Fri Apr 24 2020,Fri Apr 24 2020,147.0,US,FQHC/Look-Alike,1,$524.33
+20,Alameda Hospital Fairmont Campus Central Supply Service,San Leandro,Alameda County,CA,Wed Mar 25 2020,Tue Apr 07 2020,514.0,US,Nonprofit Hospital,3,"$32,135.37"
+21,Albemarle Hospital Foundation DBA Community Care Clinic,Elizabeth City,Pasquotank County,NC,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,204.87"
+22,Albuquerque Healthcare Coalition Medical Reserve Corps,Santa Fe,Santa Fe County,NM,Thu Apr 16 2020,Thu Apr 16 2020,40.0,US,Public Health Department,1,$109.02
+23,Alcona Health Center Alpena Services,Alpena,Alpena County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+24,"All For Health, Health For All",Glendale,Los Angeles County,CA,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+25,Alliance Community Healthcare Christopher Columbus,Jersey City,Hudson County,NJ,Tue Mar 24 2020,Tue Apr 28 2020,189.0,US,FQHC/Look-Alike,2,$633.61
+26,All-Inclusive Community Health Center,Burbank,Los Angeles County,CA,Fri Apr 03 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.88"
+27,American Addiction Institute,Santa Ana,Orange County,CA,Mon May 04 2020,Mon May 04 2020,115.0,US,Other,1,"$1,095.85"
+28,American Indian Health & Services,Santa Barbara,Santa Barbara County,CA,Mon Mar 16 2020,Tue Apr 28 2020,95.0,US,Community Clinic,2,$393.70
+29,Amistad Community Health Center Pediatrics,Corpus Christi,Nueces County,TX,Tue Mar 24 2020,Mon Apr 27 2020,90.0,US,FQHC/Look-Alike,2,$253.32
+30,"Amite County Medical Services, Inc.",Liberty,Amite County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+31,Ammonoosuc Community Health Services,Littleton,Grafton County,NH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+32,Ampla Health,Yuba City,Sutter County,CA,Thu Mar 12 2020,Thu Mar 12 2020,337.0,US,FQHC/Look-Alike,1,"$2,197.27"
+33,Anderson Free Clinic,Anderson,Anderson County,SC,Tue Mar 24 2020,Mon May 04 2020,240.0,US,Free Clinic,2,"$1,205.12"
+34,Anderson Valley Health Center,Boonville,Mendocino County,CA,Mon May 04 2020,Mon May 04 2020,14.0,US,FQHC/Look-Alike,1,"$2,875.00"
+35,Anesthesia Service Medical Group Sharp Mary Birch Anesthesia,San Diego,San Diego County,CA,Fri Mar 27 2020,Fri Mar 27 2020,60.0,US,Unknown,1,$716.20
+36,Ann Silverman Community Health Clinic,Doylestown,Bucks County,PA,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+37,Antelope Valley Emergency Medical Associates,Lancaster,Los Angeles County,CA,Thu Apr 23 2020,Thu Apr 23 2020,265.0,US,Unknown,1,"$2,867.03"
+38,Antlers First Baptist Church Free Clinic,Antlers,Pushmataha County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+39,APICHA Community Health Center,New York,New York County,NY,Mon Mar 09 2020,Mon May 04 2020,122.0,US,FQHC/Look-Alike,3,"$3,117.83"
+40,Arlington Free Clinic Pharmacy,Arlington,Arlington County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+41,Arrowhead Regional Medical Center,Colton,San Bernardino County,CA,Fri May 01 2020,Fri May 01 2020,125.0,US,Unknown,1,"$2,201.84"
+42,Asian & Pacific Islander Wellness Center dba SF Community Health Center,San Francisco,San Francisco County,CA,Fri Apr 10 2020,Mon Apr 27 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+43,Asian American Health Coalition dba HOPE Clinic,Houston,Harris County,TX,Tue Mar 24 2020,Tue Apr 28 2020,214.0,US,FQHC/Look-Alike,2,$681.74
+44,Asian Health Services,Oakland,Alameda County,CA,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+45,Asian Human Services Family Health Center,Chicago,Cook County,IL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+46,Asian Pacific Health Care Ventures,Los Angeles,Los Angeles County,CA,Wed Jan 29 2020,Fri Apr 24 2020,381.0,US,FQHC/Look-Alike,5,"$4,471.01"
+47,Asylum-Seekers Shelter Health Program,San Diego,San Diego County,CA,Fri Mar 13 2020,Fri Mar 13 2020,97.0,US,Other,1,$523.63
+48,Atascosa Health Center,Pleasanton,Atascosa County,TX,Thu Mar 26 2020,Tue Apr 28 2020,185.0,US,FQHC/Look-Alike,2,$633.35
+49,Atlantic County Sheriff's Foundation,Mays Landing,Atlantic County,NJ,Fri Apr 24 2020,Fri Apr 24 2020,68.0,US,Unknown,1,"$5,894.38"
+50,Augusta Regional Free Clinic Pharmacy,Fishersville,Augusta County,VA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+51,Avenal Community Health Center Lemoore Administrative Office,Lemoore,Kings County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+52,"Axess Pointe Community Health Centers, Inc.",Akron,Summit County,OH,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+53,Baltimore City Health Department,Baltimore,Baltimore City,MD,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+54,Baptist Community Health Services,New Orleans,Orleans Parish,LA,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.11"
+55,Baptist Mission Center,Oklahoma City,Oklahoma County,OK,Mon Mar 23 2020,Mon May 04 2020,240.0,US,Free Clinic,2,"$1,205.33"
+56,Barnabas Health Services,Fernandina Beach,Nassau County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+57,Barrier Islands Free Medical Clinic,Johns Island,Charleston County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+58,Barton Healthcare System,South Lake Tahoe,El Dorado County,CA,Tue Mar 31 2020,Tue Mar 31 2020,184.0,US,Hospital,1,"$1,057.76"
+59,Baton Rouge Primary Care Collaborative Jewel Newman Community Center,Baton Rouge,East Baton Rouge Parish,LA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+60,Beach Health Clinic Pharmacy,Virginia Beach,Virginia Beach City,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+61,"Beacon Charitable Pharmacy, Inc.",Canton,Stark County,OH,Mon May 04 2020,Mon May 04 2020,115.0,US,Charitable Pharmacy,1,"$1,095.85"
+62,Beacon Christian Community Health Center,Staten Island,Richmond County,NY,Fri Mar 27 2020,Tue Apr 28 2020,189.0,US,FQHC/Look-Alike,2,$633.36
+63,Bear Lake Community Health Center dba Cache Valley Community Health Center,North Logan,Cache County,UT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+64,Beaufort Jasper Hampton Comprehensive Health - Chelsea Medical Center,Okatie,Beaufort County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+65,Beckley Health Right,Beckley,Raleigh County,WV,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.12"
+66,Bedford Stuyvesant Family Health Center,Brooklyn,Kings County,NY,Wed Apr 01 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+67,Bee Busy Wellness Center,Houston,Harris County,TX,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+68,Behavioral Health Services Family Health Center,Hawthorne,Los Angeles County,CA,Mon Mar 30 2020,Mon Mar 30 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+69,Belington Community Medical Services Association,Belington,Barbour County,WV,Fri Apr 03 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.86"
+70,Ben Archer Health Center Pharmacy of Las Cruces,Las Cruces,Dona Ana County,NM,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+71,"Bergen Volunteer Medical Initiative, Inc.",Hackensack,Bergen County,NJ,Mon May 04 2020,Mon May 04 2020,115.0,US,Free Clinic,1,"$1,095.85"
+72,Betances Health,New York,,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+73,Beth Israel Lahey Health Lahey Hospital & Medical Center,Burlington,Middlesex County,MA,Thu Apr 16 2020,Thu Apr 16 2020,21.0,US,Unknown,1,$220.28
+74,Bethesda Free Clinic,Vancleave,Jackson County,MS,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,Free Clinic,1,$109.03
+75,Bethesda Health Clinic,Tyler,Smith County,TX,Tue Mar 24 2020,Tue Apr 28 2020,88.0,US,Free Clinic,2,$253.31
+76,BeverlyCare,Montebello,Los Angeles County,CA,Fri Apr 03 2020,Mon Apr 06 2020,158.0,US,FQHC/Look-Alike,2,$775.01
+77,Big Springs Medical Association dba Missouri Highlands Health Care,Ellington,Reynolds County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+78,"Black River Health Services, Inc. dba Black River Family Practice",Burgaw,Pender County,NC,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.11"
+79,Bland County Medical Clinic,Bastian,Bland County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+80,Bond Community Health Center YouRx Pharmacy @ BondCHC,Tallahassee,Leon County,FL,Tue Mar 24 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$2,984.28"
+81,"Borinquen Health Care Center, Inc.",Miami,,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+82,Borrego Community Health Foundation,Borrego Springs,San Diego County,CA,Mon Mar 23 2020,Mon May 04 2020,414.0,US,FQHC/Look-Alike,5,"$2,046.88"
+83,Boston Healthcare for the Homeless,Boston,Suffolk County,MA,Thu Apr 23 2020,Thu Apr 23 2020,6.0,US,Unknown,2,$428.34
+84,Boundary Regional Community Health Center DBA Kaniksu Health Services,Ponderay,Bonner County,ID,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+85,BPSOS - Atlanta Community Clinic,Norcross,Gwinnett County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+86,Bradley Free Clinic of Roanoke Valley Inc Pharmacy,Roanoke,Roanoke City,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+87,Bread of Healing Clinic,Milwaukee,Milwaukee County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+88,Brevard Health Alliance,West Melbourne,Brevard County,FL,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+89,Brewer Medical Center Pharmacy,Brewer,Penobscot County,ME,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Charitable Pharmacy,1,$109.02
+90,Bridges to Health,Marion,Grant County,IN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+91,Bristol Hospital,Bristol,Hartford County,CT,Fri Apr 24 2020,Fri Apr 24 2020,73.0,US,Unknown,1,"$27,742.41"
+92,Broad Street Clinic Foundation,Morehead City,Carteret County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+93,Brock Hughes Free Clinic Pharmacy,Wytheville,Wythe County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+94,Brockton Neighborhood Health Center,Brockton,Plymouth County,MA,Mon Mar 16 2020,Mon May 04 2020,206.0,US,FQHC/Look-Alike,2,"$2,214.61"
+95,BronxCare Health System,Bronx,Bronx County,NY,Tue Apr 21 2020,Tue Apr 21 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+96,BronxCare Health System Emergency Room Department,Bronx,Bronx County,NY,Mon Apr 20 2020,Mon Apr 20 2020,370.0,US,FQHC/Look-Alike,1,"$10,803.78"
+97,"Brooklyn Plaza Medical Center, Inc.",Brooklyn,Kings County,NY,Mon Apr 06 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+98,Brother Bill's Helping Hand Community Clinic,Dallas,Dallas County,TX,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,Community Clinic,2,$157.41
+99,Broward Community & Family Health Center,Hollywood,Broward County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+100,Brownsville Community Health Center,Brownsville,Cameron County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+101,Brownsville Multi-Service Family Health Center,Brooklyn,Kings County,NY,Fri Mar 27 2020,Mon May 04 2020,190.0,US,FQHC/Look-Alike,4,"$1,422.91"
+102,Bucksport Regional Health Center,Bucksport,Hancock County,ME,Thu Apr 02 2020,Thu Apr 02 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+103,"Bullhook Community Health Center, Inc.",Havre,Hill County,MT,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+104,C.A.R.E. Clinic,Red Wing,Goodhue County,MN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+105,Cabarrus Health Alliance,Kannapolis,Cabarrus County,NC,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+106,Cabin Creek Health Center,Dawes,Kanawha County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+107,"Cactus Health Services, Inc.",Fort Stockton,Pecos County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+108,California Department of Public Health,South San Francisco,San Mateo County,CA,Sun Mar 15 2020,Sun Mar 15 2020,535.0,US,Public Health Department,1,"$1,136.57"
+109,California Department of Public Health,San Mateo,San Mateo County,CA,Mon Mar 30 2020,Wed Apr 01 2020,933.0,US,Public Health Department,2,"$2,290.95"
+110,California Pacific Medical Center CPMC VNC Location,San Francisco,San Francisco County,CA,Thu Mar 26 2020,Thu Mar 26 2020,1049.0,US,Hospital,1,"$6,133.11"
+111,California Rehabilitation Institute,Los Angeles,Los Angeles County,CA,Tue Mar 31 2020,Tue Mar 31 2020,172.0,US,Hospital,1,"$1,793.90"
+112,Camarena Health,Madera,Madera County,CA,Fri Apr 03 2020,Mon May 04 2020,385.0,US,FQHC/Look-Alike,3,"$1,729.19"
+113,"Camillus Health Concern, Inc.",Miami,Miami-Dade County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+114,Camino Health Center,San Juan Capistrano,Orange County,CA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+115,"Camuy Health Services, Inc.",Camuy,,PR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+116,"Cape Fear Clinic, Inc",Wilmington,New Hanover County,NC,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+117,Capital City Rescue Mission Free Clinic,Albany,Albany County,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+118,"Caracole, Inc.",Cincinnati,Hamilton County,OH,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Social Services,1,$109.02
+119,Carbon Medical Service Association East Carbon Clinic,Sunnyside,Carbon County,UT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+120,Care Alliance Health Center,Cleveland,Cuyahoga County,OH,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+121,"Care Beyond the Boulevard, Inc.",Kansas City,Wyandotte County,KS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+122,CARE Clinic,Fayetteville,Cumberland County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+123,Care for the Homeless,New York,New York County,NY,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+124,Care Harbor UCLA Department of Family Medicine,Los Angeles,Los Angeles County,CA,Mon Mar 30 2020,Mon Mar 30 2020,25.0,US,Free Clinic,1,$109.01
+125,Care Resource - Ft. Lauderdale,Ft. Lauderdale,Broward County,FL,Thu Mar 26 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+126,Care South,Baton Rouge,East Baton Rouge Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+127,Caresouth Carolina,Society Hill,Darlington County,SC,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+128,Caridad Center,Boynton Beach,Palm Beach County,FL,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+129,Caring Community Clinic,Jacksonville,Onslow County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.28
+130,Caring Health Center,Springfield,Hampden County,MA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+131,Caring Hearts Free Clinic of Patrick County,Stuart,Patrick County,VA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+132,Carolina Family Health Centers Wilson Community Health Center,Wilson,Wilson County,NC,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.13"
+133,Carrboro Community Health Center,Carrboro,,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+134,"Carrillo Counseling Services, Inc. dba New Beginnings Counseling Center",Santa Barbara,Santa Barbara County,CA,Tue Mar 24 2020,Tue Mar 24 2020,331.0,US,Social Services,1,"$1,396.53"
+135,Casa El Buen Samaritano,Houston,Harris County,TX,Tue Mar 24 2020,Fri Apr 24 2020,181.0,US,Free Clinic,2,$633.59
+136,Casey Health Center,Alexandria,Alexandria City,VA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+137,Catahoula Parish Hospital District No. 2,Sicily Island,Catahoula Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+138,Catherine's Health Center,Grand Rapids,Kent County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+139,CCI Health and Wellness Services,Silver Spring,Montgomery County,MD,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+140,CDT Adjuntas - Centro de Salud Familiar,Adjuntas,Adjuntas,PR,Fri Apr 03 2020,Fri Apr 03 2020,30.0,US,Other,1,$109.03
+141,CDT Dr. Cesar A. Collazo,Juncos,,PR,Fri Apr 17 2020,Fri Apr 17 2020,25.0,US,Other,1,$109.03
+142,CDT Hospital Municipal Bernice Guerra,Sabana Grande,,PR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Other,1,$109.26
+143,CDT Rio Grande,Rio Grande,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Other,1,$109.03
+144,CDT Yabucoa,Yabucoa,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Other,1,$109.01
+145,Cenla Medication Access Program CMAP,Alexandria,Rapides Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Charitable Pharmacy,1,$109.27
+146,Center for Community Health,Los Angeles,Los Angeles County,CA,Mon Feb 03 2020,Mon Feb 03 2020,15.0,US,Unknown,1,$85.01
+147,Center for Family Health and Education,Panorama City,Los Angeles County,CA,Mon Mar 23 2020,Mon May 04 2020,39.0,US,Community Clinic,2,"$5,859.48"
+148,Center For Family Health Pharmacy,Jackson,Jackson County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+149,Center for Healing & Hope,Goshen,Elkhart County,IN,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,Free Clinic,2,$253.32
+150,Center Street Community Health Center,Marion,Marion County,OH,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+151,Central City Community Health Center,Rosemead,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+152,Central Coast Medical Association (CCMA),Santa Barbara,Santa Barbara County,CA,Tue Mar 31 2020,Tue Mar 31 2020,,US,Unknown,1,$340.02
+153,Central Counties Health Centers,Springfield,Sangamon County,IL,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+154,Central Florida Family Health Center - True Health,Sanford,Seminole County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+155,Central Florida Health Care,Lakeland,Polk County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+156,Central Mississippi Health Services,Jackson,Hinds County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+157,Central Neighborhood Health Foundation,Los Angeles,Los Angeles County,CA,Fri Mar 27 2020,Mon May 04 2020,499.0,US,FQHC/Look-Alike,5,"$8,145.20"
+158,Central Virginia Health Services Inc Pharmacy,New Canton,Buckingham County,VA,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+159,Centre Volunteers in Medicine,State College,Centre County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+160,Centro Cardiovascular de Puerto Rico y del Caribe,San Juan,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Unknown,1,$109.01
+161,Centro de Diagnostico y Tratamiento CDT Culebra,Culebra,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Unknown,1,$109.01
+162,Centro de Diagnostico y Tratamiento Hospital Susana Centeno CDT Vieques,Vieques,,PR,Fri Apr 03 2020,Fri Apr 03 2020,30.0,US,Unknown,1,$109.03
+163,Centro de Distribucion de Medicamentos OCASET Dept. De Salud Edificio E Anexo Hospital Siquiatria,Rio Piedras,San Juan,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Unknown,1,$109.03
+164,"Centro de Salud Familiar Dr. Julio Palmieri Ferri, Inc.",Arroyo,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+165,"Centro de Salud Familiar La Fe, Inc.",El Paso,El Paso County,TX,Thu Apr 02 2020,Fri Apr 03 2020,220.0,US,FQHC/Look-Alike,2,$775.03
+166,"Centro de Servicios Primarios de Salud de Patillas, Inc.",Patillas,Patillas,PR,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+167,"Centro de Servicios Primarios de Salud, Inc.",Florida,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+168,Centro Medico Community Clinic,Corona,Riverside County,CA,Mon Mar 30 2020,Fri Apr 24 2020,199.0,US,FQHC/Look-Alike,2,$633.36
+169,Centro San Vicente,El Paso,El Paso County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+170,CentroMed Pharmacy (at South Park),San Antonio,Bexar County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+171,CentroMed South Park Clinic Pharmacy,San Antonio,Bexar County,TX,Mon Apr 27 2020,Mon Apr 27 2020,138.0,US,FQHC/Look-Alike,1,$524.34
+172,CentroMed Southside Medical,San Antonio,Bexar County,TX,Thu Apr 02 2020,Thu Apr 02 2020,184.0,US,Unknown,1,$666.00
+173,Centros Integrados de Servicios de Salud - Lares,Lares,,PR,Mon May 04 2020,Mon May 04 2020,115.0,US,FQHC/Look-Alike,1,"$1,095.85"
+174,Charis Health Center,Mt. Juliet,Wilson County,TN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+175,Charitable Pharmacy of Central Ohio,Columbus,Franklin County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Other,1,$109.02
+176,Charles B. Wang Community Health Center Inc.,New York,New York County,NY,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+177,Charles Drew Health Center,Omaha,Douglas County,NE,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+178,Charlottesville Free Clinic Pharmacy,Charlottesville,Albemarle County,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+179,CHAS Spokane Urgent Care Pharmacy,Spokane,Spokane County,WA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+180,Chase Brexton Health Center,Baltimore,Baltimore City,MD,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+181,Chatham Cares Community Pharmacy,Silver City,Chatham County,NC,Mon May 04 2020,Mon May 04 2020,115.0,US,Charitable Pharmacy,1,"$1,095.85"
+182,"Chautauqua Offices of Psychotherapy & Evaluation Inc., DBA Chautauqua Healthcare Services",Defuniak Springs,Walton County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.02
+183,"Cherry Street Services, Inc Heart of the City Pharmacy",Grand Rapids,Kent County,MI,Thu Mar 26 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,204.87"
+184,"Chesapeake Care, Inc.",Chesapeake,Chesapeake City,VA,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+185,Chicago Family Health Center,Chicago,Cook County,IL,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+186,Chicopee Health Center,Holyoke,Hampden County,MA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,Unknown,1,$48.14
+187,Children and Community Health Center dba Community Health Clinic,McKinney,Collin County,TX,Tue Mar 24 2020,Tue Apr 28 2020,113.0,US,Free Clinic,3,$362.34
+188,Children's Clinic Family Health Center,Long Beach,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$4,600.00"
+189,Children's Hospital of Orange County,Orange,Orange County,CA,Mon Mar 30 2020,Tue Mar 31 2020,454.0,US,Hospital,2,"$2,557.37"
+190,Chinatown Service Center,Los Angeles,Los Angeles County,CA,Wed Apr 01 2020,Wed Apr 01 2020,186.0,US,FQHC/Look-Alike,1,$666.00
+191,Chippewa Valley Free Clinic,Eau Claire,Eau Claire County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+192,Choice Health Network Harm Reduction Program,Knoxville,Knox County,TN,Mon May 04 2020,Mon May 04 2020,115.0,US,Social Services,1,"$1,095.85"
+193,Chota Community Health Services,Madisonville,Monroe County,TN,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+194,Christ Clinic,Katy,Fort Bend County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+195,Christ Community Free Clinic,Auburn,King County,WA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+196,Christian Clinic of Howard County,Nashville,Howard County,AR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+197,"Christian Health Center, Inc.",Camden,Ouachita County,AR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+198,Cincinnati Health Network,Cincinnati,Hamilton County,OH,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+199,Circle Health Services East,Cleveland,Cuyahoga County,OH,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+200,"Citrus Health Network, Inc.",Hialeah,,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+201,City of Lompoc,Lompoc,San Luis Obispo County,CA,Wed Apr 15 2020,Wed Apr 15 2020,364.0,US,Unknown,1,"$1,960.37"
+202,City on a Hill Health Clinic,Zeeland,Ottawa County,MI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+203,CitySquare Clinic,Dallas,Dallas County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+204,Claiborne County Family Health Center,Port Gibson,Claiborne County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+205,Clarity Healthcare Preferred Family Healthcare,Hannibal,Marion County,MO,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+206,"Clarkston Community Health Center, Inc.",Clarkston,Dekalb County,GA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+207,Clatsop County Public Health,Astoria,Clatsop County,OR,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+208,Clearwater Free Clinic,Clearwater,Pinellas County,FL,Tue Mar 24 2020,Mon May 04 2020,39.0,US,Free Clinic,2,"$5,859.26"
+209,Cleaver Family Wellness Clinic,El Monte,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+210,"Clinic with a Heart, Inc.",Lincoln,Lancaster County,NE,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+211,Clinica Colorado,Westminster,Adams County,CO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+212,Clinica Comunitaria Mameyes,Utuado,,PR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+213,Clínica del Valle del Pájaro,Watsonville,Santa Cruz County,CA,Thu Apr 09 2020,Mon May 04 2020,718.0,US,Unknown,5,"$64,291.76"
+214,Clinica Esperanza Hope Clinic,Providence,Providence County,RI,Tue Mar 24 2020,Mon May 04 2020,240.0,US,Free Clinic,2,"$1,205.11"
+215,Clinica Msr. Oscar A Romero,Los Angeles,Los Angeles County,CA,Wed Mar 25 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.32
+216,Clinica Sierra Vista Administration,Bakersfield,Kern County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+217,Clinicas De Salud Del Pueblo,Brawley,Imperial County,CA,Wed Mar 18 2020,Wed Mar 18 2020,153.0,US,FQHC/Look-Alike,1,$470.23
+218,"Clinicas del Camino Real, Inc. - Ventura Room 1",Ventura,Ventura County,CA,Thu Mar 26 2020,Mon Apr 27 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+219,Coastal Bend Wellness Foundation,Corpus Christi,Nueces County,TX,Tue Mar 24 2020,Mon May 04 2020,305.0,US,FQHC/Look-Alike,3,"$1,729.46"
+220,"Coastal Community Health Services, Inc.",Brunswick,Glynn County,GA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+221,Coastal Family Health Center,Biloxi,Harrison County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+222,Codman Square Health Center,Dorchester,Suffolk County,MA,Wed Mar 18 2020,Mon Apr 27 2020,160.0,US,FQHC/Look-Alike,3,$597.56
+223,"Columbia County Volunteers In Medicine Clinic, Inc.",Mifflinville,Columbia County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.28
+224,"Columbus Neighborhood Health Center, Inc d/b/a PrimaryOne Health",Columbus,Franklin County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+225,Common Ground Health Clinic,Gretna,Jefferson Parish,LA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+226,CommuniCare Health Centers,Davis,Yolo County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+227,CommuniCare Health Centers Administration Site,Davis,Yolo County,CA,Tue Apr 28 2020,Tue Apr 28 2020,63.0,US,FQHC/Look-Alike,1,$144.05
+228,CommuniCare Health Centers Dr. Frank Bryant Health Center,San Antonio,Bexar County,TX,Tue Mar 24 2020,Mon May 04 2020,205.0,US,FQHC/Look-Alike,3,"$1,253.25"
+229,Community Action Corporation of South Texas Alice Health Center,Alice,Jim Wells County,TX,Tue Mar 24 2020,Tue Apr 28 2020,88.0,US,FQHC/Look-Alike,2,$253.32
+230,Community Care Center for Forsyth County,Winston Salem,Forsyth County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+231,Community Care Clinic,Boone,Watauga County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+232,Community Care Clinic of Dare,Nags Head,Dare County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+233,Community Care Clinic of Highlands-Cashiers,Highlands,Macon County,NC,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+234,Community Care Clinic of Rowan County,Salisbury,Rowan County,NC,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+235,"Community Clinic of Maui, Inc",Wailuku,Maui County,HI,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+236,Community Clinic of Shelbyville and Bedford County,Shelbyville,Bedford County,TN,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.12"
+237,Community Connections Free Clinic,Dodgeville,Iowa County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+238,Community Family Health Center,Dover,Tuscarawas County,OH,Tue Apr 21 2020,Tue Apr 21 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+239,Community First Health Centers New Haven Medical Center,New Haven,Macomb County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+240,Community Free Clinic,Hagerstown,Washington County,MD,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+241,Community Health Alliance,Reno,Washoe County,NV,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+242,Community Health Alliance of Pasadena Pharmacy,Pasadena,Los Angeles County,CA,Mon Mar 30 2020,Mon Mar 30 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+243,Community Health and Emergency Services,Cairo,Alexander County,IL,Tue Mar 24 2020,Mon May 04 2020,40.0,US,FQHC/Look-Alike,2,"$5,859.27"
+244,Community Health and Wellness Partners of Logan County,Bellefontaine,Logan County,OH,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+245,Community Health Care Clinic,Normal,McLean County,IL,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.13"
+246,Community Health Care Systems Administration,Tennille,Washington County,GA,Mon May 04 2020,Mon May 04 2020,115.0,US,FQHC/Look-Alike,1,"$1,095.85"
+247,"Community Health Care, Inc. Davenport Medical Clinic",Davenport,Scott County,IA,Fri Mar 27 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+248,Community Health Center New River Valley,Christiansburg,Montgomery County,VA,Mon May 04 2020,Mon May 04 2020,115.0,US,Other,1,"$1,095.85"
+249,Community Health Center of Central Missouri,Jefferson City,Cole County,MO,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+250,Community Health Center of Central Wyoming,Casper,Natrona County,WY,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+251,Community Health Center of Lubbock,Lubbock,Lubbock County,TX,Thu Apr 02 2020,Thu Apr 02 2020,192.0,US,FQHC/Look-Alike,1,$666.00
+252,Community Health Center of Richmond,Staten Island,Richmond County,NY,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+253,Community Health Center of Richmond Inc.,Staten Island,Richmond County,NY,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,FQHC/Look-Alike,1,$144.05
+254,Community Health Center of Snohomish County,Everett,Snohomish County,WA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+255,Community Health Center of Southeast Kansas,Pittsburg,Crawford County,KS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+256,Community Health Center of West Palm Beach,West Palm Beach,Palm Beach County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+257,Community Health Centers Garage,Winter Garden,Orange County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+258,Community Health Centers of Greater Dayton,Dayton,Montgomery County,OH,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+259,Community Health Centers of Pinellas Inc. - Johnnie Ruth Clark Center Administrative/Finance Offices,St. Petersburg,Pinellas County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+260,Community Health Centers of South Central Texas,Gonzales,Gonzales County,TX,Tue Mar 24 2020,Mon May 04 2020,501.0,US,FQHC/Look-Alike,5,"$4,794.26"
+261,Community Health Centers of SW FL,Fort Meyers,Lee County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+262,Community Health Centers of The Central Coast,Nipomo,San Luis Obispo County,CA,Wed Mar 25 2020,Fri Apr 24 2020,1076.0,US,FQHC/Look-Alike,4,"$3,864.43"
+263,"Community Health Centers, Inc. Mary Mahoney Memorial Health Center",Spencer,Oklahoma County,OK,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+264,Community Health Clinic of Butler County,Butler,Butler County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+265,Community Health Clinic of Hardin & LaRue Counties,Elizabethtown,Hardin County,KY,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,Free Clinic,1,$109.02
+266,Community Health Development,Uvalde,Uvalde County,TX,Thu Mar 26 2020,Mon Apr 27 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+267,"Community Health Foundation of Puerto Rico, Inc.",Bayamon,BayamÃ³n,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+268,Community Health Initiatives,Brooklyn,Kings County,NY,Mon Mar 30 2020,Mon Apr 27 2020,171.0,US,FQHC/Look-Alike,2,$625.79
+269,Community Health Northwest Florida,Pensacola,Escambia County,FL,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.12"
+270,"Community Health of East Tennessee, Inc.",LaFollette,Campbell County,TN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+271,Community Health of South Florida,Miami,Miami-Dade County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+272,Community Health Partners,Livingston,Park County,MT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+273,Community Health Programs,Great Barrington,Berkshire County,MA,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+274,Community Health Project Inc. dba Callen-Lorde Community Health Center,New York,New York County,NY,Thu Mar 12 2020,Fri Mar 13 2020,152.0,US,FQHC/Look-Alike,2,$930.26
+275,Community Health Service Agency,Greenville,Hunt County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+276,Community Health Services of Union County,Monroe,Union County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+277,"Community Health Systems, Inc. dba Access Health",Beckley,Raleigh County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+278,Community Healthcare Center,Wichita Falls,Wichita County,TX,Tue Mar 24 2020,Tue Apr 28 2020,350.0,US,FQHC/Look-Alike,3,"$1,299.60"
+279,Community Healthcare Network,New York,New York County,NY,Fri Mar 13 2020,Fri Mar 27 2020,4222.0,US,FQHC/Look-Alike,4,"$16,318.31"
+280,Community HealthWorx,Alexandria,Rapides Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+281,Community Helping Place Free Clinic,Dahlonega,Lumpkin County,GA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+282,Community Medical Centers,Stockton,San Joaquin County,CA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+283,Community Medical Clinic of Kershaw County,Camden,Kershaw County,SC,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+284,Community Medical Wellness Centers USA,Long Beach,Los Angeles County,CA,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.32
+285,"Community Options, Inc.",Princeton,Mercer County,NJ,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Social Services,1,$109.03
+286,Community Treatment Inc. (COMTREA),Festus,Jefferson County,MO,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+287,Community Volunteers In Medicine,West Chester,Chester County,PA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+288,CommunityHealth,Chicago,Cook County,IL,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+289,Community-University Health Care Center University of Minnesota,Minneapolis,Hennepin County,MN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+290,CommWell Health - Dunn Tri-County Community Health Center,Dunn,Harnett County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+291,Compass Community Health,Portsmouth,Scioto County,OH,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+292,Compassion Health Toledo,Toledo,Lucas County,OH,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Community Clinic,2,"$1,204.87"
+293,Compassionate Care Clinic,Milledgeville,Baldwin County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.28
+294,Concilio de Salud Integral de Loiza,Loiza,,PR,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.11"
+295,Conejo Los Robles Anesthesia Medical Group,Newbury Park,Ventura County,CA,Fri Mar 27 2020,Fri Mar 27 2020,64.0,US,Unknown,1,$725.80
+296,Connecticut Children's Medical Center,Hartford,Hartford County,CT,Thu Apr 23 2020,Thu Apr 23 2020,72.0,US,Unknown,1,"$27,742.41"
+297,"Consejo Renal de Puerto Rico, Inc.",San Juan,,PR,Fri Apr 17 2020,Mon May 04 2020,140.0,US,Other,2,"$1,204.86"
+298,"Cook Area Health Services, Inc. dba Scenic Rivers Health Services",Cook,,MN,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+299,Cooperative Christian Ministries and Clinic,Hot Springs,Garland County,AR,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+300,CORE Response,Los Angeles,Los Angeles County,CA,Thu Mar 26 2020,Wed Apr 08 2020,477.0,US,Unknown,4,"$2,191.13"
+301,Cornell Scott-Hill Health Corporation,New Haven,New Haven County,CT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+302,Cornerstone Care Outreach Dept Office,Waynesburg,Greene County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+303,Corporacion de Servicios Medicos Primarios y Preventativos de Hatillo,Hatillo,,PR,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+304,Corporacion SANOS,Caguas,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+305,"COSSMA, Inc. - Cidra",Cidra,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+306,Costa Salud Community Health Centers Rincón,Rincón,,PR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+307,Country Doctor Community Health Centers Country Doctor Community Clinic,Seattle,King County,WA,Fri Mar 13 2020,Fri Mar 13 2020,21.0,US,FQHC/Look-Alike,2,$820.56
+308,County of San Luis Obispo,San Luis Obispo,San Luis Obispo County,CA,Thu Apr 16 2020,Thu Apr 16 2020,845.0,US,Unknown,1,"$5,107.29"
+309,County of Santa Barbara Public Health Health Care Centers,Santa Barbara,Santa Barbara County,CA,Fri May 01 2020,Fri May 01 2020,50.0,US,Public Health Department,1,"$1,073.05"
+310,County of Santa Cruz Homeless Persons Health Project,Santa Cruz,Santa Cruz County,CA,Tue Mar 24 2020,Tue Apr 28 2020,88.0,US,FQHC/Look-Alike,2,$253.31
+311,County of Ventura Pretrial Detention Facility,Ventura,Ventura County,CA,Thu Apr 02 2020,Thu Apr 02 2020,25.0,US,Unknown,1,$514.01
+312,Cove House Free Clinic,Copperas Cove,Coryell County,TX,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,Free Clinic,2,$157.40
+313,Covenant Community Care Administration,Detroit,Wayne County,MI,Mon Apr 06 2020,Mon Apr 06 2020,41.0,US,FQHC/Look-Alike,1,$508.23
+314,Covenant Community Care Moross,Detroit,Wayne County,MI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+315,Cowlitz Family Health Center,Longview,Cowlitz County,WA,Mon May 04 2020,Mon May 04 2020,115.0,US,FQHC/Look-Alike,1,"$1,095.85"
+316,Cross and Crown Clinic,Oklahoma City,Oklahoma County,OK,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,204.87"
+317,Cross Over Health Center Pharmacy,Richmond,Richmond City,VA,Wed Apr 01 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,204.86"
+318,Cross Timbers Health Clinics,Deleon,Comanche County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+319,Crossings Community Clinic,Oklahoma City,Oklahoma County,OK,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+320,Crossroads Center Medical Clinic,Valparaiso,Okaloosa County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+321,Crossroads Medical Mission,Bristol,Bristol City,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+322,Crowley House of Hope Clinic,Crowley,Tarrant County,TX,Fri Apr 24 2020,Fri Apr 24 2020,30.0,US,Free Clinic,1,$109.02
+323,Curtis V. Cooper Primary Health Westside Urban Health Center,Savannah,,GA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+324,David Raines Community Health Centers Bossier Pharmacy,Bossier City,Bossier Parish,LA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+325,David Raines Community Health Centers Shreveport Pharmacy,Shreveport,Caddo Parish,LA,Mon May 04 2020,Mon May 04 2020,210.0,US,FQHC/Look-Alike,1,"$1,095.85"
+326,Day Kimball Hospital,Putnam,Windham County,CT,Thu Apr 23 2020,Thu Apr 23 2020,71.0,US,Unknown,1,"$27,742.41"
+327,DBA Virginia B. Andes Volunteer Community Clinic Volunteers in Medicine Alliance Care Inc.,Port Charlotte,Charlotte County,FL,Thu Mar 26 2020,Wed Apr 08 2020,274.0,US,Free Clinic,2,$885.19
+328,Del Norte Community Health Center,Crescent City,Del Norte County,CA,Tue Mar 17 2020,Tue Mar 17 2020,44.0,US,FQHC/Look-Alike,2,$326.78
+329,Denver Health and Hospital Authority,Denver,Denver County,CO,Thu Apr 02 2020,Thu Apr 02 2020,92.0,US,FQHC/Look-Alike,2,$458.89
+330,"Denver Indian Health and Family Services, Inc.",Denver,Denver County,CO,Thu Mar 26 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,204.87"
+331,"Department of Health, USVI St. Thomas / St. John Office",St. Thomas,,VI,Tue Mar 24 2020,Tue Apr 28 2020,174.0,US,Public Health Department,2,$633.60
+332,"Dept of Radiation Oncology, California Pacific Medical Center",San Francisco,San Francisco County,CA,Fri May 01 2020,Fri May 01 2020,55.0,US,Unknown,1,$619.52
+333,Desert AIDS Project,Palm Springs,Riverside County,CA,Mon Mar 16 2020,Wed Apr 29 2020,471.0,US,FQHC/Look-Alike,3,"$4,242.02"
+334,Destiny Outreach Center,Blackwood,Camden County,NJ,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,Free Clinic,2,$157.41
+335,Direct Relief Puerto Rico,Carolina,Carolina,PR,Mon Apr 20 2020,Mon Apr 20 2020,1830.0,US,Other,1,"$15,447.41"
+336,"Diversity Health Center, Inc.",Ludowici,Long County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+337,Doctors Without Walls,Goleta,Santa Barbara County,CA,Wed Apr 08 2020,Wed Apr 08 2020,25.0,US,Free Clinic,1,$109.01
+338,Dot House Health,Dorchester,Suffolk County,MA,Fri Mar 13 2020,Mon May 04 2020,697.0,US,FQHC/Look-Alike,4,"$4,587.14"
+339,Downtown Clinic,Laramie,Albany County,WY,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+340,Dr. Garabed A. Fattal Community Free Clinic,Binghamton,Broome County,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+341,Dream Centers Women's Clinic,Colorado Springs,El Paso County,CO,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.12"
+342,Duffy Health Center,Hyannis,Barnstable County,MA,Mon Apr 06 2020,Mon May 04 2020,836.0,US,FQHC/Look-Alike,5,"$6,269.12"
+343,"East Central MS Health Care, Inc.",Sebastopol,Scott County,MS,Tue Apr 21 2020,Tue Apr 21 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+344,"East End Disability Associates, Inc.",Riverhead,Suffolk County,NY,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Social Services,1,$109.03
+345,East Harlem Council for Human Services Boriken Neighborhood Health Center,New York,New York County,NY,Fri Apr 17 2020,Fri Apr 17 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+346,East Texas Community Health Services,Nacogdoches,Nacogdoches County,TX,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.32
+347,East Valley Community Health Center Covina,West Covina,Los Angeles County,CA,Mon Mar 23 2020,Mon Mar 23 2020,25.0,US,FQHC/Look-Alike,1,$109.48
+348,East Valley Community Health Center West Covina Pharmacy,West Covina,Los Angeles County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,FQHC/Look-Alike,1,$144.05
+349,Eastern Connecticut Health Network,Manchester,Hartford County,CT,Thu Apr 23 2020,Thu Apr 23 2020,145.0,US,Unknown,2,"$55,484.82"
+350,"Eastern Shore Rural Health Systems, Inc.",Onancock,Accomack County,VA,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.11"
+351,Easterseals Community Health Clinic,Pell City,St Clair County,AL,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Community Clinic,2,"$1,204.87"
+352,Eastport Health Care,Eastport,Washington County,ME,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+353,Eastside Family Dental Clinic,Santa Barbara,Santa Barbara County,CA,Wed Apr 01 2020,Mon May 04 2020,92.0,US,Unknown,3,"$1,238.30"
+354,Echo Community Health Care,Evansville,Vanderburgh County,IN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+355,Edisto Indian Free Clinic,Ridgeville,Dorchester County,SC,Mon May 04 2020,Mon May 04 2020,115.0,US,Free Clinic,1,"$1,095.85"
+356,Edward R. Leahy Jr. Center Clinic for the Uninsured,Scranton,Lackawanna County,PA,Mon May 04 2020,Mon May 04 2020,215.0,US,Free Clinic,1,"$1,095.85"
+357,Eisner Health - Pharmacy,Los Angeles,Los Angeles County,CA,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.11"
+358,El Centro De Corazon,Houston,Harris County,TX,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+359,El Dorado Community Health Center Administration Office,Placerville,El Dorado County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+360,El Dorado County Community Health Center,Placerville,El Dorado County,CA,Fri Apr 24 2020,Fri Apr 24 2020,150.0,US,FQHC/Look-Alike,1,$524.33
+361,El Hogar Guest House Clinic,Sacramento,Sacramento County,CA,Tue Apr 28 2020,Tue Apr 28 2020,63.0,US,Other,1,$144.05
+362,El Milagro Clinic,McAllen,Hidalgo County,TX,Thu Mar 26 2020,Mon May 04 2020,300.0,US,Unknown,3,"$1,349.17"
+363,El Proyecto Del Barrio,Arleta,Los Angeles County,CA,Wed Mar 25 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$157.42
+364,El Punto en la Montaña,Cidra,,PR,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Unknown,2,"$1,205.12"
+365,El Rio Community Health Center,Tucson,Pima County,AZ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+366,Elmhurst Medical Center,Elmhurst,,NY,Tue Apr 14 2020,Thu Apr 23 2020,2155.0,US,Unknown,37,"$517,226.95"
+367,Equitas Health Dayton Medical Center,Dayton,Montgomery County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+368,Eric B. Chandler Health Center,New Brunswick,Middlesex County,NJ,Tue Mar 24 2020,Mon Apr 27 2020,193.0,US,FQHC/Look-Alike,2,$633.59
+369,Erie County Community Health Center,Sandusky,Erie County,OH,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+370,Erie Family Health Center,Chicago,Cook County,IL,Sat Apr 04 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.86"
+371,Esperanza Health Centers,Chicago,Cook County,IL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+372,Etowah Baptist Charity Pharmacy,Noble,Cleveland County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+373,Eunice Community Health Center,Eunice,St Landry Parish,LA,Tue Mar 24 2020,Mon May 04 2020,240.0,US,Community Clinic,2,"$1,205.11"
+374,Exalta Health,Grand Rapids,Kent County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+375,Excell Healthcare Center,Oakland,Alameda County,CA,Thu Apr 16 2020,Thu Apr 16 2020,216.0,US,Unknown,1,"$1,059.94"
+376,EXCELth Family Health Center - New Orleans East,New Orleans,Orleans Parish,LA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$5,750.00"
+377,Excelth Family Health Center- Algiers,New Orleans,Orleans Parish,LA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$5,750.00"
+378,EXCELth Family Health Center Gentilly,New Orleans,Orleans Parish,LA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$5,750.00"
+379,"EXCELth, Inc.",New Orleans,Orleans Parish,LA,Tue Mar 24 2020,Fri Apr 10 2020,35.0,US,FQHC/Look-Alike,2,$398.29
+380,Ezras Choilim Health Center,Monroe,Orange County,NY,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+381,Fairview Community Health Center,Bowling Green,Warren County,KY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+382,Faith Community Health Center,Branson,Taney County,MO,Mon Mar 30 2020,Tue May 05 2020,235.0,US,Community Clinic,2,"$1,204.88"
+383,Faith Family Medical Clinic,Nashville,Davidson County,TN,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Community Clinic,1,$109.02
+384,Fallbrook Family Health Center,Fallbrook,San Diego County,CA,Mon Mar 30 2020,Mon Mar 30 2020,25.0,US,Unknown,1,$109.01
+385,Families Together of Orange County,Tustin,Orange County,CA,Tue Jan 28 2020,Tue Apr 28 2020,78.0,US,FQHC/Look-Alike,2,$399.07
+386,Family Care Health Centers Carondelet,Saint Louis,St Louis City,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+387,Family Christian Health Center,Harvey,Cook County,IL,Fri Apr 03 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.86"
+388,Family Health - La Clinica,Wautoma,Waushara County,WI,Mon Mar 23 2020,Mon Mar 23 2020,25.0,US,FQHC/Look-Alike,1,$109.48
+389,Family Health Care Center of SSTAR,Fall River,Bristol County,MA,Wed Mar 18 2020,Mon May 04 2020,340.0,US,FQHC/Look-Alike,3,"$1,862.08"
+390,Family Health Care Centers of Greater Los Angeles,Bell Gardens,Los Angeles County,CA,Thu Mar 26 2020,Tue Apr 28 2020,88.0,US,FQHC/Look-Alike,2,$253.07
+391,Family Health Care of Northwest Ohio,Van Wert,Van Wert County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+392,Family Health Center of Clark County DBA Family Health Centers of Southern Indiana,Jeffersonville,Clark County,IN,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+393,Family Health Center of Worcester,Worcester,Worcester County,MA,Thu Mar 19 2020,Fri Apr 24 2020,125.0,US,FQHC/Look-Alike,4,"$1,336.44"
+394,"Family Health Center, Inc.",Kalmazoo,Kalamazoo County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+395,Family Health Centers,Okanogan,Okanogan County,WA,Thu Apr 16 2020,Thu Apr 16 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+396,Family Health Clinic Medical Center Hospital,Odessa,Ector County,TX,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+397,Family Health Clinic of Burlington,Burlington,Carroll County,IN,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,Community Clinic,1,$109.01
+398,Family Health Partnership,Crystal Lake,McHenry County,IL,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Other,2,"$1,205.12"
+399,Family Health Services Administration,Twin Falls,Twin Falls County,ID,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+400,Family Health Services of Darke County,Greenville,Darke County,OH,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+401,Family Health Services of Erie County,Sandusky,Erie County,OH,Wed Apr 01 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.86"
+402,Family Healthcare Center,Fargo,Cass County,ND,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+403,Family Healthcare Network,Visalia,Tulare County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+404,Family Healthcare Network Porterville,Porterville,Tulare County,CA,Mon Apr 27 2020,Mon Apr 27 2020,168.0,US,FQHC/Look-Alike,1,$524.34
+405,"Fauquier Free Clinic, Inc.",Warrenton,Fauquier County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+406,Fayette Care Clinic,Fayettevile,Fayette County,GA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+407,Federal Bureau of Prisons USP Lompoc,Lompoc,Santa Barbara County,CA,Mon Apr 27 2020,Mon Apr 27 2020,75.0,US,Unknown,1,"$7,119.75"
+408,Fenway Community Health Center,Boston,,MA,Fri Apr 24 2020,Fri Apr 24 2020,30.0,US,FQHC/Look-Alike,1,$109.02
+409,"FernCare Free Clinic, Inc.",Ferndale,Oakland County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+410,Fetter Health Care Network,Charleston,Charleston County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+411,First Baptist Medical/Dental  Clinic,Vicksburg,Warren County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+412,First Choice Primary Care,Macon,Bibb County,GA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+413,First Refuge Ministries Medical Clinic First Baptist Denton Ministry Center,Denton,Denton County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+414,Fish River Rural Health,Fort Kent,Aroostook County,ME,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+415,Five Rivers Health Centers Samaritan Homeless Clinic,Dayton,Montgomery County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+416,Flagler County Free Clinic,Bunnell,Flagler County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+417,Flint Hills Community Clinic,Manhattan,Riley County,KS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+418,Florida Department of Veterans' Affairs,Largo,,FL,Fri Apr 24 2020,Fri May 01 2020,2067.0,US,Unknown,2,"$16,641.58"
+419,"Fordland Clinic, Inc",Fordland,Webster County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+420,Fort Bend Family Health Center AccessHealth,Richmond,Fort Bend County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+421,Fort Pierce Center,Fort Pierce,St Lucie County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+422,Franklin Primary Health Center,Mobile,Mobile County,AL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+423,"Frederiksted Health Care, Inc.",St. Croix,,VI,Thu Mar 26 2020,Thu Mar 26 2020,24.0,US,FQHC/Look-Alike,1,$109.27
+424,Free Clinic of Central Virginia Inc Pharmacy,Lynchburg,Lynchburg City,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+425,Free Clinic of Culpeper Pharmacy,Culpeper,Culpeper County,VA,Tue Mar 24 2020,Tue Mar 31 2020,284.0,US,Free Clinic,2,$775.27
+426,Free Clinic of Franklin County Bernard Healthcare Clinic Pharmacy,Rocky Mount,Franklin County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+427,"Free Clinic of Meridian, Inc.",Meridian,Lauderdale County,MS,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+428,Free Clinic of Newton,Sparta,Sussex County,NJ,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+429,Free Clinic of Rockingham County,Reidsville,Rockingham County,NC,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Free Clinic,1,$109.03
+430,Free Clinic of Simi Valley,Simi Valley,Ventura County,CA,Tue Mar 24 2020,Tue Apr 21 2020,39.0,US,Free Clinic,2,"$5,859.28"
+431,Free Clinic of Southwest Washington,Vancouver,Clark County,WA,Tue Jan 28 2020,Tue Jan 28 2020,5.0,US,Free Clinic,1,$85.01
+432,Free Clinic of the Twin Counties,Galox,Galax City,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+433,Free Clinics of Henderson County,Hendersonville,Henderson County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+434,Free Medical Clinic of Darlington County,Darlington,Darlington County,SC,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+435,"Free Medical Clinic of Oak Ridge, Inc.",Oak Ridge,Anderson County,TN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+436,Friends of Children Health Center,La Habra,Orange County,CA,Mon May 04 2020,Mon May 04 2020,115.0,US,FQHC/Look-Alike,1,"$1,095.85"
+437,Friends of Family Health Center,Tustin,Orange County,CA,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+438,Fundacion Manos Juntas,Oklahoma City,Oklahoma County,OK,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Free Clinic,1,$109.03
+439,G. A. Carmichael Family Health Center,Canton,Madison County,MS,Tue Mar 24 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,205.12"
+440,"GAIN, Inc Greater Access to those in Need",Little Rock,Pulaski County,AR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+441,Galveston County Health District Coastal Health & Wellness Clinic,Texas City,Galveston County,TX,Thu Mar 26 2020,Fri Apr 24 2020,89.0,US,FQHC/Look-Alike,2,$253.07
+442,Gardner Family Health Network,San Jose,Santa Clara County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+443,Garfield Health Center,Monterey Park,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.27
+444,"Gaston Family Health Services, Inc.",Gastonia,Gaston County,NC,Tue Mar 24 2020,Tue Mar 24 2020,20.0,US,FQHC/Look-Alike,1,$109.27
+445,Gateway Community Health Center,Laredo,Webb County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+446,Generations Family Health Center,Willimantic,Windham County,CT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+447,Genesis Community Clinic,Garden City,Ada County,ID,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,Free Clinic,1,$109.26
+448,Genesis Community Health Inc.,Boynton Beach,Palm Beach County,FL,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+449,"Georgia Highlands Medical Services, Inc",Cumming,Forsyth County,GA,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+450,Get Up Project,Austin,Travis County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+451,GHCAA dba CAPNCM Women's Health Services,Trenton,Grundy County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+452,Global Support and Development,Redwood City,San Mateo County,CA,Mon Mar 23 2020,Tue Mar 24 2020,68.0,US,Unknown,2,$523.45
+453,Gloucester-Mathews Care Clinic Pharmacy,Gloucester,Gloucester County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+454,Good Health Clinic,Tavernier,Monroe County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+455,Good Neighbor Community Health Center,Columbus,Platte County,NE,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+456,Good Neighbor Health Clinic,White River Junction,Windsor County,VT,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,Free Clinic,1,$109.02
+457,Good Neighbor House,Dayton,Montgomery County,OH,Mon May 04 2020,Mon May 04 2020,115.0,US,Free Clinic,1,"$1,095.85"
+458,Good News Care Center,Florida City,Miami-Dade County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+459,Good News Clinics,Gainesville,Hall County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+460,Good Samaritan Care Clinic,Mountain View,Howell County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+461,Good Samaritan Clinic,Gulf Breeze,Santa Rosa County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+462,Good Samaritan Clinic of West Volusia County,Deland,Volusia County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+463,Good Samaritan Health and Wellness Center,Jasper,Pickens County,GA,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.11"
+464,Good Samaritan Health Clinic of Pasco,New Port Richey,Pasco County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+465,Good Samaritan Health Services,Tulsa,Tulsa County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+466,Good Samaritan Rescue Mission,Corpus Christi,Nueces County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+467,Good Samaritan Shelter Administration,Santa Maria,Santa Barbara County,CA,Wed Apr 29 2020,Wed Apr 29 2020,50.0,US,Social Services,1,$508.73
+468,Good Shepherd Free Medical Clinic,Clinton,Laurens County,SC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+469,Good Shepherd Medical and Dental Foundation,Ardmore,Carter County,OK,Mon May 04 2020,Mon May 04 2020,210.0,US,Community Clinic,1,"$1,095.85"
+470,Good Shepherd Ministries of Oklahoma Inc.,Oklahoma City,Oklahoma County,OK,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+471,"Goshen Medical Center, Inc.",Faison,Duplin County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+472,Grace CHC - Knox,Gray,Knox County,KY,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+473,Grace Clinic of Yadkin Valley,Elkin,Surry County,NC,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,Free Clinic,1,$109.02
+474,Grace Medical Home,Orlando,Orange County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+475,Grace Outreach to Health Community Clinic,Grapevine,Tarrant County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.02
+476,Grant Park Clinic,Atlanta,Fulton County,GA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.27
+477,Great Lakes Family Care,Cadillac,Wexford County,MI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Unknown,1,$109.02
+478,Great Salt Plains Health - Enid,Enid,Garfield County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+479,Greater Baden Medical Services,Brandywine,Prince George's County,MD,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+480,Greater Greenwood United Ministry Free Medical Clinic,Greenwood,Greenwood County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+481,Greater Killeen Free Clinic,Killeen,Bell County,TX,Thu Mar 26 2020,Wed Apr 29 2020,38.0,US,Free Clinic,2,$684.27
+482,Greater Lawrence Family Health Center,Methuen,Essex County,MA,Mon Mar 16 2020,Thu Apr 09 2020,304.0,US,FQHC/Look-Alike,3,"$1,335.56"
+483,Greater Meridian Health Clinic Inc.,Meridian,Lauderdale County,MS,Fri Apr 03 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.88"
+484,Greater Prince William Community Health Center,Woodbridge,Prince William County,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+485,Green River Medical Center,Green River,Emery County,UT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+486,Greene County Health Care,Snow Hill,Greene County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+487,Greenville Free Medical Clinic,Greenville,Greenville County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+488,Griffin Hospital,Derby,New Haven County,CT,Thu Apr 23 2020,Thu Apr 23 2020,69.0,US,Unknown,1,"$27,742.41"
+489,Guadalupe Clinic,Wichita,Sedgwick County,KS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Other,1,$109.27
+490,Gulf Coast Health Center,Port  Arthur,Jefferson County,TX,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.12"
+491,Hamilton Health Center,Harrisburg,Dauphin County,PA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+492,Hands of Grace Medical Clinic,Warner Robins,Houston County,GA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+493,Hands of Hope Clinic,Stockbridge,Henry County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+494,"Hands Together Family Health Center, Inc",Humble,Harris County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+495,Hannibal Free Clinic,Hannibal,Marion County,MO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+496,"Happy Valley Medical Center West Caldwell Health Council, Inc.",Collettsville,Avery County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+497,Harbor Community Clinic,San Pedro,Los Angeles County,CA,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+498,Harbor Health Services,Hyannis,Barnstable County,MA,Fri Feb 28 2020,Mon May 04 2020,664.0,US,FQHC/Look-Alike,5,"$6,551.72"
+499,Hardeman County Community Health Center,Bolivar,Hardeman County,TN,Mon Apr 06 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,204.88"
+500,Harm Reduction Services,Sacramento,Sacramento County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,Free Clinic,1,$109.27
+501,Harris County Public Health,Houston,Harris County,TX,Tue Mar 31 2020,Mon Apr 13 2020,1107.0,US,Public Health Department,2,"$3,082.24"
+502,Harrisonburg-Rockingham Free Clinic Pharmacy,Harrisonburg,Harrisonburg City,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+503,Hartford Hospital,Hartford,Hartford County,CT,Fri Apr 24 2020,Sat Apr 25 2020,515.0,US,Unknown,7,"$194,196.87"
+504,"Harvard Street Neighborhood Health Center, Inc",Dorchester,Suffolk County,MA,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+505,HAVEN Free Clinic,New Haven,New Haven County,CT,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+506,Hawaii H.O.M.E. Project,Honolulu,Honolulu County,HI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+507,Heal the City Free Clinic,Amarillo,Potter County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+508,HEALing Community Center,Atlanta,Fulton County,GA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+509,Healing Hands Health Center,Bristol,Sullivan County,TN,Tue Mar 24 2020,Mon May 04 2020,240.0,US,Free Clinic,2,"$1,205.12"
+510,Healing Hands Ministries,Dallas,Dallas County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+511,"Health Access, Incorporated",Clarksburg,Harrison County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+512,"Health and Hope Clinic, Inc.",Pensacola,Escambia County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+513,Health and Hope Medical Outreach,Centralia,Lewis County,WA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+514,Health Center of Southeast Texas,Cleveland,Liberty County,TX,Thu Mar 26 2020,Fri Apr 24 2020,180.0,US,FQHC/Look-Alike,2,$633.60
+515,Health For All,Bryan,Brazos County,TX,Tue Mar 24 2020,Wed Apr 29 2020,38.0,US,Free Clinic,2,"$2,409.27"
+516,Health Help dba White House Clinics,Richmond,Madison County,KY,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+517,Health Net,Glendale,Los Angeles County,CA,Mon Apr 27 2020,Mon Apr 27 2020,131.0,US,Unknown,1,"$6,555.00"
+518,Health Net Regional Office Rancho Cordova,Rancho Cordova,Sacramento County,CA,Thu Apr 23 2020,Thu Apr 23 2020,51.0,US,Unknown,1,"$2,622.00"
+519,Health Net Regional Office Visalia,Visalia,Tulare County,CA,Thu Apr 23 2020,Thu Apr 23 2020,77.0,US,Unknown,1,"$3,933.00"
+520,"Health Net, Inc",Indianapolis,Marion County,IN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+521,Health Partners Free Clinic,Troy,Miami County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+522,Health Partners of Western Ohio,Lima,Allen County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+523,Health Partnership Clinic,Olathe,Johnson County,KS,Fri Apr 10 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,204.87"
+524,Health Quality Partners,Doylestown,Montgomery County,PA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Unknown,1,$109.03
+525,Health Reach Community Clinic,Mooresville,Iredell County,NC,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+526,Health Service Alliance,Chino,San Bernardino County,CA,Fri Mar 27 2020,Mon May 04 2020,40.0,US,FQHC/Look-Alike,2,"$5,859.02"
+527,Health Services of North Texas Denton Medical Center,Denton,Denton County,TX,Tue Apr 28 2020,Tue Apr 28 2020,152.0,US,FQHC/Look-Alike,1,$524.33
+528,Health Services of North Texas L288 Serve Denton Center,Denton,Denton County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+529,Health West - Lava Clinic,Lava Hot Springs,Bannock County,ID,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+530,Healthcare for the Homeless Caroline Clinic,Houston,Harris County,TX,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$157.41
+531,Healthcare Network of Southwest Florida Collier Health Services,Immokalee,Collier County,FL,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+532,Healthfinders Collaborative,Northfield,Rice County,MN,Mon May 04 2020,Mon May 04 2020,210.0,US,Free Clinic,1,"$1,095.85"
+533,"HealthLink Dental Center, Inc",Southampton,Bucks County,PA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+534,"HealthNet of Rock County, Inc.",Janesville,Rock County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+535,HealthPoint,Renton,King County,WA,Fri Apr 03 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.86"
+536,HealthPoint Bryan/College Station,Bryan,Brazos County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+537,HealthPoint Family Care,Covington,Kenton County,KY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+538,HealthProMed Foundation,Santurce,,PR,Fri Apr 03 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+539,"HealthSource of Ohio, Inc.",Loveland,Clermont County,OH,Mon Apr 06 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,204.86"
+540,HealthWorks,Cheyenne,Laramie County,WY,Tue Mar 24 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,205.12"
+541,HealthWorks for North Virginia,Leesburg,Loudoun County,VA,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+542,Heart and Soul Clinic,Westfield,Hamilton County,IN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+543,Heart of Florida Health Center Administration,Ocala,Marion County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+544,Heart of Kansas Family HealthCare Inc,Great Bend,Barton County,KS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+545,Heart of Texas Community Health Center,Waco,McLennan County,TX,Tue Mar 24 2020,Fri Apr 24 2020,284.0,US,FQHC/Look-Alike,3,$919.32
+546,Heartland Community Health Center Heartland Medical Clinic,Lawrence,Douglas County,KS,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+547,Heartland Community Health Clinic,Peoria,Peoria County,IL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+548,Heartland Health Center,Chicago,Cook County,IL,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+549,Helping Hands Clinic,Lenoir,Caldwell County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+550,Helping Hands Free Medical Clinic,Mullins,Marion County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+551,Helping Hands Health and Wellness Center,Columbus,Franklin County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+552,Henderson Behavioral Health HILL Program,Lauderdale Lakes,Broward County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+553,Henry J. Austin Health Center Administration Clinical Department,Trenton,Mercer County,NJ,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.13"
+554,Herald Christian Health Center,Rosemead,Los Angeles County,CA,Thu Jan 30 2020,Mon Apr 27 2020,432.0,US,FQHC/Look-Alike,3,"$1,384.14"
+555,Heritage Community Clinic Ohio University Heritage College of Osteopathic Medicine Community Health Programs,Athens,Athens County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+556,Heritage Health,Coeur d'Alene,Kootenai County,ID,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+557,Hi-Desert Memorial Healthcare District,Yucca Valley,San Bernardino County,CA,Mon Mar 30 2020,Mon Mar 30 2020,72.0,US,FQHC/Look-Alike,1,$302.09
+558,"High Plains Community Health Center, Inc",Lamar,Prowers County,CO,Thu Mar 26 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+559,Highland Health Providers Corporation,Hillsboro,Highland County,OH,Thu Apr 02 2020,Mon May 04 2020,140.0,US,Community Clinic,2,"$1,204.88"
+560,Highland Hospital K3 Pharmacy,Oakland,Alameda County,CA,Wed Apr 15 2020,Thu Apr 16 2020,86.0,US,Charitable Pharmacy,2,"$29,542.41"
+561,Highland Medical Center Pharmacy,Monterey,Highland County,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+562,Highlands Health Laurel Highlands Free & Charitable Clinic,Johnstown,Cambria County,PA,Tue Mar 24 2020,Mon May 04 2020,38.0,US,Free Clinic,2,"$1,834.26"
+563,Hill Country Health and Wellness Center,Round Mountain,Shasta County,CA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+564,Hilltown Community Health Centers,Worthington,Hampshire County,MA,Fri Mar 13 2020,Fri Mar 13 2020,285.0,US,FQHC/Look-Alike,1,"$1,524.69"
+565,"His Branches, Inc.",Rochester,Monroe County,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+566,HIV Alliance,Eugene,Lane County,OR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.02
+567,HIV-AIDS Alliance for Region Two dba Open Health Care Clinic,Baton Rouge,East Baton Rouge Parish,LA,Thu Mar 26 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$5,859.27"
+568,Hogar Albergue Para Ninos Jesus de Nazaret,Mayagüez,,PR,Mon Apr 20 2020,Mon Apr 20 2020,25.0,US,Other,1,$109.01
+569,Hollywood Presbyterian Medical Center,Los Angeles,Los Angeles County,CA,Tue Mar 31 2020,Tue Mar 31 2020,222.0,US,Hospital,1,"$3,308.78"
+570,Holyoke Health Center,Holyoke,Hampden County,MA,Tue Mar 17 2020,Mon Apr 27 2020,161.0,US,FQHC/Look-Alike,2,$627.61
+571,Homeless Health Care Center Chattanooga,Chattanooga,Hamilton County,TN,Thu Mar 26 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.12"
+572,Hometown Health Centers Schenectady Family Health Services,Schenectady,Schenectady County,NY,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+573,Hope Clinic,Bayboro,Pamlico County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+574,Hope Clinic,Ypsilanti,Washtenaw County,MI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+575,Hope Clinic and Care Center,Menasha,Winnebago County,WI,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+576,Hope Clinic of McKinney,McKinney,Collin County,TX,Tue Mar 24 2020,Tue Apr 28 2020,209.0,US,Free Clinic,2,$633.59
+577,Hope Health Clinic,LaGrange,Oldham County,KY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+578,Hope Medical Clinic,Destin,Okaloosa County,FL,Tue Mar 24 2020,Mon May 04 2020,248.0,US,Free Clinic,3,"$1,780.12"
+579,Hope Medical-Dental Clinic Inc.,Dover,Kent County,DE,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Free Clinic,1,$109.03
+580,Hopelight Medical Clinic,Longmont,Boulder County,CO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+581,"Hopewell Health Centers, Inc.",Athens,Athens County,OH,Mon Apr 06 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.86"
+582,"Horizon Health Care, Inc. Administration",Howard,Miner County,SD,Mon May 04 2020,Mon May 04 2020,115.0,US,FQHC/Look-Alike,1,"$1,095.85"
+583,Hospital for Special Care,New Britain,Hartford County,CT,Fri Apr 24 2020,Fri Apr 24 2020,71.0,US,Unknown,1,"$27,742.41"
+584,Hospital General Castañer,Castaner,,PR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+585,Hospital Municipal de San Juan,San Juan,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Unknown,1,$109.01
+586,Hospital Pediátrico Universitario Dr. Antonio Ortiz (Centro Medico),San Juan,San Juan,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Unknown,1,$109.01
+587,Hospital Universitario de Adultos,San Juan,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Unknown,1,$109.03
+588,Hospital Universitario Dr. Ramón Ruiz Arnau,Bayamón,Bayamón,PR,Wed Apr 01 2020,Fri Apr 17 2020,12957.0,US,Unknown,4,"$52,880.58"
+589,"House of Mercy, Inc.",Belmont,Gaston County,NC,Tue Apr 07 2020,Tue Apr 07 2020,42.0,US,Unknown,1,$165.00
+590,Housing for Health,Los Angeles,Los Angeles County,CA,Thu Apr 16 2020,Thu Apr 16 2020,165.0,US,Unknown,1,"$3,754.29"
+591,Housing Works Health Services II Housing Works Community Healthcare,Brooklyn,Kings County,NY,Tue Mar 17 2020,Mon May 04 2020,186.0,US,FQHC/Look-Alike,2,"$1,443.49"
+592,"Houston Area Community Health Services, Inc. dba Avenue 360 Health and Wellness",Houston,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+593,Howard Brown Health Center,Chicago,Cook County,IL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+594,Howard Community Health Center,Howard,Miner County,SD,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+595,Hudson Headwaters Health Network,Queensbury,Warren County,NY,Fri Apr 03 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+596,Hudson River Healthcare,Fishkill,Dutchess County,NY,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+597,"Hudson River HealthCare, Inc.",Peekskill,Westchester County,NY,Fri Mar 27 2020,Mon Apr 27 2020,286.0,US,FQHC/Look-Alike,3,"$2,914.75"
+598,Humboldt County Public Health Communicable Disease Prevention,Eureka,Humboldt County,CA,Fri Feb 28 2020,Fri Feb 28 2020,17.0,US,Public Health Department,1,$88.29
+599,Huntington Beach Urgent Care,Newport Beach,Orange County,CA,Wed Mar 18 2020,Wed Mar 18 2020,20.0,US,Unknown,2,$205.25
+600,Hyde County Health Department,Swan Quarter,Hyde County,NC,Mon May 04 2020,Mon May 04 2020,215.0,US,Public Health Department,1,"$1,095.85"
+601,Hyndman Area Health Center,Hyndman,Bedford County,PA,Tue Mar 24 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$3,559.26"
+602,Iberia Comprehensive Community Health Center,New Iberia,Iberia Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+603,Ibn Sina Foundation,Houston,Harris County,TX,Thu Mar 26 2020,Tue Apr 28 2020,192.0,US,Community Clinic,2,$633.60
+604,"ICL HealthCare Choices, Inc.",Brooklyn,Kings County,NY,Tue Mar 24 2020,Tue Apr 28 2020,191.0,US,FQHC/Look-Alike,2,$633.60
+605,Icna Relief USA Programs Inc dba Shifa Free Clinic,Mount Pleasant,Charleston County,SC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+606,Imperial Beach Community Clinic,Imperial Beach,San Diego County,CA,Mon May 04 2020,Mon May 04 2020,210.0,US,FQHC/Look-Alike,1,"$1,095.85"
+607,Indian Health Center of Santa Clara Valley,San Jose,Santa Clara County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+608,InHealth Community Wellness Free Clinic,Boscobel,Grant County,WI,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+609,"Iniciativa Comunitaria de Investigacion, Inc.",Hato Rey,,PR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+610,Inland Family Community Health Center,San Bernardino,San Bernardino County,CA,Tue Mar 24 2020,Fri Apr 24 2020,104.0,US,FQHC/Look-Alike,3,"$6,003.31"
+611,Inogen Corporate Headquarters,Goleta,Santa Barbara County,CA,Fri Apr 17 2020,Fri Apr 17 2020,,US,Unknown,1,$727.50
+612,International Community Health Services,Seattle,King County,WA,Tue Mar 10 2020,Mon May 04 2020,679.0,US,FQHC/Look-Alike,3,"$4,433.97"
+613,"Island Health & Wellness Center, Inc.",St. John,,VI,Thu Mar 26 2020,Thu Mar 26 2020,24.0,US,Community Clinic,1,$109.27
+614,Islands Community Medical Services,Vinalhaven,Knox County,ME,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+615,Ithaca Health Alliance,Ithaca,Tompkins County,NY,Mon Apr 27 2020,Mon Apr 27 2020,63.0,US,Free Clinic,1,$144.05
+616,Ithaca Health Alliance,Elmira,Chemung County,NY,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+617,J.C. Lewis Health Care Center,Savannah,Chatham County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+618,Jackson-Hinds Comprehensive Health Center Central Mississippi Civic Improvement Association,Jackson,Hinds County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+619,Jacobi Hospital Center Donation Center NYC Health + Hospitals,Bronx,Bronx County,NY,Thu Apr 23 2020,Thu Apr 23 2020,788.0,US,Unknown,1,"$70,026.13"
+620,Jefferson Community Health Care Centers,Avondale,Jefferson Parish,LA,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+621,Jefferson Comprehensive Health Center,Fayette,Jefferson County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+622,Jericho Road Community Health Center,Buffalo,Erie County,NY,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+623,Jessie Trice Community Health,Miami,Miami-Dade County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+624,Jewish Renaissance Foundation (JRF) Community Health Center,Edison,Middlesex County,NJ,Tue Apr 21 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+625,Jewish Renaissance Medical Center,Perth Amboy,Middlesex County,NJ,Tue Mar 24 2020,Tue Apr 28 2020,186.0,US,FQHC/Look-Alike,2,$633.59
+626,Johnson City Community Health Center East Tennessee State University,Johnson City,Washington County,TN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+627,Joseph P. Addabbo Family Health Center,Arverne,Queens County,NY,Fri Apr 10 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.07
+628,"Juniper Health, Inc. Breathitt County Family Health Center",Jackson,Breathitt County,KY,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+629,Jupiter Medical Center,Jupiter,Palm Beach County,FL,Thu Apr 09 2020,Tue Apr 14 2020,150.0,US,Nonprofit Hospital,2,"$1,401.47"
+630,"JWCH Institute, Inc.",Commerce,Los Angeles County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,FQHC/Look-Alike,1,$144.05
+631,Kaiser Permanente Fontana Medical Center,Fontana,San Bernardino County,CA,Tue Apr 07 2020,Fri May 01 2020,109.0,US,Unknown,2,$849.91
+632,Kaiser Permanente Orange County Irvine Medical Center,Irvine,Orange County,CA,Sat Mar 21 2020,Sat Mar 21 2020,105.0,US,Unknown,1,$340.02
+633,Kansas City CARE Clinic,Kansas City,Jackson County,MO,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+634,Katahdin Valley Health Center Patten South,Patten,Penobscot County,ME,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+635,Katy Trail Community Health Center Sedalia,Sedalia,Pettis County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+636,Kaweah Delta Medical Center,Visalia,Tulare County,CA,Fri Apr 24 2020,Fri Apr 24 2020,281.0,US,Nonprofit Hospital,4,"$114,139.84"
+637,Kedren Community Health Center,Los Angeles,Los Angeles County,CA,Wed Apr 01 2020,Sat Apr 04 2020,222.0,US,FQHC/Look-Alike,2,$775.03
+638,Kinston Community Health Center,Kinston,Lenoir County,NC,Mon Mar 23 2020,Wed Mar 25 2020,26.0,US,FQHC/Look-Alike,2,$124.33
+639,Knox County Community Health Center,Mount Vernon,Knox County,OH,Sat Apr 04 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+640,Knox County Health Clinic,Rockland,Knox County,ME,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+641,Kokua Kalihi Valley Comprehensive Health Services,Honolulu,Honolulu County,HI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+642,Korean Community Services Administrative Site,Anaheim,Orange County,CA,Mon May 04 2020,Mon May 04 2020,210.0,US,Community Clinic,1,"$1,095.85"
+643,Korean Community Services DBA KCS Health Center,Buena Park,Orange County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+644,Korean Health Education Information and Research Center (KHEIR),Los Angeles,Los Angeles County,CA,Sat Apr 04 2020,Mon May 04 2020,401.0,US,FQHC/Look-Alike,3,"$1,729.19"
+645,La Clinica Cristiana,Muscle Shoals,Colbert County,AL,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.12"
+646,La Comunidad Hispana,Kennett Square,Chester County,PA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+647,La Esperanza Clinic Health and Dental Centers,San Angelo,Tom Green County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+648,"La Maestra Family Clinic, Inc.",San Diego,San Diego County,CA,Fri Mar 13 2020,Fri Mar 13 2020,372.0,US,FQHC/Look-Alike,2,"$1,210.32"
+649,La Pine Community Health Center,La Pine,Deschutes County,OR,Fri Apr 03 2020,Mon May 04 2020,235.0,US,Unknown,2,"$1,204.88"
+650,LAC+USC Medical Center,Los Angeles,Los Angeles County,CA,Sat Mar 21 2020,Sat Mar 21 2020,105.0,US,Unknown,1,$340.02
+651,Lackey Clinic Pharmacy,Yorktown,York County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+652,Laguna Beach Community Clinic,Laguna Beach,Orange County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,Community Clinic,1,$109.27
+653,Lahai Health,Seattle,King County,WA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+654,Lake Area Free Clinic,Oconomowoc,Waukesha County,WI,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,Free Clinic,1,$109.02
+655,Lake County Free Clinic,Painesville,Lake County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+656,Lake Health District Fund Northeast Ohio Drug Repository Program,Painesville,Lake County,OH,Mon May 04 2020,Mon May 04 2020,115.0,US,Charitable Pharmacy,1,"$1,095.85"
+657,Lanai Community Health Center Administration,Lanai City,Maui County,HI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+658,Lancaster Emergency Medical Services Association (EMS),Lancaster,Lancaster County,PA,Tue Apr 21 2020,Tue Apr 21 2020,25.0,US,Other,1,$109.02
+659,Lancaster Health Center,Lancaster,Lancaster County,PA,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+660,Lawton Community Health Center,Lawton,Comanche County,OK,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+661,Lebanon Valley Volunteers in Medicine,Lebanon,Lebanon County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+662,Ledwith Lewis Free Clinic,Tappahannock,Essex County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+663,Lee Health Gulf Coast Medical Center,Fort Myers,Lee County,FL,Thu Apr 16 2020,Thu Apr 16 2020,187.0,US,Unknown,1,$917.70
+664,Legacy Community Health Services,Houston,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+665,Lestonnac Free Clinic,Orange,Orange County,CA,Mon Mar 30 2020,Mon May 04 2020,300.0,US,Free Clinic,3,"$1,729.22"
+666,LifeCare Alliance,Columbus,Franklin County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+667,Lifecare Family Health and Dental Center,Canton,Stark County,OH,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+668,Lifelong Medical Care,Oakland,Alameda County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,FQHC/Look-Alike,1,$144.05
+669,Lifelong Medical Care East Oakland Health Center,Oakland,Alameda County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+670,Lifelong Medical Care Pharmacy,Berkeley,Alameda County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$5,750.00"
+671,LifeSpring Community Medical Services,Jeffersonville,Clark County,IN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+672,Light of the World Clinic,Oakland Park,Broward County,FL,Thu Mar 26 2020,Mon May 04 2020,38.0,US,Free Clinic,2,"$1,259.02"
+673,Lighthouse Clinic,Wenatchee,Chelan County,WA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,204.87"
+674,Lighthouse Medical Ministries,Edmond,Oklahoma County,OK,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+675,Lisbon and East Liverpool Community Health Centers,Lisbon,Columbiana County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+676,Livingston Memorial Visiting Nurse Association,Ventura,Ventura County,CA,Wed Apr 01 2020,Wed Apr 01 2020,22.0,US,Other,1,$551.42
+677,Lloyd F. Moss Free Clinic Pharmacy,Fredericksburg,Fredericksburg City,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+678,Lompoc Valley Medical Center,Lompoc,Santa Barbara County,CA,Mon Mar 30 2020,Mon Apr 13 2020,313.0,US,Hospital,3,"$27,351.54"
+679,Lone Star Community Health Center,Conroe,Montgomery County,TX,Tue Mar 24 2020,Fri Apr 24 2020,270.0,US,FQHC/Look-Alike,3,$919.32
+680,Long Island FQHC Inc.,Westbury,Nassau County,NY,Fri Mar 27 2020,Tue Apr 28 2020,191.0,US,FQHC/Look-Alike,2,$633.36
+681,"Long Island Select Healthcare, Inc.",Central Islip,Suffolk County,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+682,Lorain County Free Clinic,Lorain,Lorain County,OH,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.12"
+683,Los Angeles Christian Health Centers,Los Angeles,Los Angeles County,CA,Mon Mar 16 2020,Mon Mar 16 2020,6.0,US,FQHC/Look-Alike,1,$62.15
+684,Los Angeles Fire Department CORE Response,Los Angeles,Los Angeles County,CA,Fri Apr 24 2020,Fri Apr 24 2020,926.0,US,Unknown,1,"$5,777.64"
+685,Los Barrios Unidos Community Clinic,Dallas,Dallas County,TX,Tue Mar 24 2020,Mon May 04 2020,54.0,US,FQHC/Look-Alike,3,"$11,609.27"
+686,Los Robles Health System,Thousand Oaks,Ventura County,CA,Mon Mar 30 2020,Thu Apr 02 2020,222.0,US,Hospital,2,"$3,109.90"
+687,Loudoun Free Clinic,Leesburg,,VA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,204.87"
+688,Loveland Community Health Center Sunrise Community Health,Loveland,Larimer County,CO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+689,Lowell Community Health Center,Lowell,Middlesex County,MA,Thu Apr 02 2020,Thu Apr 02 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+690,Loyola Center for Dialysis,Maywood,Cook County,IL,Mon Apr 06 2020,Tue Apr 14 2020,149.0,US,Hospital,4,$864.12
+691,Luke's House A Clinic for Healing and Hope,New Orleans,Orleans Parish,LA,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+692,Lutheran Social Services of Central Ohio Health Center at Faith Mission,Columbus,Franklin County,OH,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+693,Maimonides Medical Center,Brooklyn,Kings County,NY,Mon Apr 20 2020,Mon Apr 20 2020,209.0,US,Nonprofit Hospital,1,"$1,240.05"
+694,Maliheh Free Clinic,Millcreek,Salt Lake County,UT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+695,Malta House of Care,Hartford,Hartford County,CT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+696,Mammoth Hospital Pharmacy,Mammoth Lakes,Mono County,CA,Tue Apr 07 2020,Wed Apr 08 2020,143.0,US,Unknown,2,"$39,052.92"
+697,Mamou Health Resources,Mamou,Evangeline Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+698,Manatee County Rural Health Services,Bradenton,Manatee County,FL,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+699,Manet Community Health Center,Quincy,Norfolk County,MA,Thu Mar 19 2020,Thu Mar 19 2020,92.0,US,FQHC/Look-Alike,2,"$1,076.38"
+700,Manna Medical Clinic,Picayune,Pearl River County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+701,Mansfield Mission - Linda Nix Clinic,Mansfield,Tarrant County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+702,Mantachie Rural Health Care,Mantachie,Itawamba County,MS,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+703,Maple City Health Care Center,Goshen,Elkhart County,IN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+704,Marana Health Center,Marana,Pima County,AZ,Mon Apr 27 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+705,Marillac Community Health Centers,New Orleans,Orleans Parish,LA,Thu Apr 02 2020,Thu Apr 02 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+706,Martin Luther King Health Center,Shreveport,Caddo Parish,LA,Tue Mar 24 2020,Wed Apr 29 2020,40.0,US,Free Clinic,2,"$5,859.27"
+707,Martin Luther King Jr. Family Clinic,Dallas,Dallas County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+708,Martin-Tyrrell-Washington District Health,Plymouth,Washington County,NC,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+709,Maryland Emergency Management Agency,Edgemere,Baltimore County,MD,Thu Apr 09 2020,Thu Apr 09 2020,15821.0,US,Unknown,1,"$162,500.00"
+710,Mary's Center,Washington,District of Columbia,DC,Mon May 04 2020,Mon May 04 2020,210.0,US,FQHC/Look-Alike,1,"$1,095.85"
+711,Mary's Center for Maternal and Child Care,Washington,District of Columbia,DC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+712,Massachusetts Emergency Management Agency,Marlborough,Middlesex County,MA,Fri Apr 10 2020,Fri Apr 10 2020,7878.0,US,Unknown,1,"$81,250.00"
+713,Matagorda Episcopal Health Outreach Program Medical Clinic,Bay City,Matagorda County,TX,Tue Mar 24 2020,Mon May 04 2020,104.0,US,FQHC/Look-Alike,3,"$6,003.31"
+714,Mattapan Community Health Center,Mattapan,Suffolk County,MA,Fri Feb 28 2020,Mon Apr 20 2020,87.0,US,FQHC/Look-Alike,3,$362.14
+715,"Matthew 25, Inc.",Fort Wayne,Allen County,IN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+716,"Med Centro, Inc.",Ponce,,PR,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+717,Medical Associates Plus,Augusta,Richmond County,GA,Fri Mar 27 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+718,"Medical Office John and Alieta Eck, MDs",Piscataway,Middlesex County,NJ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Unknown,1,$109.26
+719,Medical Outreach Ministries,Montgomery,Montgomery County,AL,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+720,Medlink Georgia,Colbert,Madison County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+721,Mel Leaman Free Clinic of Smyth County,Marion,Smyth County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+722,Memorial Sloan Kettering Cancer Center,New York,New York County,NY,Mon Apr 13 2020,Tue Apr 14 2020,186.0,US,Unknown,2,"$1,469.12"
+723,MemorialCare Orange Coast Medical Center,Fountain Valley,Orange County,CA,Mon Apr 13 2020,Mon Apr 13 2020,368.0,US,Unknown,1,"$1,469.12"
+724,Mendocino Coast Clinics,Fort Bragg,Mendocino County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+725,Mendocino Community Health Clinic Inc. Hillside Health Center,Ukiah,Mendocino County,CA,Thu Mar 26 2020,Mon Apr 27 2020,184.0,US,FQHC/Look-Alike,2,$633.36
+726,MERCI Clinic,New Bern,Craven County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+727,Mercy Health Center,Athens,Clarke County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+728,Mercy Medical Clinic,Shelbyville,Shelby County,KY,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,204.87"
+729,Mercy Medical Clinic,Lyons,Toombs County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+730,Mercy Medicine Free Clinic,Florence,Florence County,SC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+731,Meridian Educational Resource Group dba Whitefoord Inc.,Atlanta,Dekalb County,GA,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+732,"Metro Community Health Center, Inc.",Bronx,Bronx County,NY,Mon Apr 06 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$2,409.03"
+733,"Metro Community Health Center, Inc. Brooklyn",Brooklyn,Kings County,NY,Mon May 04 2020,Mon May 04 2020,14.0,US,FQHC/Look-Alike,1,"$2,875.00"
+734,Metro Community Provider Network dba STRIDE Community Health Center,Denver,Denver County,CO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+735,Metropolitan Community Health Services Williamston,Williamston,Martin County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+736,Miami Beach Community Health Center,Miami Beach,Miami-Dade County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+737,Miami Rescue Mission Clinic,Miami,Miami-Dade County,FL,Thu Mar 26 2020,Mon May 04 2020,39.0,US,Free Clinic,2,"$4,709.02"
+738,Mid Delta Health Systems,Clarendon,Monroe County,AR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+739,Middlesex Hospital,Middletown,Middlesex County,CT,Thu Apr 23 2020,Thu Apr 23 2020,74.0,US,Unknown,1,"$27,742.41"
+740,MidMichigan Health Services,Houghton Lake,Roscommon County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+741,Midtown Community Health Center,Ogden,Weber County,UT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+742,Midtown Health Center,Norfolk,Madison County,NE,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+743,Milan Puskar Health Right,Morgantown,Monongalia County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+744,"Milwaukee Health Services, Inc.",Milwaukee,Milwaukee County,WI,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+745,Mission Arlington Medical Clinic,Arlington,Tarrant County,TX,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,Free Clinic,1,$109.03
+746,"Mission City Community Network, Inc.",North Hills,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+747,Mission Medical Clinic,Colorado Springs,El Paso County,CO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+748,Mission Neighborhood Health Center,San Francisco,San Francisco County,CA,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+749,Mission Of Mercy - Arizona Clinics,Phoenix,Maricopa County,AZ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+750,Mission of Mercy Administration MD/PA Clinics,Gettysburg,Adams County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+751,Mission Possible,Aurora,Kane County,IL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+752,Mission Travis Mercy Free Clinic,Fort Worth,Tarrant County,TX,Thu Mar 26 2020,Tue Apr 28 2020,88.0,US,Free Clinic,2,$253.07
+753,Moab Free Health Clinic,Moab,Grand County,UT,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.12"
+754,Montana Migrant Council,Billings,Yellowstone County,MT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+755,Montefiore Nyack Hospital,Nyack,Rockland County,NY,Thu Mar 26 2020,Wed Apr 01 2020,1748.0,US,Nonprofit Hospital,4,"$112,790.50"
+756,"Morehouse Community Medical Centers, Inc",Bastrop,Morehouse Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+757,"Morovis Community Health Center, Inc.",Morovis,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+758,Morton Comprehensive Health Services,Tulsa,Tulsa County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+759,Moses Lake Community Health Center,Moses Lake,Grant County,WA,Fri Apr 17 2020,Fri Apr 17 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+760,Mount Sinai Health System MSHS COVID Supplies Donation OSDC,New York,New York County,NY,Mon Apr 13 2020,Thu Apr 30 2020,2101.0,US,Unknown,3,"$10,802.62"
+761,Mount Sinai West Hospital,New York,New York County,NY,Tue Mar 31 2020,Tue Mar 31 2020,177.0,US,Hospital,1,"$1,498.00"
+762,Mountain Community Health Partnership Celo Health Center,Burnsville,Yancey County,NC,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.11"
+763,Mountain Comprehensive Health Corporation,Whitesburg,Letcher County,KY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+764,Mountain Family Community Health Center,Glenwood Springs,Garfield County,CO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+765,Mountain Family Health Centers,Glenwood Springs,Garfield County,CO,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+766,Mountain Health & Community Services,Alpine,San Diego County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+767,Mountain Home Christian Clinic,Mountain Home,Baxter County,AR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+768,Mountain Park Health Center - Baseline,Phoenix,Maricopa County,AZ,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+769,"Mountainlands Community Health Center, Inc.",Provo,Utah County,UT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+770,M-Power Ministries,Birmingham,Jefferson County,AL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+771,MQVN Community Development Corp NOELA CHC,New Orleans,Orleans Parish,LA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+772,Mt. Enterprise Community Health Clinic,Mount Enterprise,,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Unknown,1,$109.02
+773,Mt. Pleasant Clinic,San Jose,Santa Clara County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,Unknown,1,$144.05
+774,MultiCare Health System Tacoma General Hospital,Tacoma,Pierce County,WA,Mon Mar 16 2020,Mon Mar 16 2020,1661.0,US,Hospital,2,"$6,487.41"
+775,My Community Health Center,Canton,Stark County,OH,Wed Apr 01 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.86"
+776,N.E.W. Community Clinic,Green Bay,Brown County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+777,Native American Health Center Oakland Seven Directions,Oakland,Alameda County,CA,Tue Apr 28 2020,Mon May 04 2020,278.0,US,FQHC/Look-Alike,2,"$1,239.90"
+778,Navajo Nation Chinle Wildcat Den,Chinle,Apache County,AZ,Mon Apr 27 2020,Mon Apr 27 2020,3923.0,US,Unknown,1,"$52,262.07"
+779,NC MedAssist,Charlotte,Mecklenburg County,NC,Thu Mar 26 2020,Mon Apr 20 2020,56.0,US,Charitable Pharmacy,3,$795.98
+780,Neighborcare Health,Seattle,King County,WA,Mon Mar 16 2020,Tue Mar 17 2020,920.0,US,FQHC/Look-Alike,3,"$4,701.08"
+781,Neighborhood Clinic,Tacoma,Pierce County,WA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+782,"Neighborhood Health Care, Inc. dba Neighborhood Family Practice",Cleveland,Cuyahoga County,OH,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,Unknown,1,$109.02
+783,Neighborhood Health Center,Buffalo,Erie County,NY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+784,Neighborhood Health Clinic,Naples,Collier County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+785,Neighborhood Healthcare - Escondido,Escondido,San Diego County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+786,Neighborhood Medical Center Richardson-Lewis Center,Tallahassee,Leon County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+787,Neighborhood Service Organization,Detroit,Wayne County,MI,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,Free Clinic,1,$109.03
+788,NEMS Pharmacy - SB,San Francisco,San Francisco County,CA,Mon Apr 27 2020,Mon Apr 27 2020,149.0,US,FQHC/Look-Alike,1,$524.34
+789,"NeoMed Center, Inc. Gurabo",Gurabo,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+790,Network Medical,Goleta,Santa Barbara County,CA,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+791,New Heights Clinic,Vancouver,Clark County,WA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+792,New Hope Clinic,Southport,Brunswick County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+793,New Horizon Family Health Services,Greenville,Greenville County,SC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+794,New Song Health Center dba Bolinbrook Christian Health Center,Bolingbrook,Will County,IL,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Community Clinic,1,$109.01
+795,New York Fire Department - NYC EMS FDNY Fire Academy,Randalls Island,New York County,NY,Thu Apr 02 2020,Thu Apr 02 2020,235.0,US,Unknown,1,$736.05
+796,Newark Community Health Centers Corporate Office,Newark,Essex County,NJ,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+797,NewHope Clinic,Owingsville,Bath County,KY,Tue Mar 24 2020,Tue Mar 24 2020,30.0,US,Free Clinic,1,$109.26
+798,NewYork-Presbyterian Brooklyn Methodist Hospital,Brooklyn,Kings County,NY,Thu Apr 16 2020,Thu Apr 16 2020,470.0,US,Nonprofit Hospital,1,"$11,125.37"
+799,Nhan Hoa Comprehensive Health Care Clinic,Garden Grove,Orange County,CA,Sat Apr 04 2020,Mon May 04 2020,303.0,US,FQHC/Look-Alike,3,"$1,348.91"
+800,No Aids Task Force DBA Crescent Care,New Orleans,Orleans Parish,LA,Tue Mar 24 2020,Tue Apr 14 2020,44.0,US,FQHC/Look-Alike,3,"$3,451.71"
+801,NOAH - Neighborhood Outreach Access to Health,Scottsdale,Maricopa County,AZ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+802,North by Northeast Community Health Center,Portland,Multnomah County,OR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+803,North County Health Services,San Marcos,San Diego County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+804,North County Health Services Mission Mesa Pediatrics,Oceanside,San Diego County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,Community Clinic,1,$144.05
+805,North Dallas Shared Ministries Free Medical Clinic,Dallas,Dallas County,TX,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,Free Clinic,2,$253.32
+806,North East Medical Services,Daly City,San Mateo County,CA,Tue Jan 28 2020,Tue Jan 28 2020,230.0,US,FQHC/Look-Alike,1,"$3,965.26"
+807,North End Community Health Committee,Boston,Suffolk County,MA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+808,"North Florida Medical Centers, Inc.",Tallahassee,Leon County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+809,North Hills Wellness Center,North Hills,Los Angeles County,CA,Mon May 04 2020,Mon May 04 2020,115.0,US,FQHC/Look-Alike,1,"$1,095.85"
+810,North Hudson Community Action Corporation - Administration,Union City,Hudson County,NJ,Tue Mar 24 2020,Fri Apr 24 2020,189.0,US,FQHC/Look-Alike,2,$633.60
+811,North Jefferson County Clinic Pharmacy,Beaumont,Jefferson County,TX,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,Public Health Department,1,$109.01
+812,North Miami Beach Medical Center Mercy Mobile Clinic,North Miami Beach,Miami-Dade County,FL,Tue Mar 24 2020,Mon May 04 2020,38.0,US,Free Clinic,2,"$1,834.27"
+813,North Mississippi Primary Health Care Inc.,Ashland,Benton County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+814,North Orange County Regional Health Foundation,Fullerton,Orange County,CA,Wed Mar 25 2020,Mon Apr 27 2020,185.0,US,FQHC/Look-Alike,2,$633.60
+815,Northeast Community Clinic,Alhambra,,CA,Wed Apr 01 2020,Wed Apr 01 2020,197.0,US,FQHC/Look-Alike,1,$666.00
+816,Northeast Florida Health Services Family Health Source,Deland,Volusia County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+817,"Northeast Mississippi Health Care, Inc.",Byhalia,Marshall County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+818,Northeast Missouri Health Council Inc.,Kirksville,Adair County,MO,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+819,Northeast Valley Health Corporation,San Fernando,Los Angeles County,CA,Tue Apr 28 2020,Tue Apr 28 2020,63.0,US,FQHC/Look-Alike,1,$144.05
+820,Northeast Valley Health Corporation Corporate Office,San Fernando,Los Angeles County,CA,Wed Apr 01 2020,Wed Apr 01 2020,171.0,US,FQHC/Look-Alike,1,$666.00
+821,Northeast Valley Health Corporation San Fernando Health Center,San Fernando,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+822,"Northeastern Oklahoma Community Health Centers, Inc.",Hulbert,Cherokee County,OK,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+823,"Northern Health Centers, Inc.",Lakewood,Oconto County,WI,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+824,Northern Neck Free Health Clinic Pharmacy,Kilmarnock,Northumberland County,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+825,Northern Nevada HOPES Clinic,Reno,Washoe County,NV,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+826,NorthLakes Community Clinic,Iron River,Bayfield County,WI,Fri Apr 03 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.88"
+827,Northland Community Health Center Administration,Turtle Lake,McLean County,ND,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+828,NorthShore Health Centers,Portage,Porter County,IN,Tue Mar 24 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.12"
+829,Northside Medical Center,Richmond,Henrico County,VA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+830,Northwest Community Health Center,Libby,Lincoln County,MT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+831,Northwest Fire Department,Houston,Harris County,TX,Fri Apr 24 2020,Fri Apr 24 2020,53.0,US,Unknown,1,"$5,544.20"
+832,"Northwest Health Services, Inc.",St. Joseph,Buchanan County,MO,Thu Mar 26 2020,Mon May 04 2020,241.0,US,FQHC/Look-Alike,3,"$1,208.42"
+833,"Northwest Michigan Health Services, Inc. Traverse City Clinic",Traverse City,,MI,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+834,Nova Scripts Central Inc Pharmacy,Falls Church,Fairfax County,VA,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Charitable Pharmacy,2,"$1,205.11"
+835,Nuestra Clinica Del Valle,San Juan,Hidalgo County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+836,Nuestra Clinica Del Valle Edcouch Clinic,Edcouch,Hidalgo County,TX,Thu Apr 02 2020,Thu Apr 02 2020,175.0,US,FQHC/Look-Alike,1,$666.00
+837,NYC Health + Hospitals Bellevue Hospital Incident Command Center,New York,New York County,NY,Mon Mar 30 2020,Wed Apr 22 2020,1947.0,US,Hospital,37,"$513,392.90"
+838,NYU Langone Health,New Hyde Park,Nassau County,NY,Mon Apr 13 2020,Tue Apr 14 2020,187.0,US,Nonprofit Hospital,2,"$1,469.12"
+839,Oakhurst Medical Center,Stone Mountain,Dekalb County,GA,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+840,ODA Primary Care Health Center,Brooklyn,Kings County,NY,Thu Mar 19 2020,Fri Mar 20 2020,57.0,US,FQHC/Look-Alike,2,$770.82
+841,Olde Towne Medical and Dental Center,Williamsburg,James City County,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Other,1,$109.02
+842,Omni Family Health,Wasco,Kern County,CA,Tue Mar 24 2020,Mon Apr 27 2020,218.0,US,FQHC/Look-Alike,2,$633.60
+843,OneWorld Community Health Center,Omaha,Douglas County,NE,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+844,Open Arms Clinic,Toccoa,Stephens County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+845,Open Arms Health Clinic,Arlington,Tarrant County,TX,Tue Mar 24 2020,Mon Apr 27 2020,90.0,US,Free Clinic,2,$253.31
+846,Open Bible Medical Clinic and Pharmacy,Colorado Springs,El Paso County,CO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+847,Open Door Clinic of Alamance County,Burlington,Alamance County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+848,Open Door Family Medical Centers Inc.,Ossining,Westchester County,NY,Fri Apr 03 2020,Mon Apr 27 2020,175.0,US,FQHC/Look-Alike,2,$633.36
+849,Open Door Health Center,Homestead,Miami-Dade County,FL,Tue Mar 24 2020,Mon May 04 2020,39.0,US,Free Clinic,2,"$2,409.26"
+850,Open Door Health Clinic,Ellensburg,Kittitas County,WA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+851,Open Door Urban Ministries of Wake County,Raleigh,Wake County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+852,Orange County Free Clinic,Orange,Orange County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+853,Orchard Hospital,Gridley,Butte County,CA,Wed Apr 01 2020,Wed Apr 01 2020,362.0,US,Hospital,1,"$3,580.23"
+854,Outlook Health Services,Chisago City,Chisago County,MN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+855,Outreach Community Health Centers,Milwaukee,Milwaukee County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+856,"Outreach Health Services, Inc.",Shubuta,Clarke County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+857,Outside In,Portland,Multnomah County,OR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+858,Oxnard College Dental Hygiene Program,Oxnard,Ventura County,CA,Thu Apr 16 2020,Thu Apr 16 2020,73.0,US,Unknown,1,"$3,484.28"
+859,Ozanam Charitable Pharmacy,Mobile,Mobile County,AL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Charitable Pharmacy,1,$109.02
+860,PACE Community Action Agency Health Department Vigo County,Terre Haute,Vigo County,IN,Mon May 04 2020,Mon May 04 2020,115.0,US,Other,1,"$1,095.85"
+861,Pacific Garden Mission,Chicago,Cook County,IL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.28
+862,"Palmetto Health Council, Inc.",Palmetto,Fulton County,GA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+863,Palms Medical Group,High Springs,Alachua County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+864,"Pancare of Florida, Inc.",Panama City,Bay County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+865,Paradise Valley Hospital,National City,San Diego County,CA,Fri Mar 27 2020,Fri Mar 27 2020,609.0,US,Hospital,1,"$4,770.35"
+866,Park Duvalle Community Health Center,Louisville,Jefferson County,KY,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+867,Partners For Healing,Tullahoma,Coffee County,TN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+868,Partners Healthcare,Somerville,Berkshire County,MA,Fri Apr 17 2020,Thu Apr 23 2020,1112.0,US,Unknown,2,"$26,839.30"
+869,Partnership Community Health Center Appleton Site,Appleton,Outagamie County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+870,Pasadena Health Center,Pasadena,Harris County,TX,Tue Mar 24 2020,Mon May 04 2020,202.0,US,FQHC/Look-Alike,3,"$3,508.61"
+871,PathPoint,Santa Barbara,Santa Barbara County,CA,Mon Apr 13 2020,Thu Apr 16 2020,239.0,US,Social Services,2,"$8,984.22"
+872,PCPFHF Warehouse,Clinton,East Feliciana Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,10.0,US,Unknown,1,$264.00
+873,Peach Tree Healthcare,Marysville,Yuba County,CA,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+874,PediPlace,Lewisville,Denton County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Other,1,$109.26
+875,Peninsula Community Health Services,Bremerton,Kitsap County,WA,Tue Mar 24 2020,Thu Apr 09 2020,311.0,US,FQHC/Look-Alike,2,"$3,158.62"
+876,Penn Yan Community Health,Penn Yan,Yates County,NY,Tue Mar 24 2020,Mon May 04 2020,203.0,US,FQHC/Look-Alike,3,"$1,349.16"
+877,Peoples Community Health Clinic,Waterloo,Black Hawk County,IA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+878,People's Health Clinic,Park City,Summit County,UT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+879,Person Family Medical Center,Roxboro,Person County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+880,Petaluma Health Center,Petaluma,Sonoma County,CA,Thu Mar 26 2020,Wed Apr 22 2020,45.0,US,FQHC/Look-Alike,2,"$2,409.02"
+881,Philadelphia Department of Health Health Care Center #2,Philadelphia,Philadelphia County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+882,Pittsburgh Mercy Family Health Center,Pittsburgh,Allegheny County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.27
+883,Planned Parenthood of California Central Coast,Santa Barbara,Santa Barbara County,CA,Mon Mar 30 2020,Mon Mar 30 2020,355.0,US,Women's Health,1,"$1,885.00"
+884,Planned Parenthood of Tennessee and North Mississippi,Memphis,Shelby County,TN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.27
+885,Planned Parenthood Southwest Ohio Region Mt. Auburn Surgical Center,Cincinnati,Hamilton County,OH,Mon May 04 2020,Mon May 04 2020,115.0,US,Women's Health,1,"$1,095.85"
+886,Pocatello Free Clinic,Pocatello,Bannock County,ID,Mon May 04 2020,Mon May 04 2020,210.0,US,Free Clinic,1,"$1,095.85"
+887,Point Washington Medical Clinic,Santa Rosa Beach,Walton County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+888,Pomona Community Health Center Ontario,Ontario,San Bernardino County,CA,Thu Mar 26 2020,Tue Apr 28 2020,88.0,US,Unknown,2,$253.07
+889,Ponce Medical School Foundation Inc,Ponce,,PR,Fri Apr 17 2020,Fri Apr 17 2020,73.0,US,Free Clinic,1,"$27,742.41"
+890,Portland Community Free Clinic,Portland,Cumberland County,ME,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+891,Portland Community Health Center,Portland,Cumberland County,ME,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+892,Precision Valley Free Clinic,Springfield,Windsor County,VT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+893,Premier Community HealthCare Administrative Office,Dade City,Pasco County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+894,Preston-Taylor Community Health Centers,Grafton,Taylor County,WV,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+895,"Primary Care at Home, Inc.",Oakland,Alameda County,CA,Thu Mar 26 2020,Mon May 04 2020,154.0,US,Community Clinic,3,"$4,080.12"
+896,Primary Care Medical Practice of NY Vida Sana Medical Care,Jackson Heights,Queens County,NY,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Community Clinic,2,"$1,205.11"
+897,Primary Care of Southwest Georgia,Blakely,,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+898,Primary Health Network,Sharon,Mercer County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+899,Primary Health Services Center,Monroe,Ouachita Parish,LA,Wed Apr 08 2020,Wed Apr 08 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+900,Primary Health Services Center,Monroe,Ouachita Parish,LA,Mon May 04 2020,Mon May 04 2020,14.0,US,FQHC/Look-Alike,1,"$5,750.00"
+901,Primary Healthcare Center Rossville,Rossville,Walker County,GA,Thu Mar 26 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+902,Program for Health Care to Underserved Populations Birmingham Free Clinic,Pittsburgh,Allegheny County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+903,Programa de Vacunacion Puerto Rico Department of Health Centro de Distribucion,Rio Piedras,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Public Health Department,1,$109.01
+904,"Project H.O.P.E.,Inc.",Camden,Camden County,NJ,Tue Mar 24 2020,Tue Apr 28 2020,186.0,US,FQHC/Look-Alike,2,$633.61
+905,"Project Health, Inc. dba Langley Health Services",Sumterville,Sumter County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+906,Project Renewal Inc.,New York,New York County,NY,Thu Apr 02 2020,Thu Apr 02 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+907,"Proteus, Inc.",Des Moines,Polk County,IA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+908,"Prototype Health, Inc.",Mesa,Maricopa County,AZ,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.02
+909,Providence Regional Medical Center Everett Colby,Everett,Snohomish County,WA,Tue Mar 17 2020,Fri Mar 27 2020,2575.0,US,Hospital,2,"$106,459.65"
+910,Providence Saint John's Health Center,Santa Monica,Los Angeles County,CA,Sat Mar 21 2020,Sat Mar 21 2020,164.0,US,Unknown,1,$680.04
+911,"PryMed Medical Care, Inc.",Ciales,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+912,Pueblo Community Health Center PCHC Pharmacy,Pueblo,Pueblo County,CO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+913,Puerto Rico Department of Health,San Juan,,PR,Wed Apr 08 2020,Wed Apr 08 2020,8045.0,US,Public Health Department,1,"$5,110.81"
+914,Puerto Rico State Guard National Guard,San Juan,,PR,Fri Apr 03 2020,Fri Apr 03 2020,24.0,US,Other,1,$109.03
+915,Puerto Rico Trauma Center,San Juan,San Juan,PR,Fri May 01 2020,Fri May 01 2020,308.0,US,Unknown,1,"$4,865.70"
+916,Pushmataha Family Medical Center Inc.,Clayton,Pushmataha County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+917,QueensCare East 3rd Street,Los Angeles,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+918,QueensCare Health Center,Los Angeles,Los Angeles County,CA,Wed Apr 01 2020,Mon Apr 27 2020,251.0,US,FQHC/Look-Alike,2,$810.05
+919,QueensCare Hollywood,Los Angeles,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$5,750.00"
+920,R.O.A.D.S. Community Care Clinic,Compton,Los Angeles County,CA,Thu Mar 26 2020,Fri Apr 24 2020,25.0,US,FQHC/Look-Alike,2,$633.35
+921,Rapha Clinic of West Georgia,Temple,Carroll County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+922,Rapides Primary Health Care Center,Alexandria,Rapides Parish,LA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+923,"Recovery Consultants of Atlanta, Inc.",Decatur,Dekalb County,GA,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+924,Redwoods Rural Health Center Inc.,Redway,Humboldt County,CA,Mon Mar 09 2020,Mon May 04 2020,303.0,US,FQHC/Look-Alike,3,"$1,357.83"
+925,Regence Health Network Homeless Clinic,Amarillo,Potter County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+926,Regional Medical Center at Lubec,Lubec,Washington County,ME,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+927,Renewed Hope Health Clinic,Allegan,Allegan County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+928,"Rescue Mission Ministries, Inc.",Roanoke,Roanoke City,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+929,Richard F. Clarke Help Free Clinic Pharmacy,Hampton,Hampton City,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+930,Richmond Area High Blood Pressure Center for Healthy Hearts,Richmond,Richmond City,VA,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,204.87"
+931,Ridgefield Fire Department,Ridgefield,Fairfield County,CT,Tue Apr 14 2020,Tue Apr 14 2020,824.0,US,Unknown,1,"$2,176.09"
+932,Ridley-Tree Cancer Center,Santa Barbara,Santa Barbara County,CA,Wed Apr 08 2020,Wed Apr 08 2020,25.0,US,Community Clinic,1,$109.03
+933,Ritter Center,San Rafael,Marin County,CA,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.32
+934,RKM Primary Care,Clinton,East Feliciana Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+935,Roane County Family Health Care,Spencer,Roane County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+936,Roanoke Chowan Community Health Center,Ahoskie,Hertford County,NC,Thu Apr 16 2020,Thu Apr 16 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+937,Robeson Health Care Corporation,Pembroke,Robeson County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+938,Rochester General Hospital,Rochester,Monroe County,NY,Tue Mar 24 2020,Thu Mar 26 2020,931.0,US,Hospital,2,"$4,244.13"
+939,Rock Springs Clinic,Milner,Lamar County,GA,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+940,Rocking Horse Community Health Center,Springfield,Clark County,OH,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+941,Rolette County Public Health District,Rolla,Rolette County,ND,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+942,Roots Community Health Center,Oakland,Alameda County,CA,Mon Mar 30 2020,Mon Mar 30 2020,18.0,US,Community Clinic,1,$429.00
+943,Rosa Clark Medical Clinic,Seneca,Oconee County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+944,"RotaCare Gilroy Clinic at South Valley Middle School RotaCare Bay Area, Inc.",Gilroy,Santa Clara County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,Free Clinic,1,$144.05
+945,Rotacare North Helpline,Seattle,King County,WA,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Community Clinic,1,$109.02
+946,"RotaCare San Jose at Washington Elementary School RotaCare Bay Area, Inc.",San Jose,Santa Clara County,CA,Thu Feb 13 2020,Thu Feb 13 2020,2.0,US,Free Clinic,1,$3.29
+947,"RotaCare, Inc.",Uniondale,Nassau County,NY,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+948,Rural Alliance for Better Health aka Missouri Community Health Center,West Plains,Howell County,MO,Mon Apr 06 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.88"
+949,"Rural Medical Service, Inc. Newport",Newport,Cocke County,TN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.28
+950,Ruth's Place Clinic,Granbury,Hood County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+951,Rutland Free Clinic,Rutland,Rutland County,VT,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+952,RWJBarnabas Health Qualitas Pharmacy Services,South Plainfield,Middlesex County,NJ,Thu Apr 09 2020,Fri Apr 10 2020,766.0,US,Unknown,12,"$293,484.51"
+953,Ryan Chelsea-Clinton Community Health Center,New York,New York County,NY,Sat Apr 04 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+954,Saban Community Clinic,Los Angeles,Los Angeles County,CA,Wed Jan 29 2020,Fri Apr 24 2020,191.0,US,Free Clinic,5,"$3,539.14"
+955,Sacramento Native American Health Center,Sacramento,Sacramento County,CA,Fri Mar 13 2020,Thu Mar 26 2020,132.0,US,FQHC/Look-Alike,2,$857.24
+956,Sacred Heart Community Clinic,Round Rock,Williamson County,TX,Thu Mar 26 2020,Mon Apr 27 2020,90.0,US,Community Clinic,2,$253.32
+957,Safe Harbor Free Clinic,Stanwood,Snohomish County,WA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+958,Safer Alternatives Thru Networking & Education (SANE) - Clinic Site,Sacramento,Sacramento County,CA,Tue Apr 21 2020,Tue Apr 21 2020,13.0,US,Social Services,1,$575.00
+959,Saint Joseph's Medical Clinic,Waukesha,Waukesha County,WI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+960,Salaam Clinic,Cleveland,Cuyahoga County,OH,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+961,Salina Family Healthcare Center,Salina,Saline County,KS,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+962,Saltville Medical Center,Saltville,Smyth County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+963,Salud at Valle Verde,Freedom,Santa Cruz County,CA,Wed Apr 15 2020,Wed Apr 15 2020,539.0,US,Free Clinic,1,"$124,112.50"
+964,Salud Family Health Centers Administration,Fort Lupton,Weld County,CO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+965,Salud Integral en la Montaña (SIM) - Central Offices,Naranjito,,PR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+966,Samaritan Health Services,Cedar Park,Williamson County,TX,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,Community Clinic,2,$157.16
+967,Samaritan House Free Clinic,San Mateo,San Mateo County,CA,Thu Mar 26 2020,Fri Apr 24 2020,189.0,US,Free Clinic,2,$633.35
+968,Samaritan Regional Health Clinic,Cape Girardeau,Cape Girardeau County,MO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+969,Samuel Dixon Family Health Center,Valencia,Los Angeles County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+970,Samuel Dixon Family Health Center Canyon Country,Canyon Country,Los Angeles County,CA,Wed Apr 22 2020,Wed Apr 22 2020,19.0,US,FQHC/Look-Alike,1,"$1,150.00"
+971,Samuel Dixon Family Health Center Newhall,Newhall,Los Angeles County,CA,Wed Apr 22 2020,Wed Apr 22 2020,19.0,US,FQHC/Look-Alike,1,"$1,150.00"
+972,Samuel Dixon Family Health Center Val Verde,Val Verde,Los Angeles County,CA,Wed Apr 22 2020,Wed Apr 22 2020,19.0,US,FQHC/Look-Alike,1,"$1,150.00"
+973,San Diego Family Care Mid-City Community Clinic (Pediatrics),San Diego,San Diego County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+974,San Fernando Community Health Center,San Fernando,Los Angeles County,CA,Fri Mar 27 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+975,San Francisco Community Clinic Consortium Street Outreach Services,San Francisco,San Francisco County,CA,Mon Mar 23 2020,Mon Mar 23 2020,2.0,US,FQHC/Look-Alike,1,$48.56
+976,San Francisco Free Clinic,San Francisco,San Francisco County,CA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+977,San Jose Clinic,Houston,Harris County,TX,Wed Apr 29 2020,Wed Apr 29 2020,14.0,US,Charitable Pharmacy,1,"$5,750.00"
+978,San Jose Foothill Family Community Clinic - Administration,San Jose,Santa Clara County,CA,Wed Feb 05 2020,Wed Feb 05 2020,135.0,US,FQHC/Look-Alike,1,$765.04
+979,San Leandro Hospital Inpatient Pharmacy Department,San Leandro,Alameda County,CA,Fri Apr 10 2020,Fri Apr 10 2020,70.0,US,Nonprofit Hospital,1,"$26,650.41"
+980,San Mateo County Public Health SMC Warehouse,South San Francisco,San Mateo County,CA,Thu Mar 19 2020,Thu Mar 19 2020,257.0,US,Unknown,1,$830.61
+981,San Ysidro Health,San Diego,San Diego County,CA,Fri Mar 13 2020,Wed Apr 15 2020,649.0,US,FQHC/Look-Alike,2,"$3,960.83"
+982,Sansum Clinic,Santa Barbara,Santa Barbara County,CA,Wed Mar 11 2020,Thu Apr 16 2020,1009.0,US,Unknown,3,"$6,835.90"
+983,Santa Barbara Cottage Hospital,Santa Barbara,Santa Barbara County,CA,Fri Mar 20 2020,Thu Apr 09 2020,501.0,US,Hospital,22,"$535,574.32"
+984,Santa Barbara County Fire Department,Santa Barbara,Santa Barbara County,CA,Wed Apr 01 2020,Wed Apr 01 2020,1323.0,US,Unknown,1,"$6,572.83"
+985,"Santa Barbara County Search & Rescue, Inc.",Santa Barbara,Santa Barbara County,CA,Tue Apr 14 2020,Tue Apr 14 2020,,US,Other,1,"$2,062.89"
+986,Santa Barbara County Sherriff's Office,Santa Barbara,Santa Barbara County,CA,Fri Apr 17 2020,Fri Apr 17 2020,136.0,US,Unknown,1,"$11,178.00"
+987,Santa Barbara Neighborhood Clinics,Santa Barbara,Santa Barbara County,CA,Tue Mar 24 2020,Tue Mar 24 2020,19.0,US,FQHC/Look-Alike,1,$528.00
+988,Santa Barbara Neighborhood Clinics Eastside Neighborhood Clinic,Santa Barbara,Santa Barbara County,CA,Thu Mar 26 2020,Fri Mar 27 2020,219.0,US,FQHC/Look-Alike,2,"$1,469.10"
+989,Santa Clara County Better Health Pharmacy,San Jose,Santa Clara County,CA,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+990,Santa Clara County IPA SCCIPA,Foster City,San Mateo County,CA,Thu Apr 16 2020,Thu Apr 16 2020,219.0,US,Unknown,1,"$11,875.28"
+991,Santa Cruz Community Health Centers,Santa Cruz,Santa Cruz County,CA,Mon Apr 06 2020,Mon May 04 2020,305.0,US,FQHC/Look-Alike,3,"$1,348.91"
+992,"Scripps Mercy Hospital, San Diego",San Diego,San Diego County,CA,Mon Mar 30 2020,Mon Apr 20 2020,677.0,US,Hospital,2,"$5,475.50"
+993,Sea Mar Community Health Centers,Seattle,King County,WA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+994,Seattle Indian Health Board,Seattle,King County,WA,Tue Mar 10 2020,Fri Mar 13 2020,273.0,US,FQHC/Look-Alike,4,"$2,399.64"
+995,SEMO Health Network Corporate Office,Benton,Scott County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+996,Serve the People Community Health Center,Santa Ana,Orange County,CA,Fri Apr 03 2020,Mon Apr 27 2020,225.0,US,FQHC/Look-Alike,3,"$6,383.34"
+997,Service Employees International Union SEIU Local 721,Los Angeles,Los Angeles County,CA,Thu Apr 16 2020,Thu Apr 16 2020,116.0,US,Unknown,1,"$2,064.19"
+998,"Servicios de Salud Primarios de Barceloneta, Inc. dba Atlantic Medical Center",Barceloneta,Barceloneta,PR,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.11"
+999,Settlement Health & Medical Services,New York,New York County,NY,Wed Mar 18 2020,Wed Mar 18 2020,176.0,US,FQHC/Look-Alike,1,"$1,204.92"
+1000,Shackelford County Community Health Center,Breckenridge,Stephens County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1001,Shannon Medical Center,San Angelo,Tom Green County,TX,Mon Apr 27 2020,Mon Apr 27 2020,11.0,US,Unknown,1,"$2,300.00"
+1002,Share Our Selves Community Health Center,Costa Mesa,Orange County,CA,Mon Mar 30 2020,Mon Mar 30 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1003,Shasta Community Health Center,Redding,Shasta County,CA,Wed Mar 18 2020,Wed Mar 18 2020,28.0,US,FQHC/Look-Alike,1,$92.85
+1004,Shawnee Mental Health Center,Portsmouth,Scioto County,OH,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1005,Sheep Inc. Health Care Center,Verona,Allegheny County,PA,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,Free Clinic,1,$109.01
+1006,Shelter Health Services,Charlotte,Mecklenburg County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1007,Shenandoah County Free Clinic,Woodstock,Shenandoah County,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1008,"Shepherd's Clinic, Inc.",Baltimore,Baltimore City,MD,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+1009,Sheridan Health Center,Sheridan,Sheridan County,WY,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Community Clinic,1,$109.27
+1010,Sierra Health Center - Fullerton,Fullerton,Orange County,CA,Wed Mar 18 2020,Wed Mar 18 2020,50.0,US,Community Clinic,1,$249.82
+1011,Signature Health Inc.,Mentor,Lake County,OH,Wed Apr 01 2020,Wed Apr 01 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+1012,Siloam Family Health Center,Nashville,Davidson County,TN,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1013,Sinclair Health Clinic Pharmacy,Winchester,Winchester City,VA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1014,Smith Medical Clinic,Pawleys Island,Georgetown County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1015,Smithville Community Clinic,Smithville,Bastrop County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1016,Smoky Mountain Harm Reduction,Franklin,Macon County,NC,Tue Apr 21 2020,Mon May 04 2020,140.0,US,Other,2,"$1,204.87"
+1017,Snake River Community Clinic,Lewiston,Nez Perce County,ID,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1018,Society of St. Vincent de Paul Charitable Pharmacy of North Texas dba St. Vincent de Paul Pharmacy,Dallas,Dallas County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Charitable Pharmacy,1,$109.02
+1019,Sonoma County Department of Emergency Management,Santa Rosa,Sonoma County,CA,Fri Apr 03 2020,Fri Apr 03 2020,1186.0,US,Unknown,2,"$4,109.14"
+1020,Sonoma Valley Community Health Center,Sonoma,Sonoma County,CA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+1021,South Bay Family Health Care Center,Torrance,Los Angeles County,CA,Wed Mar 25 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.32
+1022,South Broward Community Health Services Memorial Hallandale Pharmacy,Hallandale Beach,Broward County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+1023,South Central Family Health Center,Los Angeles,Los Angeles County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1024,South County Community Clinic DBA Interfaith Community Clinic,Oak Ridge North,Montgomery County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1025,South Cove Community Health Center,Boston,Suffolk County,MA,Thu Feb 20 2020,Thu Feb 20 2020,130.0,US,FQHC/Look-Alike,1,"$1,018.23"
+1026,South of Market Health Center,San Francisco,San Francisco County,CA,Fri Mar 27 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.87"
+1027,South Plains Rural Health,Levelland,Hockley County,TX,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,FQHC/Look-Alike,2,$253.31
+1028,"South Texas Rural Health Services, Inc.",Cotulla,La Salle County,TX,Tue Mar 24 2020,Mon Apr 27 2020,182.0,US,FQHC/Look-Alike,2,$633.59
+1029,Southeast Community Health Systems,Zachary,East Baton Rouge Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1030,Southeast Mississippi Rural Health Initiative,Hattiesburg,Forrest County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1031,"Southeast, Inc. Pharmacy",Columbus,Franklin County,OH,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.11"
+1032,Southern Trinity Health Care Services,Mad River,Humboldt County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1033,"Southland Integrated Services, Inc. dba Southland Health Center",Garden Grove,Orange County,CA,Tue Mar 24 2020,Mon Apr 27 2020,189.0,US,FQHC/Look-Alike,2,$633.59
+1034,Southwest Boulevard Family Health Care,Kansas City,Wyandotte County,KS,Tue Mar 24 2020,Mon May 04 2020,232.0,US,Community Clinic,3,"$1,761.51"
+1035,Southwest Louisiana Primary Healthcare Center,Opelousas,St Landry Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1036,Spectra Health,Grand Folks,Grand Forks County,ND,Tue Mar 24 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,205.11"
+1037,Spring Branch Community Health Center,Houston,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1038,Spring Branch Community Health Center Hillendahl Clinic,Houston,Harris County,TX,Tue Apr 28 2020,Tue Apr 28 2020,169.0,US,FQHC/Look-Alike,1,$524.33
+1039,St Luke Community Clinic,Front Royal,Warren County,VA,Mon May 04 2020,Mon May 04 2020,115.0,US,Free Clinic,1,"$1,095.85"
+1040,St Vincent de Paul Charitable Pharmacy,Cincinnati,Hamilton County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Charitable Pharmacy,1,$109.02
+1041,St. Anthony Medical Clinic,San Francisco,San Francisco County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1042,St. Clare Medical Outreach,Lutherville,Baltimore County,MD,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1043,St. Francis Medical Center,Lynwood,Los Angeles County,CA,Fri Apr 10 2020,Tue Apr 21 2020,362.0,US,Nonprofit Hospital,2,"$2,444.12"
+1044,St. Gabriel Eastside Community Health Center,St. Gabriel,Iberville Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1045,St. Hope Foundation Inc,Houston,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1046,St. John's Well Child and Family Centers,Los Angeles,Los Angeles County,CA,Thu Mar 26 2020,Mon May 04 2020,205.0,US,FQHC/Look-Alike,3,"$1,348.92"
+1047,St. Joseph Social Welfare Board,St. Joseph,Buchanan County,MO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1048,St. Joseph’s Eureka Hospital Hospital Based Services,Eureka,Humboldt County,CA,Wed Mar 25 2020,Thu Mar 26 2020,405.0,US,Hospital,2,"$5,484.96"
+1049,St. Joseph's Medical Center,Stockton,San Joaquin County,CA,Fri Apr 10 2020,Fri Apr 10 2020,210.0,US,Nonprofit Hospital,1,"$1,469.12"
+1050,St. Jude Neighborhood Health Centers,Fullerton,Orange County,CA,Wed Mar 25 2020,Mon May 04 2020,290.0,US,FQHC/Look-Alike,3,"$1,729.45"
+1051,St. Luke's Free Medical Clinic,Spartanburg,Spartanburg County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1052,St. Martin's Healthcare Services,Garrett,De Kalb County,IN,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,Free Clinic,1,$109.03
+1053,St. Mary's Health Center,Savannah,Chatham County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1054,St. Mary's Health Wagon,Wise,Wise County,VA,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+1055,St. Mary's Medical Center,West Palm Beach,Palm Beach County,FL,Thu Apr 16 2020,Thu Apr 16 2020,187.0,US,Unknown,1,$917.70
+1056,St. Michael's Medical Clinic,Anniston,Calhoun County,AL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1057,St. Paul Children's,Tyler,Smith County,TX,Tue Mar 24 2020,Fri Apr 24 2020,90.0,US,Community Clinic,2,$253.32
+1058,St. Thomas Clinic Clinic Director,Franklin,Johnson County,IN,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,Free Clinic,1,$109.03
+1059,St. Thomas Community Health Center,New Orleans,Orleans Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1060,St. Vincent de Paul Charitable Pharmacy,Madison,Dane County,WI,Thu Mar 26 2020,Mon May 04 2020,140.0,US,Charitable Pharmacy,2,"$1,204.87"
+1061,St. Vincent De Paul Clinic,Phoenix,Maricopa County,AZ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1062,St. Vincent de Paul Community Pharmacy,Monroe,Ouachita Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1063,St. Vincent De Paul Village Family Healthcare Center,San Diego,San Diego County,CA,Mon Mar 30 2020,Tue Apr 28 2020,88.0,US,FQHC/Look-Alike,2,$253.08
+1064,St. Vincent's Student Run Free Clinic,Galveston,Galveston County,TX,Thu Mar 26 2020,Fri Apr 24 2020,90.0,US,Free Clinic,2,$157.16
+1065,Stamford Hospital,Stamford,Fairfield County,CT,Thu Apr 23 2020,Thu Apr 23 2020,74.0,US,Unknown,1,"$27,742.41"
+1066,Stanford Children's Health Lucile Packard Children's Hospital,Menlo Park,San Mateo County,CA,Fri Mar 20 2020,Fri Mar 20 2020,434.0,US,Hospital,1,"$1,037.04"
+1067,Stanford Health Care Attn. Supply Donations Center,Palo Alto,Santa Clara County,CA,Thu Mar 26 2020,Thu Mar 26 2020,1082.0,US,Unknown,1,"$7,184.68"
+1068,Start Corporation (CHC),Houma,Terrebonne Parish,LA,Tue Apr 21 2020,Tue Apr 21 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1069,State Health Operations Center,Dover,Kent County,DE,Mon Apr 13 2020,Mon Apr 13 2020,3621.0,US,Unknown,1,"$48,750.00"
+1070,StayWell Health Center,Waterbury,,CT,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1071,Stedman Wade Health Services,Wade,Cumberland County,NC,Mon May 04 2020,Mon May 04 2020,210.0,US,FQHC/Look-Alike,1,"$1,095.85"
+1072,Stephen F Austin Community Health Network,Alvin,Brazoria County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1073,Sterling Area Health Center,Sterling,,MI,Tue Mar 24 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$2,984.27"
+1074,Stevenson Family Health Center,Bronx,Bronx County,NY,Tue Mar 31 2020,Fri Apr 24 2020,252.0,US,Unknown,4,"$26,283.40"
+1075,Stigler Health & Wellness,Stigler,Haskell County,OK,Thu Mar 26 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,205.12"
+1076,Sulzbacher Health Center,Jacksonville,Duval County,FL,Tue Mar 24 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$5,859.26"
+1077,Sumter United Ministries,Sumter,Sumter County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1078,Suncoast Community Health Centers Administrative Office Brandon Community Health Center,Brandon,Hillsborough County,FL,Tue Mar 24 2020,Mon May 04 2020,39.0,US,FQHC/Look-Alike,2,"$5,859.26"
+1079,Sunset Community Health Center,Yuma,Yuma County,AZ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1080,Sunshine Community Health Center,Talkeetna,Matanuska-Susitna Borough,AK,Mon May 04 2020,Mon May 04 2020,210.0,US,FQHC/Look-Alike,1,"$1,095.85"
+1081,SUNY Downstate Health Sciences University Hospital of Brooklyn,Brooklyn,Kings County,NY,Mon Apr 20 2020,Wed Apr 29 2020,1001.0,US,Unknown,3,"$32,860.57"
+1082,Sutphin Health Center Community Healthcare Network,Jamaica,Queens County,NY,Tue Apr 07 2020,Fri Apr 24 2020,122.0,US,Unknown,2,$283.62
+1083,Sutter Health Alta Bates Summit Medical Center,Berkeley,Alameda County,CA,Wed Apr 01 2020,Wed Apr 01 2020,202.0,US,Unknown,1,$409.64
+1084,SWLA Center For Health Services,Lake Charles,Calcasieu Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1085,Symba Center,Apple Valley,San Bernardino County,CA,Tue Mar 31 2020,Fri Apr 24 2020,73.0,US,Free Clinic,2,$192.03
+1086,"Syracuse Community Health Center, Inc.",Syracuse,Onondaga County,NY,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1087,Talbert House Health Center dba Centerpoint Health,Middletown,Butler County,OH,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1088,Tampa Family Health Centers #30,Tampa,Hillsborough County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1089,Tandem Health SC,Sumter,Sumter County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1090,Tarzana Treatment Center,Reseda,Los Angeles County,CA,Wed Mar 25 2020,Mon May 04 2020,319.0,US,Community Clinic,4,"$7,003.26"
+1091,TCC Family Health Atlantic,Long Beach,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$4,600.00"
+1092,TCC Family Health Center Cabrillo Gateway,Long Beach,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$2,875.00"
+1093,TCC Family Health Center Central Long Beach,Long Beach,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$4,600.00"
+1094,"Temple Community Free Clinic, Inc.",Temple,Bell County,TX,Tue Mar 24 2020,Tue Apr 28 2020,88.0,US,Free Clinic,2,$253.31
+1095,Tennille Community Health Center,Tennille,Washington County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1096,Texas Association of Community Health Centers,Austin,Travis County,TX,Thu Apr 16 2020,Thu Apr 16 2020,467.0,US,Association,1,$913.41
+1097,Texas International Institute of Health Professions dba VCares Clinics,Houston,Harris County,TX,Fri Mar 27 2020,Tue Apr 28 2020,248.0,US,Community Clinic,2,$777.41
+1098,That Neighborhood Free Health Clinic (TNFHC),Toledo,Lucas County,OH,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.12"
+1099,The Achievable Foundation,Culver City,Los Angeles County,CA,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1100,The Athens Nurses Clinic,Athens,Clarke County,GA,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,204.87"
+1101,The Berkeley Free Clinic,Berkeley,Alameda County,CA,Thu Mar 26 2020,Mon Apr 27 2020,90.0,US,Free Clinic,2,$253.07
+1102,The Brooklyn Hospital Center,Brooklyn,Kings County,NY,Tue Apr 28 2020,Fri May 01 2020,399.0,US,Unknown,4,"$90,748.06"
+1103,The Center for Black Women's Wellness,Atlanta,Fulton County,GA,Tue Mar 24 2020,Tue Mar 24 2020,60.0,US,Free Clinic,1,$109.26
+1104,The Chautauqua Center,Dunkirk,Chautauqua County,NY,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1105,The Children's Clinic,Long Beach,Los Angeles County,CA,Wed Apr 22 2020,Wed Apr 22 2020,19.0,US,FQHC/Look-Alike,1,"$1,150.00"
+1106,The Children's Clinic Administration,Long Beach,Los Angeles County,CA,Mon Mar 30 2020,Tue Apr 28 2020,277.0,US,FQHC/Look-Alike,2,"$1,515.33"
+1107,The Children's Clinic Bellflower Family Health Center,Bellflower,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,12.0,US,FQHC/Look-Alike,1,"$4,600.00"
+1108,The Children's Clinic Family Health Center at Hamilton School,Long Beach,Los Angeles County,CA,Tue Apr 21 2020,Tue Apr 21 2020,14.0,US,FQHC/Look-Alike,1,"$2,875.00"
+1109,The Community Free Clinic,Concord,Cabarrus County,NC,Tue Mar 24 2020,Tue Mar 24 2020,30.0,US,Free Clinic,1,$109.27
+1110,The Door-Adolescent Health Center,New York,New York County,NY,Tue Apr 21 2020,Tue Apr 21 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1111,The Family Place,Dallas,Dallas County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1112,The Floating Hospital,Long Island City,Queens County,NY,Tue Mar 24 2020,Tue Apr 28 2020,217.0,US,FQHC/Look-Alike,2,$633.60
+1113,The Free Medical Clinic,Columbia,Richland County,SC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1114,The Good Samaritan Medical Clinic,Columbus,Lowndes County,MS,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+1115,The Good Shepherd Medical & Dental Clinic,Laurel,Jones County,MS,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1116,The Haley Center,Winter Haven,Polk County,FL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1117,THE Health and Wellness Center,Los Angeles,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1118,The Health Hut,Ruston,Lincoln Parish,LA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1119,"The Hearts and Hands Clinic, Inc.",Statesboro,Bulloch County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1120,The HOPE Project,Tenaha,Shelby County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1121,The Institute for Family Health,New York,New York County,NY,Fri Mar 13 2020,Fri Mar 27 2020,629.0,US,FQHC/Look-Alike,3,"$4,774.93"
+1122,The Kaplan Family Pavilion Cornerstone Family Healthcare,Newburgh,Orange County,NY,Thu Apr 02 2020,Mon Apr 27 2020,186.0,US,FQHC/Look-Alike,2,$633.34
+1123,The Marie Blanchard Friendship Clinic,Boise,Ada County,ID,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Free Clinic,1,$109.01
+1124,The Neighborhood Christian Clinic,Phoenix,Maricopa County,AZ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1125,The Night Ministry,Chicago,Cook County,IL,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1126,The Open Door Clinic,Chippewa Falls,Chippewa County,WI,Tue Mar 24 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,205.11"
+1127,The Refuge Clinic,Lexington,Fayette County,KY,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1128,The Shalom Project Medical Clinic,Winston-Salem,Forsyth County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1129,The Wellness Plan PHARMACY,Detroit,Wayne County,MI,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.11"
+1130,The Willow Clinic,Sacramento,Sacramento County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1131,The Wright Center for Community Health,Jermyn,Lackawanna County,PA,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+1132,"Third Street Community Clinic, Inc.",Mansfield,Richland County,OH,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1133,Three Rivers Community Health Perry County Medical Center,Linden,,TN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1134,Thundermist Health Center,Woonsocket,Providence County,RI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1135,TIAA,Charlotte,Mecklenburg County,NC,Mon Apr 13 2020,Mon Apr 13 2020,8.0,US,Unknown,1,$218.25
+1136,TOMAGWA HealthCare Ministries,Tomball,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1137,Trac-B Exchange,Las Vegas,Clark County,NV,Mon May 04 2020,Mon May 04 2020,210.0,US,Other,1,"$1,095.85"
+1138,Traverse Health Clinic,Traverse City,Grand Traverse County,MI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1139,Treasure Coast Community Health Pharmacy,Fellsmere,Indian River County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1140,Tri City Health Partnership,St. Charles,Kane County,IL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1141,Triangle Area Network TAN Healthcare,Beaumont,Jefferson County,TX,Tue Mar 24 2020,Wed Apr 29 2020,104.0,US,FQHC/Look-Alike,3,"$6,003.31"
+1142,Tri-Area Community Pharmacy At Lourel Fork,Laurel Fork,Carroll County,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1143,Tri-Cities Community Health,Pasco,Franklin County,WA,Mon Apr 27 2020,Mon Apr 27 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1144,Tri-County Family Medicine Program,Dansville,Livingston County,NY,Fri Apr 10 2020,Fri Apr 10 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1145,Trillium Health Inc.,Rochester,Monroe County,NY,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1146,Trinity Clinic of Calvin,Calvin,Hughes County,OK,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1147,Trinity Community Services dba Cabrini Clinic,Detroit,Wayne County,MI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1148,Trinity Free Clinic,Carmel,Hamilton County,IN,Mon Mar 23 2020,Mon Mar 23 2020,25.0,US,Free Clinic,1,$109.48
+1149,Trinity Health of New England,Hartford,Hartford County,CT,Mon Apr 27 2020,Mon Apr 27 2020,224.0,US,Unknown,3,"$83,227.23"
+1150,Truman Medical Centers,Kansas City,Jackson County,MO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Other,1,$109.02
+1151,Ubi Caritas Health Ministries,Beaumont,Jefferson County,TX,Tue Mar 24 2020,Wed Apr 29 2020,104.0,US,Free Clinic,3,"$3,128.32"
+1152,UConn Health John Dempsey Hospital,Farmington,Hartford County,CT,Thu Apr 23 2020,Thu Apr 23 2020,66.0,US,Unknown,1,"$27,742.41"
+1153,UCSD Anesthesiology,La Jolla,San Diego County,CA,Tue Apr 07 2020,Tue Apr 07 2020,0.0,US,Unknown,1,$599.20
+1154,UCSD Student-Run Free Clinic Project,La Jolla,San Diego County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,Free Clinic,1,$109.27
+1155,UCSF Shelter Clinic,San Francisco,San Francisco County,CA,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+1156,UNC Health Care,Durham,Durham County,NC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Charitable Pharmacy,1,$109.02
+1157,Underground Free Clinic,Tampa,Hillsborough County,FL,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Free Clinic,1,$109.03
+1158,Unicare Community Health Center,Ontario,San Bernardino County,CA,Fri Mar 27 2020,Mon May 04 2020,300.0,US,FQHC/Look-Alike,3,"$1,729.21"
+1159,Union Community Health Center,Bronx,Bronx County,NY,Fri Mar 27 2020,Mon May 04 2020,296.0,US,FQHC/Look-Alike,3,"$1,729.20"
+1160,Union County Department of Human Services Division of Public Health,Monroe,Union County,NC,Mon May 04 2020,Mon May 04 2020,115.0,US,Public Health Department,1,"$1,095.85"
+1161,Union Gospel Mission,Dallas,Dallas County,TX,Tue Mar 24 2020,Wed Apr 29 2020,104.0,US,Free Clinic,3,"$3,032.41"
+1162,United American Indian Involvement Medical Clinic,Los Angeles,Los Angeles County,CA,Fri Apr 24 2020,Fri Apr 24 2020,150.0,US,Community Clinic,1,$524.33
+1163,United Health Partners (UHP),Houston,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Community Clinic,1,$109.26
+1164,United Health Partners (UHP),Houston,Harris County,TX,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,Community Clinic,1,$144.05
+1165,Universal Community Health Center,Los Angeles,Los Angeles County,CA,Wed Mar 25 2020,Wed Mar 25 2020,25.0,US,Community Clinic,1,$109.27
+1166,University Community Health Services,Nashville,Davidson County,TN,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1167,University Hospital and Clinics Inc.,Lafayette,Lafayette Parish,LA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Other,1,$109.02
+1168,University Medical Center,New Orleans,Orleans Parish,LA,Mon Apr 13 2020,Mon Apr 13 2020,157.0,US,Nonprofit Hospital,1,$656.80
+1169,University Medical Center,Lubbock,,TX,Fri May 01 2020,Fri May 01 2020,33.0,US,Unknown,1,"$3,822.78"
+1170,University of California Davis,Davis,Yolo County,CA,Thu Mar 26 2020,Thu Mar 26 2020,1183.0,US,Hospital,1,"$6,243.41"
+1171,University of Michigan Health System,Ann Arbor,Washtenaw County,MI,Thu Apr 09 2020,Mon Apr 13 2020,218.0,US,Unknown,2,"$2,202.81"
+1172,University of Rochester Accountable Health Partners,Rochester,Monroe County,NY,Mon Mar 30 2020,Tue Apr 14 2020,790.0,US,Hospital,2,"$3,394.08"
+1173,Upham's Corner Health Center,Dorchester,Suffolk County,MA,Thu Mar 26 2020,Wed Apr 29 2020,195.0,US,FQHC/Look-Alike,2,$633.36
+1174,Upper Valley Community Health Services,Saint Anthony,Fremont County,ID,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1175,Urban Health and Wellness,Atlanta,Fulton County,GA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1176,"Urban Health Plan, Inc.",Bronx,Bronx County,NY,Thu Mar 26 2020,Tue Apr 28 2020,406.0,US,FQHC/Look-Alike,4,"$3,404.05"
+1177,Urban Inter-Tribal Center of Texas,Dallas,Dallas County,TX,Thu Mar 26 2020,Mon Apr 27 2020,154.0,US,FQHC/Look-Alike,2,$633.60
+1178,UW Medicine Valley Medical Center PPE Supplies for Incident Response,Renton,King County,WA,Fri Mar 13 2020,Fri Mar 13 2020,1388.0,US,Hospital,1,"$7,849.23"
+1179,VA Palo Alto Health Care System,Palo Alto,Santa Clara County,CA,Fri May 01 2020,Fri May 01 2020,292.0,US,Unknown,1,"$5,382.44"
+1180,Valley AIDS Council,Harlingen,Cameron County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Other,1,$109.27
+1181,Valley Community Healthcare,North Hollywood,Los Angeles County,CA,Tue Mar 24 2020,Fri Apr 24 2020,104.0,US,FQHC/Look-Alike,3,"$2,553.31"
+1182,Valley Junction Free Clinic,West Des Moines,Polk County,IA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1183,"Valley Medical Center, San Jose Santa Clara Valley Medical Center",San Jose,Santa Clara County,CA,Wed Mar 25 2020,Wed Mar 25 2020,775.0,US,Hospital,1,"$6,243.40"
+1184,Valley View Health and Dental Centers - Piketon,Piketon,Pike County,OH,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1185,Valley Wide Health Systems,Alamosa,Alamosa County,CO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1186,Vecino Health Centers Houston Community Health Centers,Houston,Harris County,TX,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1187,Vecinos Farmworker Health Program,Sylva,Jackson County,NC,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Free Clinic,1,$109.02
+1188,"Vega Alta Community Health, Inc.",Vega Alta,,PR,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Community Clinic,1,$109.01
+1189,Venice Family Clinic,Venice,Los Angeles County,CA,Wed Mar 25 2020,Mon May 04 2020,254.0,US,FQHC/Look-Alike,3,"$6,955.12"
+1190,Ventura County Human Services Agency Area Agency on Aging,Ventura,Ventura County,CA,Fri Mar 27 2020,Fri Mar 27 2020,2769.0,US,Unknown,1,"$8,412.34"
+1191,Ventura County Medical Center,Ventura,Ventura County,CA,Wed Mar 25 2020,Thu Mar 26 2020,575.0,US,Nonprofit Hospital,2,"$5,718.37"
+1192,Ventura County OES,Camarillo,Ventura County,CA,Thu Mar 19 2020,Thu Mar 19 2020,1418.0,US,Public Health Department,1,"$3,110.17"
+1193,Via Care Community Health Center,Los Angeles,Los Angeles County,CA,Fri Apr 24 2020,Fri Apr 24 2020,65.0,US,FQHC/Look-Alike,1,$144.05
+1194,Via Care Community Health Center Headquarters,Los Angeles,Los Angeles County,CA,Fri Feb 07 2020,Wed Apr 01 2020,218.0,US,FQHC/Look-Alike,2,"$1,060.01"
+1195,VIP Community Services Inc.,Bronx,Bronx County,NY,Sat Apr 04 2020,Sat Apr 04 2020,25.0,US,FQHC/Look-Alike,1,$109.03
+1196,Virginia Garcia Memorial Health Center,Hillsboro,Washington County,OR,Thu Mar 26 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.87"
+1197,Vista Community Clinic La Tortuga Administrative and Program Offices,Vista,San Diego County,CA,Fri Mar 27 2020,Tue Apr 28 2020,88.0,US,FQHC/Look-Alike,2,$253.07
+1198,VNA Health Care,Aurora,Kane County,IL,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1199,Voices of Hope,Elkton,Cecil County,MD,Mon May 04 2020,Mon May 04 2020,115.0,US,Unknown,1,"$1,095.85"
+1200,Volunteer Healthcare Clinic,Austin,Travis County,TX,Thu Mar 26 2020,Mon May 04 2020,203.0,US,Free Clinic,3,"$1,348.92"
+1201,Volunteers In Medicine,St. Charles,St Charles County,MO,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1202,Volunteers in Medicine,Jacksonville,Duval County,FL,Tue Mar 24 2020,Mon May 04 2020,39.0,US,Free Clinic,2,"$5,859.27"
+1203,Volunteers In Medicine,Wilkes Barre,Luzerne County,PA,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1204,Volunteers in Medicine Berkshires,Great Barrington,Berkshire County,MA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1205,Volunteers in Medicine Clinic,Stuart,Martin County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.27
+1206,Volunteers in Medicine Clinic of the Cascades,Bend,Deschutes County,OR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1207,Volunteers in Medicine Gautier,Gautier,Jackson County,MS,Tue Mar 24 2020,Mon May 04 2020,140.0,US,Free Clinic,2,"$1,205.11"
+1208,Volunteers in Medicine Hilton Head Island,Hilton Head,Beaufort County,SC,Mon Apr 06 2020,Mon Apr 06 2020,25.0,US,Free Clinic,1,$109.03
+1209,Volunteers in Medicine of South Jersey Atlantic County,Egg Harbor Township,Atlantic County,NJ,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1210,Volunteers in Medicine of Southern Nevada Ruffin Family Clinic,Las Vegas,Clark County,NV,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1211,Volunteers in Medicine San Francisco dba Clinic by the Bay,San Francisco,San Francisco County,CA,Mon May 04 2020,Mon May 04 2020,115.0,US,Free Clinic,1,"$1,095.85"
+1212,Waianae District Comprehensive Health and Hospital Board dba Waianae Coast Comprehensive Health Center,Waianae,Honolulu County,HI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1213,Waikiki Health,Honolulu,Honolulu County,HI,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1214,Waimanalo Health Center,Waimanalo,Honolulu County,HI,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1215,Wake Health Services dba Advance Commuity Health,Raleigh,Wake County,NC,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1216,Waterbury Hospital,Waterbury,New Haven County,CT,Thu Apr 23 2020,Thu Apr 23 2020,72.0,US,Unknown,1,"$27,742.41"
+1217,Waterman Community Clinic Florida Hospital,Eustis,Lake County,FL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.28
+1218,Watts Healthcare Corporation Jordan Wellness Center,Los Angeles,Los Angeles County,CA,Thu Mar 26 2020,Mon May 04 2020,222.0,US,FQHC/Look-Alike,4,"$1,923.92"
+1219,WelcomeHealth,Fayetteville,Washington County,AR,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1220,Wellness Pointe,Longview,Gregg County,TX,Thu Mar 26 2020,Wed Apr 29 2020,374.0,US,FQHC/Look-Alike,4,"$7,049.35"
+1221,Wellpath,San Luis Obispo,San Luis Obispo County,CA,Mon Apr 20 2020,Mon Apr 20 2020,60.0,US,Unknown,1,"$1,174.88"
+1222,Welvista,Columbia,Richland County,SC,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Charitable Pharmacy,1,$109.02
+1223,Wesley Community and Health Centers,Phoenix,Maricopa County,AZ,Tue Mar 24 2020,Mon May 04 2020,240.0,US,FQHC/Look-Alike,2,"$1,205.12"
+1224,"West Cecil Health Center, Inc.",Conowingo,Cecil County,MD,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1225,West County Health Centers Sebastopol Shipping Site,Sebastopol,Sonoma County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1226,West Hawaii Community Health Center,Kailua Kona,Hawaii County,HI,Mon Apr 06 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.86"
+1227,West Plains Christian Clinic,West Plains,Howell County,MO,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1228,West Ridge Obstetrics and Gynecology,Webster,Monroe County,NY,Mon Mar 23 2020,Mon Mar 30 2020,227.0,US,Unknown,2,"$1,656.00"
+1229,West Virginia Health Right,Charleston,Kanawha County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1230,"Western Health Center Western Region, Inc. - Mayaguez",Mayaguez,,PR,Thu Mar 26 2020,Mon May 04 2020,581.0,US,FQHC/Look-Alike,3,"$7,864.87"
+1231,Western Maine Family Health Center,Livermore Falls,Androscoggin County,ME,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Unknown,1,$109.27
+1232,Western Sierra Medical Clinic,Grass Valley,Nevada County,CA,Sat Apr 04 2020,Mon May 04 2020,210.0,US,FQHC/Look-Alike,3,"$6,383.36"
+1233,Western Tidewater Free Clinic Pharmacy,Suffolk,Suffolk City,VA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.02
+1234,Westminster Free Clinic,Newbury Park,Ventura County,CA,Mon Mar 23 2020,Mon May 04 2020,205.0,US,Free Clinic,3,"$1,253.47"
+1235,Westside Family Health  Center,Santa Monica,Los Angeles County,CA,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1236,"Whatley Health Services, Inc.",Tuscaloosa,Tuscaloosa County,AL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1237,Wheeling Health Right,Wheeling,Ohio County,WV,Thu Mar 26 2020,Mon May 04 2020,235.0,US,Free Clinic,2,"$1,204.87"
+1238,White Bird Clinic,Eugene,Lane County,OR,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,FQHC/Look-Alike,1,$109.27
+1239,Whitehall Family Health Center,Columbus,Franklin County,OH,Fri Mar 27 2020,Fri Mar 27 2020,25.0,US,Unknown,1,$109.02
+1240,Whittier Street Health Center,Roxbury,Suffolk County,MA,Wed Mar 18 2020,Mon Mar 30 2020,25.0,US,FQHC/Look-Alike,2,$282.95
+1241,Whole Family Health Center,Vero Beach,Indian River County,FL,Thu Apr 16 2020,Thu Apr 16 2020,25.0,US,FQHC/Look-Alike,1,$109.02
+1242,Will County Community Health Center,Joliet,Will County,IL,Sat Apr 04 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,204.88"
+1243,Will-Grundy Medical Clinic,Joliet,Will County,IL,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,Free Clinic,1,$109.26
+1244,William F. Ryan Community Health Center,New York,New York County,NY,Fri Mar 27 2020,Mon May 04 2020,371.0,US,FQHC/Look-Alike,4,"$3,975.57"
+1245,Willing Helpers Medical Inc.,Covington,Newton County,GA,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,Free Clinic,1,$109.03
+1246,Wilmington Community Clinic,Wilmington,Los Angeles County,CA,Tue Mar 24 2020,Mon Apr 27 2020,188.0,US,Community Clinic,2,$633.60
+1247,Winton Hills Medical and Health Center dba WinMed Health Services,Cincinnati,Hamilton County,OH,Fri Apr 03 2020,Fri Apr 03 2020,25.0,US,FQHC/Look-Alike,1,$109.01
+1248,Wirt County Health Services Association DBA River Valley Health and Wellness,Ravenswood,Jackson County,WV,Tue Mar 24 2020,Tue Mar 24 2020,25.0,US,FQHC/Look-Alike,1,$109.26
+1249,Woven Health,Farmers Branch,Dallas County,TX,Thu Mar 26 2020,Thu Mar 26 2020,25.0,US,Free Clinic,1,$109.27
+1250,Yakima Neighborhood Health Services,Yakima,Yakima County,WA,Tue Mar 24 2020,Mon May 04 2020,140.0,US,FQHC/Look-Alike,2,"$1,205.12"
+1251,YNHH York Street Campus,New Haven,New Haven County,CT,Tue Apr 28 2020,Tue Apr 28 2020,363.0,US,Unknown,5,"$138,861.80"
+1252,Your Community Health Center,Rolla,Phelps County,MO,Fri Apr 03 2020,Mon May 04 2020,235.0,US,FQHC/Look-Alike,2,"$1,204.86"
+1253,Zuckerberg San Francisco General Hospital,San Francisco,San Francisco County,CA,Mon Apr 06 2020,Mon Apr 06 2020,946.0,US,Hospital,1,"$3,163.68"
+1254,Zuckerberg SF General Hospital Department of Pharmacy,San Francisco,San Francisco County,CA,Fri Apr 10 2020,Fri Apr 10 2020,1379.0,US,Unknown,20,"$529,463.20"
+1255,Zufall Health Center Dover,Dover,Morris County,NJ,Tue Mar 24 2020,Tue Apr 28 2020,217.0,US,FQHC/Look-Alike,2,$633.59
