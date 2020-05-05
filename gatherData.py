@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import subprocess
 
 import urllib.request, json
 import sys
@@ -27,8 +28,9 @@ def collectData(endpoints, outputfiles):
         ii += 1
 
 def fixJSON(outputfiles):
+    newfiles = []
+
     for item in outputfiles:
-        print(item)
         df = pd.read_json(item)
         if 'JHU' in item:
             df = pd.DataFrame(df['data']['table'])
@@ -41,12 +43,35 @@ def fixJSON(outputfiles):
         elif 'USMedAid' or 'FacilityCapacity' or 'USCases' in item:
             df = pd.DataFrame(df['data'][0]['table'])
 
-        output = df.to_csv()
+        output = df.to_csv(index=False)
 
         item = item.split('.')[0] + '.csv'
 
+        newfiles.append(item)
+
         with open(item, 'w') as f:
             f.write(output)
+
+    return newfiles
+
+
+def prepDB(newfiles):
+    for item in newfiles:
+        print(item)
+
+        with open(item, 'r') as f:
+            df = pd.read_csv(item)
+
+        if 'JHU' in item:
+            df = df.drop(columns=['Last_Update'])
+        
+        
+
+        item = 'DBInput/' + item.split('/')[1]
+
+        with open(item, 'w') as f:
+            f.write(df.to_csv(index=False))
+
 
 
 def main():
@@ -63,6 +88,12 @@ def main():
 
     collectData(endpoints, outputfiles)
 
-    fixJSON(outputfiles)
+    newfiles = fixJSON(outputfiles)
+
+    os.system("rm ./Data/*.json")
+
+    os.system("mkdir -p DBInput")
+
+    prepDB(newfiles)
 
 main()
