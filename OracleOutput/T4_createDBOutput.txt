@@ -1,0 +1,58 @@
+Table STATE created.
+
+Elapsed: 00:00:00.016
+
+
+Table JHUDATA created.
+
+Elapsed: 00:00:00.018
+
+
+Table USCASEBYSTATE created.
+
+Elapsed: 00:00:00.022
+
+
+Table HOSPITALIZED created.
+
+Elapsed: 00:00:00.017
+
+
+Table ICU created.
+
+Elapsed: 00:00:00.040
+
+
+Table VENTILATOR created.
+
+Elapsed: 00:00:00.016
+
+
+Table RECOVERED created.
+
+Elapsed: 00:00:00.014
+
+
+Table USFACILITIES created.
+
+Elapsed: 00:00:00.020
+
+
+Table USALLBEDOCCUPANCY created.
+
+Elapsed: 00:00:00.016
+
+
+Table USICUBEDOCCUPANCY created.
+
+Elapsed: 00:00:00.013
+
+
+Table USTESTS created.
+
+Elapsed: 00:00:00.272
+
+
+Table USMEDAIDAGGREGATE created.
+
+Elapsed: 00:00:00.016

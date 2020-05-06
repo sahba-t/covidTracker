@@ -112,7 +112,7 @@ CREATE TABLE USTESTS (
   DateRecorded DATE,
   CDCLabs NUMBER,
   USPublicHealthLabs NUMBER,
-  PRIMARY KEY(DateCollected)
+  PRIMARY KEY(DateRecorded)
   );
 
 CREATE TABLE USMEDAIDAGGREGATE (
@@ -122,5 +122,5 @@ CREATE TABLE USMEDAIDAGGREGATE (
   Cost NUMBER(10, 2),
   Weight NUMBER(8, 2),
   PRIMARY KEY(DateRecorded, State),
-  FOREIGN KEY(State) REFERENCES STATES(StateAbbreviation)
+  FOREIGN KEY(State) REFERENCES STATE(StateAbbreviation)
   );
