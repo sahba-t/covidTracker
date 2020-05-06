@@ -83,7 +83,7 @@ def prepDB(newfiles):
     'North Dakota': 'ND', 'Northern Mariana Islands':'MP', 'Ohio': 'OH', 'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA',
     'Puerto Rico': 'PR', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD', 'Tennessee': 'TN',
     'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virgin Islands': 'VI', 'Virginia': 'VA', 'Washington': 'WA',
-    'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'}
+    'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY', 'Diamond Princess': 'DP', 'Grand Princess': 'GP', 'Recovered': 'RE'}
     
     #Abb2State = dict(map(reversed, State2Abb.items()))
 
@@ -116,6 +116,7 @@ def prepDB(newfiles):
             # TABLE JHU (DateRecorded, Country, State, City, Confirmed, Deaths, Recovered, Active, Latitude, Longitude)
             cols = ['DateRecorded', 'Country', 'State', 'City', 'Confirmed', 'Deaths', 'Recovered', 'Active', 'Latitude', 'Longitude']
             dfJHU = df[cols]
+            dfJHU = dfJHU.drop_duplicates(['DateRecorded', 'Country', 'State', 'City'],keep= 'last')
 
             # Save CSV File to Different Folder
             item = 'DBInput/' + item.split('/')[1]
@@ -138,7 +139,9 @@ def prepDB(newfiles):
             # Re-Arranging Columns to Match DB Table
             # TABLE USCASEBYSTATE (DateRecorded, State, Positive, Negative, Death, Total, DataQualityGrade, DataGrade)
             cols = ['DateRecorded', 'State', 'Positive', 'Negative', 'Death', 'Total', 'DataQualityGrade', 'DataGrade']
+            df = df.drop_duplicates(['DateRecorded', 'State'],keep= 'last')
             dfUSCase = df[cols]
+            
 
             # Save CSV File to Different Folder
             item = 'DBInput/' + item.split('/')[1]
@@ -197,7 +200,9 @@ def prepDB(newfiles):
             # Re-Arranging Columns to Match DB Table
             # TABLE USFACILITIES (DateRecorded, State, CountyName, Population, Population20Plus, Population65Plus, StaffedAllBed, StaffedICUBed, LicensedAllBeds)
             cols = ['DateRecorded', 'State', 'CountyName', 'Population', 'Population20Plus', 'Population65Plus', 'StaffedAllBeds', 'StaffedICUBeds', 'LicensedAllBeds']
+            df = df.drop_duplicates(['DateRecorded', 'State', 'CountyName'],keep= 'last')
             dfFacilities = df[cols]
+            
 
             # Save CSV File to Different Folder
             item = 'DBInput/' + item.split('/')[1]
@@ -205,7 +210,7 @@ def prepDB(newfiles):
                 f.write(dfFacilities.to_csv(index=False))
 
             # TABLE USALLBEDOCCUPANCY (DateRecorded, State, AllBedOccupancyRate)
-            dfRecovered = df[['DateRecorded', 'State', 'AllBedOccupancyRate']]
+            dfRecovered = df[['DateRecorded', 'State', 'CountyName', 'AllBedOccupancyRate']]
             dfRecovered = dfRecovered.dropna(subset=['AllBedOccupancyRate'], how='all')
 
             # Save CSV File to Different Folder
@@ -214,7 +219,7 @@ def prepDB(newfiles):
                 f.write(dfRecovered.to_csv(index=False))
 
             # TABLE USICUBEDOCCUPANCY (DateRecorded, State, ICUBedOccupancyRate)
-            dfRecovered = df[['DateRecorded', 'State', 'ICUBedOccupancyRate']]
+            dfRecovered = df[['DateRecorded', 'State', 'CountyName', 'ICUBedOccupancyRate']]
             dfRecovered = dfRecovered.dropna(subset=['ICUBedOccupancyRate'], how='all')
 
             # Save CSV File to Different Folder
@@ -246,6 +251,7 @@ def prepDB(newfiles):
             # TABLE USMEDAIDAGGREGATE (DateRecorded, State, Deliveries, Cost, Weight)
             cols = ['DateRecorded', 'State', 'Deliveries', 'Cost', 'Weight']
             dfMedAid = df[cols]
+            dfMedAid = dfMedAid.drop_duplicates(['DateRecorded', 'State'],keep= 'last')
 
             # Save CSV File to Different Folder
             item = 'DBInput/' + item.split('/')[1]
@@ -259,6 +265,7 @@ def prepDB(newfiles):
             # Format Date Correctly for Oracle DMBS
             df['DateRecorded'] = df['DateRecorded'].apply(lambda x: x+"/2020")
             dfTests = df
+            dfTests = dfTests.drop_duplicates(['DateRecorded'],keep= 'last')
 
             # TABLE USTEST(DataRecorded, CDCLabs, USPublicHealthLabs)
             # Save CSV File to Different Folder

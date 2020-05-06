@@ -34,8 +34,8 @@ CREATE TABLE USCASEBYSTATE (
   Negative NUMBER NOT NULL,
   Death NUMBER NOT NULL,
   Total NUMBER NOT NULL,
-  DataQualityGrade VARCHAR(2) CHECK(DataQualityGrade IN ('F', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+')) NOT NULL,
-  DataGrade VARCHAR(2) CHECK(DataGrade IN ('F', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+')) NOT NULL,
+  DataQualityGrade VARCHAR(2) CHECK(DataQualityGrade IN ('F', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+')),
+  DataGrade VARCHAR(2) CHECK(DataGrade IN ('F', 'D-', 'D', 'D+', 'C-', 'C', 'C+', 'B-', 'B', 'B+', 'A-', 'A', 'A+')),
   PRIMARY KEY(DateRecorded, State),
   FOREIGN KEY(State) REFERENCES STATE(StateAbbreviation)
   );
@@ -87,25 +87,27 @@ CREATE TABLE USFACILITIES (
   StaffedAllBeds NUMBER(10, 0),
   StaffedICUBeds NUMBER(10, 0),
   LicensedAllBeds NUMBER(10, 0),
-  PRIMARY KEY(DateRecorded, State),
+  PRIMARY KEY(DateRecorded, State, CountyName),
   FOREIGN KEY(State) REFERENCES STATE(StateAbbreviation)
   );
 
 CREATE TABLE USALLBEDOCCUPANCY (
   DateRecorded DATE,
   State VARCHAR(20),
+  CountyName VARCHAR(50),
   AllBedOccupancyRate NUMBER(4, 3),
-  PRIMARY KEY(DateRecorded, State),
-  FOREIGN KEY(DateRecorded, State) REFERENCES USFACILITIES(DateRecorded, State)
+  PRIMARY KEY(DateRecorded, State, CountyName),
+  FOREIGN KEY(DateRecorded, State, CountyName) REFERENCES USFACILITIES(DateRecorded, State, CountyName)
   );
 
 
 CREATE TABLE USICUBEDOCCUPANCY (
   DateRecorded DATE,
   State VARCHAR(20),
+  CountyName VARCHAR(50),
   ICUBedOccupancyRate NUMBER(4, 3),
-  PRIMARY KEY(DateRecorded, State),
-  FOREIGN KEY(DateRecorded, State) REFERENCES USFACILITIES(DateRecorded, State)
+  PRIMARY KEY(DateRecorded, State, CountyName),
+  FOREIGN KEY(DateRecorded, State, CountyName) REFERENCES USFACILITIES(DateRecorded, State, CountyName)
   );
 
 CREATE TABLE USTESTS (

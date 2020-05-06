@@ -172,3 +172,12 @@ VALUES ('MP', 'Northern Mariana Islands');
 
 INSERT INTO STATE
 VALUES ('VI', 'Virgin Islands');
+
+INSERT INTO STATE
+VALUES ('DP', 'Diamond Princess');
+
+INSERT INTO STATE
+VALUES ('GP', 'GrandPrincess');
+
+INSERT INTO STATE
+VALUES ('RE', 'Recovered');
