@@ -112,9 +112,10 @@ CREATE TABLE USICUBEDOCCUPANCY (
 
 CREATE TABLE USTESTS (
   DateRecorded DATE,
+  DateCollected DATE,
   CDCLabs NUMBER,
   USPublicHealthLabs NUMBER,
-  PRIMARY KEY(DateRecorded)
+  PRIMARY KEY(DateRecorded, DateCollected)
   );
 
 CREATE TABLE USMEDAIDAGGREGATE (

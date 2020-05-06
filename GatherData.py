@@ -259,14 +259,18 @@ def prepDB(newfiles):
                 f.write(dfMedAid.to_csv(index=False))
     
         if 'USTESTS' in item:
-            # Rename Columns
-            df = df.rename(columns={'DateCollected': 'DateRecorded'})
+            # Date Recorded
+            df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
 
             # Format Date Correctly for Oracle DMBS
-            df['DateRecorded'] = df['DateRecorded'].apply(lambda x: x+"/2020")
-            dfTests = df
-            dfTests = dfTests.drop_duplicates(['DateRecorded'],keep= 'last')
+            df['DateCollected'] = df['DateCollected'].apply(lambda x: x+"/2020")
 
+            # Re-Arranging Columns to Match DB Table
+            # TABLE USTESTS (DateRecorded, DateCollected, CDCLabs, USPublicHealthLabs)
+            cols = ['DateRecorded', 'DateCollected', 'CDCLabs', 'USPublicHealthLabs']
+            df = df.drop_duplicates(['DateRecorded', 'DateCollected'],keep= 'last')
+            dfTests = df[cols]
+            
             # TABLE USTEST(DataRecorded, CDCLabs, USPublicHealthLabs)
             # Save CSV File to Different Folder
             item = 'DBInput/' + item.split('/')[1]
