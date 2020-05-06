@@ -56,7 +56,7 @@ def fixJSON(outputfiles):
         #elif 'Fatality' in item:
         #    df = pd.DataFrame(df['table'].tolist())
 
-        elif 'USMEDAID' or 'USFACILITIES' or 'USCASEBYSTATE' in item:
+        elif 'USMEDAIDAGGREGATE' or 'USFACILITIES' or 'USCASEBYSTATE' in item:
             df = pd.DataFrame(df['data'][0]['table'])
 
         # Convert to CSV File
@@ -70,6 +70,7 @@ def fixJSON(outputfiles):
 
 
 # Function to Convert Cleaned Up JSON Data to CSV Files That Correspond to our DB Tables
+# Extract the desired fields from the jsons/ rename the columns
 def prepDB(newfiles):
     for item in newfiles:
         today = date.today()
@@ -86,26 +87,22 @@ def prepDB(newfiles):
             # Get city from combined_key of city, state, country
             df['Combined_Key'] = df['Combined_Key'].apply(lambda x: x.split(',')[0])
 
-            # Re-assigning some things to be more readable
-            df = df.assign(Latitude=df['Lat'])
-            df = df.assign(Longitude=df['Long_'])
-            df = df.assign(Country=df['Country_Region'])
-            df = df.assign(State=df['Province_State'])
-            df = df.assign(City=df['Combined_Key'])
+            # Re-assigning some things to be more readable and adding DateRecorded
             df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
+            df = df.rename(columns={'Lat': 'Latitude', 'Long_': 'Longitude', 'Country_Region': 'Country', 'Province_State': 'State', 'Combined_Key': 'City'})
 
-            # Drop duplicate and un-needed columns
-            df = df.drop(columns=['Lat', 'Long_', 'Last_Update', 'Country_Region', 'Province_State', 'Combined_Key'])
+            # Drop un-needed columns
+            df = df.drop(columns=['Last_Update'])
 
             # Re-Arranging Columns to Match DB Table
             # TABLE JHU (DateRecorded, Country, State, City, Confirmed, Deaths, Recovered, Active, Latitude, Longitude)
             cols = ['DateRecorded', 'Country', 'State', 'City', 'Confirmed', 'Deaths', 'Recovered', 'Active', 'Latitude', 'Longitude']
-            df = df[cols]
+            dfJHU = df[cols]
 
             # Save CSV File to Different Folder
             item = 'DBInput/' + item.split('/')[1]
             with open(item, 'w') as f:
-                f.write(df.to_csv(index=False))
+                f.write(dfJHU.to_csv(index=False))
 
         # US Cases by State Data - To Be Organized into 5 tables to minimize NULL entries
         if 'USCASEBYSTATE' in item:
@@ -113,26 +110,12 @@ def prepDB(newfiles):
             df = df.drop(columns=['positiveScore', 'negativeScore', 'negativeRegularScore', 'commercialScore', 'score', 'pending', 
             'lastUpdateEt', 'checkTimeEt', 'totalTestResults', 'posNeg', 'fips', 'dateModified', 'dateChecked'])
             
-            # Re-assigning some things to be more readable
+            # Re-assigning some things to be more readable and Adding DateRecorded
             df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
-            df = df.assign(State=df['state'])
-            df = df.assign(Positive=df['positive'])
-            df = df.assign(Negative=df['negative'])
-            df = df.assign(Death=df['death'])
-            df = df.assign(Total=df['total'])
-            df = df.assign(DataQualityGrade=df['dataQualityGrade'])
-            df = df.assign(DataGrade=df['dataGrade'])
-            df = df.assign(HospitalizedCurrently=df['hospitalizedCurrently'])
-            df = df.assign(HospitalizedCumulative=df['hospitalizedCumulative'])
-            df = df.assign(InICUCurrently=df['inIcuCurrently'])
-            df = df.assign(InICUCumulative=df['inIcuCumulative'])
-            df = df.assign(OnVentilatorCurrently=df['onVentilatorCurrently'])
-            df = df.assign(OnVentilatorCumulative=df['onVentilatorCumulative'])
-            df = df.assign(Recovered=df['recovered'])
-
-            # Drop duplicate and un-needed columns
-            df.drop(columns=['state', 'positive', 'negative', 'death', 'total', 'dataQualityGrade', 'dataGrade', 
-            'hospitalizedCurrently', 'hospitalizedCumulative', 'inIcuCurrently', 'inIcuCumulative', 'onVentilatorCurrently', 'onVentilatorCumulative', 'recovered'])
+            df = df.rename(columns={'state': 'State', 'positive': 'Positive', 'negative': 'Negative', 'death': 'Death', 'total': 'Total', 
+            'dataQualityGrade': 'DataQualityGrade', 'dataGrade': 'DataGrade', 'hospitalizedCurrently': 'HospitalizedCurrently', 
+            'hospitalizedCumulative': 'HospitalizedCumulative', 'inIcuCurrently': 'InICUCurrently', 'inIcuCumulative': 'InICUCumulative', 
+            'onVentilatorCurrently': 'OnVentilatorCurrently', 'onVentilatorCumulative': 'OnVentilatorCumulative', 'recovered': 'Recovered'})
 
             # Re-Arranging Columns to Match DB Table
             # TABLE USCASEBYSTATE (DateRecorded, State, Positive, Negative, Death, Total, DataQualityGrade, DataGrade)
@@ -143,8 +126,6 @@ def prepDB(newfiles):
             item = 'DBInput/' + item.split('/')[1]
             with open(item, 'w') as f:
                 f.write(dfUSCase.to_csv(index=False))
-
-            print(df.head())
 
             # TABLE HOSPITALIZED (DateRecorded, State, HospitalizedCurrently, HospitalizedCumulative)
             dfHospitalized = df[['DateRecorded', 'State', 'HospitalizedCurrently', 'HospitalizedCumulative']]
@@ -187,14 +168,12 @@ def prepDB(newfiles):
             # Round numerical data to 3 decimal places
             df = df.round(3)
 
-            # Re-assigning some things to be more readable
+            # Re-assigning some things to be more readable and Adding DateRecorded
             df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
-            df = df.assign(Population20Plus=df['Population_20_plus'])
-            df = df.assign(Population65Plus=df['Population_65_plus'])
+            df = df.rename(columns={'Population_20_plus': 'Population20Plus', 'Population_65_plus': 'Population65Plus'})
 
-            # Drop duplicate and un-needed columns
-            df.drop(columns=['fips_code', 'Population_20_plus', 'Population_65_plus', 
-            'LicensedAllBedsPer1000Adults20_plus', 'LicensedAllBedsPer1000Elderly65_plus', 'StaffedAllBedsPer1000Adults20_plus', 
+            # Drop un-needed columns
+            df.drop(columns=['fips_code', 'LicensedAllBedsPer1000Adults20_plus', 'LicensedAllBedsPer1000Elderly65_plus', 'StaffedAllBedsPer1000Adults20_plus', 
             'StaffedAllBedsPer1000Elderly65_plus', 'StaffedAllBedsPer1000People', 'StaffedICUBedsPer1000Adults20_plus', 'StaffedICUBedsPer1000Elderly65_plus', 'StaffedICUBedsPer1000People'])
 
             # Re-Arranging Columns to Match DB Table
@@ -224,11 +203,55 @@ def prepDB(newfiles):
             item = 'DBInput/USICUBEDOCCUPANCY.csv'
             with open(item, 'w') as f:
                 f.write(dfRecovered.to_csv(index=False))
+        
+        if 'USMEDAIDAGGREGATE' in item:
+            # Split and Rename Columns
+            df = df['state weight_lbs number_of_deliveries cost'.split()]
+            df = df.rename(columns={'state': 'State', 'weight_lbs': 'Weight', 'cost': 'Cost', 'number_of_deliveries': 'Deliveries'})
+
+            # Removing Dollar Sign
+            df['Cost'] = df['Cost'].apply(lambda x: float(x.split('$')[1].replace(',', '')))
+
+            # Grouping By State and Aggregating for Weight, Cost, and Deliveries
+            df = df.groupby(['State']).sum()
+
+            # Round Numerical Data to 3 Decimal Places
+            df = df.round(3)
+
+            # Re-assigning some things to be more readable and Adding DateRecorded
+            df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
+
+            # After these Operations Pandas thinks State Column is Index - Fixed with Reset Index 
+            df.reset_index(inplace=True)
+
+            # Re-Arranging Columns to Match DB Table
+            # TABLE USMEDAIDAGGREGATE (DateRecorded, State, Deliveries, Cost, Weight)
+            cols = ['DateRecorded', 'State', 'Deliveries', 'Cost', 'Weight']
+            dfMedAid = df[cols]
+
+            # Save CSV File to Different Folder
+            item = 'DBInput/' + item.split('/')[1]
+            with open(item, 'w') as f:
+                f.write(dfMedAid.to_csv(index=False))
+    
+        if 'USTESTS' in item:
+            # Rename Columns
+            df = df.rename(columns={'DateCollected': 'DateRecorded'})
+
+            # Format Date Correctly for Oracle DMBS
+            df['DateRecorded'] = df['DateRecorded'].apply(lambda x: x+"/2020")
+            dfTests = df
+
+            # TABLE USTEST(DataRecorded, CDCLabs, USPublicHealthLabs)
+            # Save CSV File to Different Folder
+            item = 'DBInput/' + item.split('/')[1]
+            with open(item, 'w') as f:
+                f.write(dfTests.to_csv(index=False))
 
 
-
-
+# Main Routine to Gather Data with GET Requests and Prepare Data in CSV Format to be Fed into Oracle DBMS and our Database Design
 def main():
+    # Original 8 Endpoints Used - Decided to Remove the 3 Fatality Endpoints since they were not high quality, did not add a lot of information
     '''
     endpoints = ['https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport', 
                 'https://covid19api.io/api/v1/TestsInUS', 
@@ -242,24 +265,31 @@ def main():
     outputfiles = ['Data/JHU.json', 'Data/USTests.json', 'Data/FatalityAge.json', 'Data/FatalityBySex.json', 'Data/FatalityByComorbidities.json', 'Data/USMedAid.json', 'Data/FacilityCapacity.json', 'Data/USCases.json']
     '''
 
+    # 5 Endpoints Used
     endpoints = ['https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport', 
                 'https://covid19api.io/api/v1/TestsInUS', 
                 'https://covid19api.io/api/v1/USAMedicalAidDistribution',
                 'https://covid19-server.chrismichael.now.sh/api/v1/AggregatedFacilityCapacityCounty',
                 'https://covid19api.io/api/v1/UnitedStateCasesByStates']
 
-    outputfiles = ['Data/JHU.json', 'Data/USTESTS.json', 'Data/USMEDAID.json', 'Data/USFACILITIES.json', 'Data/USCASEBYSTATE.json']
+    # Original Output Files
+    outputfiles = ['Data/JHU.json', 'Data/USTESTS.json', 'Data/USMEDAIDAGGREGATE.json', 'Data/USFACILITIES.json', 'Data/USCASEBYSTATE.json']
 
+    # Make Raw Data Directory
     os.system('mkdir -p Data')
 
+    # Gather Data with GET Requests
     collectData(endpoints, outputfiles)
 
+    # Clean Up Data
     newfiles = fixJSON(outputfiles)
 
     os.system("rm ./Data/*.json")
-
     os.system("mkdir -p DBInput")
 
+    # Organize and Output Data for Oracle DBMS Insertion
     prepDB(newfiles)
 
-main()
+# Run Main
+if __name__ == "__main__":
+    main()
