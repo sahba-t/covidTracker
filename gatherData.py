@@ -67,6 +67,9 @@ def prepDB(newfiles):
         with open(item, 'r') as f:
             df = pd.read_csv(item)
 
+        
+        #extract the desired fields from the jsons/ rename the columns
+        
         if 'JHU' in item:
             df['Combined_Key'] = df['Combined_Key'].apply(lambda x: x.split(',')[0])
             df = df.assign(Latitude=df['Lat'])
@@ -85,6 +88,22 @@ def prepDB(newfiles):
             df = df.drop(columns=['fips_code'])
             df = df.assign(Date=today.strftime("%m/%d/%Y"))
 
+        
+        if 'USMedAid' in item:
+            df = df['state weight_lbs number_of_deliveries cost'.split()]
+            df = df.rename(columns={'weight_lbs':'Weight', 'cost': 'Cost'})
+            #getting rid of the dolloar sign
+            df['Cost'] = df['Cost'].apply(lambda x: float(x.split('$')[1].replace(',', '')))
+            df = df.groupby(['state']).sum()
+            df = df.round(3)
+            df = df.assign(Date=today.strftime("%m/%d/%Y"))
+            #after these operations pandas thinks state 
+            df.reset_index(inplace=True)
+    
+        if 'USTests' in item:
+            df['DateCollected'] = df['DateCollected'].apply(lambda x: x+"/2020")
+            
+        
         item = 'DBInput/' + item.split('/')[1]
 
         with open(item, 'w') as f:
@@ -126,4 +145,5 @@ def main():
 
     prepDB(newfiles)
 
-main()
+if __name__ == "__main__":
+    main()
