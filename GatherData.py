@@ -73,6 +73,20 @@ def fixJSON(outputfiles):
 # Function to Convert Cleaned Up JSON Data to CSV Files That Correspond to our DB Tables
 # Extract the desired fields from the jsons/ rename the columns
 def prepDB(newfiles):
+    # State Abbreviation to Name Dictionary for JHU Data
+    State2Abb = {'Alabama': 'AL', 'Alaska': 'AK', 'American Samoa': 'AS', 'Arizona': 'AZ', 'Arkansas': 'AR',
+    'California': 'CA', 'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE', 'District of Columbia': 'DC', 'Florida': 'FL',
+    'Georgia': 'GA', 'Guam': 'GU', 'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA',
+    'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA',
+    'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS', 'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE',
+    'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC',
+    'North Dakota': 'ND', 'Northern Mariana Islands':'MP', 'Ohio': 'OH', 'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA',
+    'Puerto Rico': 'PR', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD', 'Tennessee': 'TN',
+    'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virgin Islands': 'VI', 'Virginia': 'VA', 'Washington': 'WA',
+    'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'}
+    
+    #Abb2State = dict(map(reversed, State2Abb.items()))
+
     for item in newfiles:
         today = date.today()
 
@@ -91,6 +105,9 @@ def prepDB(newfiles):
             # Re-assigning some things to be more readable and adding DateRecorded
             df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
             df = df.rename(columns={'Lat': 'Latitude', 'Long_': 'Longitude', 'Country_Region': 'Country', 'Province_State': 'State', 'Combined_Key': 'City'})
+
+            # Map State Names to State Abbreviations
+            df['State'] = df['State'].map(State2Abb)
 
             # Drop un-needed columns
             df = df.drop(columns=['Last_Update'])
