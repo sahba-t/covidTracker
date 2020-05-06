@@ -1,9 +1,13 @@
+# Authors: Jered Dominguez-Trujillo and Sahba Tashakkori
+# Date: May 5, 2020
+# Description: Script to Obtain, Parse, and Organize COVID-19 Data for CS 564 Final Project
+
 import pandas as pd
 import os
-import subprocess
-
 import urllib.request, json
 import sys
+
+from datetime import date
 
 def collectData(endpoints, outputfiles):
     # John Hopkins Data Daily Report: https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport
@@ -14,6 +18,7 @@ def collectData(endpoints, outputfiles):
     # USA Medical Aid Distribution: https://covid19api.io/api/v1/USAMedicalAidDistribution
     # Aggregated Facility Capacity County: https://covid19-server.chrismichael.now.sh/api/v1/AggregatedFacilityCapacityCounty
     # United States Cases By State: https://covid19api.io/api/v1/UnitedStateCasesByStates
+
     ii = 0
 
     for url_endpoint in endpoints:
@@ -57,15 +62,28 @@ def fixJSON(outputfiles):
 
 def prepDB(newfiles):
     for item in newfiles:
-        print(item)
+        today = date.today()
 
         with open(item, 'r') as f:
             df = pd.read_csv(item)
 
         if 'JHU' in item:
-            df = df.drop(columns=['Last_Update'])
-        
-        
+            df['Combined_Key'] = df['Combined_Key'].apply(lambda x: x.split(',')[0])
+            df = df.assign(Latitude=df['Lat'])
+            df = df.assign(Longitude=df['Long_'])
+            df = df.assign(City=df['Combined_Key'])
+            df = df.assign(Date=today.strftime("%m/%d/%Y"))
+
+            df = df.drop(columns=['Lat', 'Long_', 'Last_Update', 'Combined_Key'])
+
+        if 'USCases' in item:
+            df = df.drop(columns=['positiveScore', 'negativeScore', 'negativeRegularScore', 'commercialScore', 'score', 'pending', 'lastUpdateEt', 'checkTimeEt', 'totalTestResults', 'posNeg', 'fips', 'dateModified', 'dateChecked'])
+            df = df.assign(Date=today.strftime("%m/%d/%Y"))
+
+        if 'Facility' in item:
+            df = df.round(3)
+            df = df.drop(columns=['fips_code'])
+            df = df.assign(Date=today.strftime("%m/%d/%Y"))
 
         item = 'DBInput/' + item.split('/')[1]
 
@@ -75,6 +93,7 @@ def prepDB(newfiles):
 
 
 def main():
+    '''
     endpoints = ['https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport', 
                 'https://covid19api.io/api/v1/TestsInUS', 
                 'https://covid19api.io/api/v1/FatalityRateByAge',
@@ -85,6 +104,17 @@ def main():
                 'https://covid19api.io/api/v1/UnitedStateCasesByStates']
 
     outputfiles = ['Data/JHU.json', 'Data/USTests.json', 'Data/FatalityAge.json', 'Data/FatalityBySex.json', 'Data/FatalityByComorbidities.json', 'Data/USMedAid.json', 'Data/FacilityCapacity.json', 'Data/USCases.json']
+    '''
+
+    endpoints = ['https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport', 
+                'https://covid19api.io/api/v1/TestsInUS', 
+                'https://covid19api.io/api/v1/USAMedicalAidDistribution',
+                'https://covid19-server.chrismichael.now.sh/api/v1/AggregatedFacilityCapacityCounty',
+                'https://covid19api.io/api/v1/UnitedStateCasesByStates']
+
+    outputfiles = ['Data/JHU.json', 'Data/USTests.json', 'Data/USMedAid.json', 'Data/FacilityCapacity.json', 'Data/USCases.json']
+
+    os.system('mkdir -p Data')
 
     collectData(endpoints, outputfiles)
 
