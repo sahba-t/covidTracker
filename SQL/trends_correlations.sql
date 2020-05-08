@@ -21,7 +21,7 @@ group by state, daterecorded order by state, daterecorded;
 
 
 /*getting trends for some of the sates*/
-select daterecorded, state, positive, death from uscasebystate where state IN ('NM', 'CA', 'NY', 'GA') order by state;
+select daterecorded, state, positive, negative, total, death from uscasebystate where state IN ('NM', 'CA', 'NY', 'GA') order by state;
 
 
 
@@ -46,6 +46,11 @@ select state, total, daterecorded from uscasebystate order by state;
 /*!!!!!This particular one may not be needed everyday!!!!!? We are not going to gain population 65+ everyday!; how about beds and stuff?*/
 select state, daterecorded, sum(population65plus) as over65Pop from USFACILITIES group by state, daterecorded order by state, daterecorded;
 
+SELECT B.State, B.DateRecorded, sum(Population65Plus) AS over65Pop, sum(Population), sum(Population65Plus) / sum(Population) AS Ratio
+FROM USFACILITIES B, USCASEBYSTATE C
+GROUP BY State, DateRecorded
+ORDER BY State, DateRecorded;
+
 /*same with staffed beds and stuff*/
 select state, daterecorded, sum(staffedallbeds) as staffed_beds, sum(staffedICUbeds) as staffed_icu, 
 sum(licensedallbeds) as licensed_beds from USFACILITIES group by state, daterecorded order by state, daterecorded;
@@ -53,6 +58,6 @@ sum(licensedallbeds) as licensed_beds from USFACILITIES group by state, datereco
 
 /*!!!! Sahba sees potential here!!!!*/
 /*looking at tests vs med aid; we can compare state totals, but it will not be correlation it can show the trends though!*/
-select u.daterecorded, u.state, u.total as test_total, ma.deliveries, ma.cost, ma.weight
+select u.daterecorded, u.state, u.positive, u.negative, u.total as test_total, u.death, ma.deliveries, ma.cost, ma.weight
 from uscasebystate u, usmedaidaggregate ma
 where u.state = ma.state and u.daterecorded = ma.daterecorded order by u.state, u.daterecorded;
