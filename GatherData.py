@@ -10,6 +10,9 @@ import numpy as np
 import os
 import urllib.request, json
 import sys
+import datetime
+
+from dateutil.parser import parse
 from datetime import date
 
 
@@ -263,6 +266,8 @@ def prepDB(newfiles):
             df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
 
             # Format Date Correctly for Oracle DMBS
+            df['DateCollected'] = df['DateCollected'].apply(lambda x: parse(x).strftime("%m/%d"))
+
             df['DateCollected'] = df['DateCollected'].apply(lambda x: x+"/2020")
 
             # Re-Arranging Columns to Match DB Table
