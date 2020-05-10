@@ -10,8 +10,11 @@ WHERE u.State = ma.State AND u.DateRecorded = ma.DateRecorded
 ORDER BY u.State, u.DateRecorded;
 
 /* Getting Population Data joined with Testing Data */
-SELECT FAC.State, FAC.DateRecorded, sum(FAC.Population20Plus) AS over20Pop, sum(FAC.Population65Plus) AS over65Pop, sum(Population), US.Positive, US.Negative, US.Total, US.Death
+SELECT * FROM (
+SELECT FAC.State, FAC.DateRecorded, sum(FAC.Population20Plus) AS over20Pop, sum(FAC.Population65Plus) AS over65Pop, sum(Population) as total_pop, US.Positive, US.Negative, US.Total, US.Death
 FROM USFACILITIES FAC, USCASEBYSTATE US
 WHERE FAC.State = US.State AND FAC.DateRecorded = US.DateRecorded
 GROUP BY FAC.State, FAC.DateRecorded, US.Positive, US.Negative, US.Total, US.Death
-ORDER BY FAC.State, FAC.DateRecorded;
+ORDER BY FAC.State, FAC.DateRecorded
+) where daterecorded IN(select max(daterecorded) from USCASebystate)
+ORDER BY state;
