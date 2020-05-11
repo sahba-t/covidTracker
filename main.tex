@@ -139,6 +139,7 @@ Data on global coronavirus statistics and demographics will be gathered and orga
 \section{Approach}
 
 \subsection{Sourcing of Data}
+\label{subsec:sourcedata}
 
 \noindent
 The data sources outlined in \textbf{Section \ref{sec:Intro}} each had unique data: \MYhref{https://www.worldometers.info/coronavirus/}{Worldometer} provides updated positive cases and deaths on a rolling 24-hour basis grouped by country, \MYhref{https://coronavirus.jhu.edu/map.html}{John Hopkins Coronavirus Resource Center} provides geographical data updated frequently, \MYhref{https://covidtracking.com/api}{The Covid Tracking Project} provides data in an easily accessible json format that includes all historical United States positive cases, tests, and deaths data grouped by state, while \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} provides easily accessibly json data that includes worldwide tests, death, fatality rates, health care system data, and medical aid distribution data that is updated daily and grouped by country, state, city, and county.
@@ -212,8 +213,26 @@ The main function of our work is to create a record of Covid19 related informati
     \item Correlation between number of deaths and the number of available hospital beds, ICU beds, and ventilators.
 \end{itemize}
 
-\subsection{Why a Relational Database}
+\pagebreak
 
+\section{Database Design and Implementation}
+
+\noindent
+The database design and implementation for the COVID-19 Timeseries Data is presented as follows:
+
+\begin{enumerate}[1)]
+    \item Why a Relational Database (Section \ref{subsec:why})
+    \item Approach (Section \ref{subsec:approach})
+    \item Database Design (Section \ref{subsec:design})
+    \item Database Implementation (Section \ref{subsec:implementation})
+    \item Data Insertion and Extraction (Section \ref{subsec:insertextract})
+\end{enumerate}
+
+\noindent
+It should be noted that the Python file used to collect and prepare the data for database insertion is included as GatherData.py, the SQL files used to create the database and populate the initial STATE table are included as createDB.sql and PopulateStateTable.sql, the SQL file to extract data for analysis using queries is included as Queries.sql, and the Python notebook used to analyze the data and generate the plots seen in Section \ref{sec:analysis} is included as Analysis.ipynb.
+
+\subsection{Why a Relational Database}
+\label{subsec:why}
 %\noindent
 %We will record this data for NM, NY, and the cumulative data from all 50 U.S States. This allows the user of the database to not only compare the trends in NM, NY, but also to examine how the trends in these two states compare to the overall trend in the U.S.
 
@@ -224,21 +243,9 @@ The data that we will be working with conveniently fits into a single machine. T
 \noindent
 Overall, we anticipate that the data gathered can be modeled using a few relations and relationships in the ER model. For example, Medical Aid could be a relation with the relationship 'receives' with the Country/State/City relation. A similar paradigm could be used for a Facilities relation having a relationship with a Country/State/City relation. Additionally, Tests, Positive Cases, and Deaths data could be stored in their own relations, time stamped and given a foreign key that identifies the geographical region it pertains to (Country/State/City). Lastly, given the coarseness of the sampling of the data (daily updates), we do not anticipate that storing time series data in this fashion will pose a problem.
 
-%\subsection{Data Insertion}
-
-%\noindent
-%The data will be collected at a specific time every day using the REST API. The data will be parsed and adapted to our relational model and will be either pushed directly to the Oracle Cloud database instance or output to a CSV file to be ingested by Oracle Cloud.  
-
-\pagebreak
-
-\section{Database Design}
-
-\noindent
-Little intro
-
 \subsection{Approach}
+\label{subsec:approach}
 
-\noindent
 Little approach blurb. Reference Appendix.
 
 \FloatBarrier
@@ -246,23 +253,22 @@ Little approach blurb. Reference Appendix.
     \centering
     \includegraphics[width=\textwidth]{diagrams/ER1.png}
     \caption{Basic Entity-Relationship Diagram to Model our Data Sources and Relational Database Design}
-    \label{fig:er2}
-\end{figure}
-\FloatBarrier
-
-\FloatBarrier
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{diagrams/ER2.png}
-    \caption{Basic Entity-Relationship Diagram to Model our Data Sources and Relational Database Design}
     \label{fig:er1}
 \end{figure}
 \FloatBarrier
 
-\subsection{Final Design}
+\subsection{Database Design}
+\label{subsec:design}
 
 \noindent
 Little blurb. See next page w\textbf{A note on Normalization}
+
+\subsection{Database Implementation}
+\label{subsec:implementation}
+
+\noindent
+Little blurb. See next page w\textbf{A note on Normalization}
+
 \pagebreak
 
 \begin{figure}[H]
@@ -427,12 +433,31 @@ Little blurb. See next page w\textbf{A note on Normalization}
 \caption{COVID-19 Schema}
 \end{figure}	
 
+\subsection{Data Insertion}
+\label{subsec:insertextract}
+
+\noindent
+The data was collected between 5 MST and 7MST everyday from May 6, 2020 until May 13, 2020 using the REST API and a python script (GatherData.py). This process involved posting a GET request to the 5 endpoints described in Section \ref{subsec:sourcedata} and obtaining the data in JSON format. 
+
+\noindent
+Since some of the data included irrelevant and extraneous columns, the python script first removed those extra columns and converted the data to CSV format to begin prepping for upload to our database instance on Oracle Cloud. Next, since the data needed to be broken down into a file for each of the 11 tables (excluding that STATE table), the python script organized the data into 11 files, taking care that the columns of each CSV file corresponded with the columns of each table in the instance of the database.
+
+\noindent
+This allowed the users to run the python script once every evening to collect and organize data, and subsequently upload the data into the Oracle Cloud Database instance. Backups of the raw data obtained from the COVID-19 API endpoints, in addition to backups of the processed data that was prepared for database insertion were kept everyday to ensure that no data would be lost in the unlikely case of an accident or data loss. Additionally, the data, python scripts, and SQL scripts were all kept in sync and backed up on GitHub (which also allowed easy collaboration).
+
 \pagebreak
 
 \section{Data Analysis}
+\label{sec:analysis}
+
+\noindent
 We mainly used SQL queries and Python's data science toolset (Pandas\cite{citepandas}, NumPy\cite{citenumpy}, ScikitLearn\cite{cite_scikit-learn}) to retrieve, prepare,  and analyze the our data. The following sections provides details on our approach in preparing the data and performing the analysis.
+
 \subsection{Data Preparation}
+
+\noindent
 We decided to divide the large tuples of raw data retrieved from our sources into multiple tables as shown in Figure \ref{fig:tbl_bd}. In addition to resulting in a much more logical representation, this approach resulted in far fewer null values in the table. The Python script to retrieve and divide the data resides in the `GatherData.py' file.
+
 \FloatBarrier
 \begin{figure}[h]
     \centering
@@ -457,6 +482,8 @@ In order to perform these analyses, we used simple SQL queries against our datab
 We started by looking at some of the trends in the data. Figure \ref{fig:pos_trends} shows the number of positive cases in four states for four days (May 6th-9th) and the predictions for two days into the feature using regression.
 \subsubsection{Approach}
 We used the `USTESTBYSTATES' table to retrieve historical trends for the states. The result of the query was exported to a \textit{csv} file and imported into the python script for plotting and regression analysis.
+
+\FloatBarrier
 \begin{figure}[h]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
@@ -485,15 +512,16 @@ We used the `USTESTBYSTATES' table to retrieve historical trends for the states.
         \label{fig:pos_trends}
 
 \end{figure}
+\FloatBarrier
+
 \pagebreak
 
 \subsection{Correlation of Tests with Medical Aid at the State Level}
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.5]{diagrams/analysis/test_cost_fit.png}
-    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
-    \label{fig:test_cost_fit}
-\end{figure}
+\noindent
+We looked the historical test and medical aid data in our database to look for the relationship between the amount of medical aid a state receives and the number of tests the state performs. 
+
+\subsubsection{Approach}
+We joined two tables `USCASEBYSTATE' and `USMEDAIDAGGREGATE', on the timestamp and state attributes and returned the total monetary value of the aid received and the number of tests performed. 
 
 \FloatBarrier
 \begin{figure}[h]
@@ -513,19 +541,6 @@ We used the `USTESTBYSTATES' table to retrieve historical trends for the states.
 \end{figure}
 \FloatBarrier
 
-\noindent
-We looked the historical test and medical aid data in our database to look for the relationship between the amount of medical aid a state receives and the number of tests the state performs. 
-
-\subsubsection{Approach}
-We joined two tables `' and `', on the timestamp and statename and returned 
-
-
-\noindent
-\textbf{Plot Group 1}: Probably deliveries on the x-axis and deaths on the y-axis. And then cost on the x-axis and deaths on the y-axis. And the weight on the x-axis and deaths on the y-axis. Is there correlation?
-
-\noindent
-\textbf{Plot Group 2}: Probably deliveries on the x-axis and total (tests) on the y-axis. And then cost on the x-axis and total (tests) on the y-axis. And the weight on the x-axis and total (tests) on the y-axis. Is there correlation?
-
 
 \subsubsection{Discussion}
 
@@ -538,65 +553,6 @@ Quick Intro: deaths vs available hospital resources (we use the fragmented table
 
 \subsubsection{Approach}
 
-\noindent
-JDT: To keep it simple
-
-\begin{itemize}
-    \item I would get Deaths by State from USCASEBYSTATE
-    \item I would get hospital resources from USFACILITIES
-    \item I would ignore occupancy rates, because that is a lot of work
-\end{itemize}
-
-\noindent
-Step 1: GROUP USFACILITIES by STATE (Call this USFACILITIESSTATE) and REMOVE CountyName column \\
-\noindent
-Step 2: JOIN USFACILITIESSTATE with STATE (kind of redundant, don't know if necessary. If not necessary, skip to step 4) \\
-\noindent
-Step 3: Join USCASEBYSTATE with STATE (kind of redundant, don't know if necessary. If not necessary, skip to step 4) \\
-\noindent
-Step 4: JOIN USFACILITIESSTATE with USCASEBASESTATE where State = State and DateRecorded = DateRecorded \\
-\noindent
-Step 5: Remove DataQualityGrade and DataGrade from resulting table \\
-
-\noindent
-The resulting table for a state should look like the following, with an entry for every day we have recorded:
-
-\begin{figure}[H]
-\begin{adjustwidth*}{}{-8em}
-\centering
-\resizebox{1.5\textwidth}{!}{%
-\begin{tikzpicture}[relation/.style={rectangle split, rectangle split parts=#1, rectangle split part align=base, draw, anchor=center, align=center, text height=3mm, text centered}]\hspace*{-0.5cm}
-
-% RELATIONS
-
-\node (statetitle) {\textbf{RESULTBYSTATE}};
-
-\node [relation=12, rectangle split horizontal, rectangle split part fill={lightgray!50}, anchor=north west, below=0.6cm of statetitle.west, anchor=west] (state)
-{State%
-\nodepart{two}   DateRecorded
-\nodepart{three} positive
-\nodepart{four} negative
-\nodepart{five} Death
-\nodepart{six} total
-\nodepart{seven} Population
-\nodepart{eight} Population20Plus
-\nodepart{nine} Population65Plus
-\nodepart{ten} StaffedAllBeds
-\nodepart{eleven} StaffedICUBeds
-\nodepart{twelve} LicensedAllBeds};
-\end{tikzpicture}
-}%
-\end{adjustwidth*}
-\end{figure}
-
-\noindent
-Save to csv files for each state and plot some correlations in python.
-
-\noindent
-\textbf{Plot Group 1}: Probably StaffedAllBeds on the x-axis and deaths on the y-axis.
-
-\noindent
-\textbf{Plot Group 2}: Probably Population on the x-axis and Death (normalized by population) on the y-axis. And then Percent of Population over 65 on the x-axis and Death (normalized by population) on the y-axis.
 
 \subsubsection{Discussion}
 
