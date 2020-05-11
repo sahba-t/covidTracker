@@ -17,7 +17,8 @@
 \usepackage[linguistics]{forest}
 \usepackage{changepage}
 \usepackage{float}
-
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{tikz}
 \usetikzlibrary{shapes,positioning,calc}
 \colorlet{lightgray}{gray!20}
@@ -261,8 +262,7 @@ Little approach blurb. Reference Appendix.
 \subsection{Final Design}
 
 \noindent
-Little blurb. See next page
-
+Little blurb. See next page w\textbf{A note on Normalization}
 \pagebreak
 
 \begin{figure}[H]
@@ -449,206 +449,76 @@ As mentioned previously, we performed a number of analyses to demonstrate the vi
     \item Correlation of Tests with Medical Aid at the State Level
     \item Hospital Resources as a Predictor of Cases and Deaths
 \end{itemize}
-In order to perform these analyses, we used simple SQL queries against our database to retrieve the data and simple python scripts to analyze the data and visualize the results. The code to analyze and visualize the data can be found in the `analysis.ipynb' Jupyter Notebook.
+In order to perform these analyses, we used simple SQL queries against our database to retrieve the data and simple python scripts to analyze the data and visualize the results. The queries used to retrieve the historic data from our database can be found in the `Queries' folder and the Python scripts for analyzing and visualizing the data can be found in the `analysis.ipynb' Jupyter Notebook.
 
 \subsection{Tests, Cases, and Deaths as the State Level}
 
 \noindent
-The first step was to look for the trends in the data
-
+We started by looking at some of the trends in the data. Figure \ref{fig:pos_trends} shows the number of positive cases in four states for four days (May 6th-9th) and the predictions for two days into the feature using regression.
 \subsubsection{Approach}
+We used the `USTESTBYSTATES' table to retrieve historical trends for the states. The result of the query was exported to a \textit{csv} file and imported into the python script for plotting and regression analysis.
+\begin{figure}[h]
+     \centering
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{diagrams/analysis/positive_trend_NY.png}
+         \caption{Positive cases trends for NY}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{diagrams/analysis/positive_trend_CA.png}
+         \caption{Positive cases trends for CA}
+     \end{subfigure}
+        \label{fig:three graphs}
+             \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{diagrams/analysis/positive_trend_GA.png}
+         \caption{Positive cases trends for GA}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.49\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{diagrams/analysis/positive_trend_NM.png}
+         \caption{Positive cases trends for NY}
+         \label{fig:three sin x}
+     \end{subfigure}
+        \caption{The actual number of positive cases for CA, GA, NY, NM plus predictions for two days into the future using linear(LS) and plynomal regression (PR3)}
+        \label{fig:pos_trends}
 
-\noindent
-JDT: I would use the USCASEBYSTATE Data and its children and I would look at 3 or 4 states (New York, New Jersey, Michigan, Connecticut, Pennsylvania, Massachusetts, Georgia, Florida, New Mexico).
-
-\noindent
-SELECT DateRecorded, State, Positive, Negative, Death, Total, HospitalizedCurrently, HospitalizedCumulative, InICUCurrently, InICUCumulative, OnVentilatorCurrently, OnVentilatorCumulative, Recovered FROM USCASEBYSTATE, HOSPITALIZED, ICU, VENTILATOR, RECOVERED WHERE State = 'NY' \\
-\noindent
-... etc
-
-\noindent Perhaps add your ER diagram to depict which tables we will draw the data from (STATE, USCASEBYSTATE, HOSPITALIZED, ICU, VENTILATOR, RECOVERED)
-
-\noindent
-Then, I would export to CSV:
-\begin{itemize}
-    \item NY.csv
-    \item NJ.csv
-    \item MI.csv
-    \item ... etc.
-\end{itemize}
-
-\noindent
-I would do a couple of plots using python.
-
-\pagebreak
-
-\noindent
-\textbf{Group 1}: 4 Subplots \\
-
-\textbf{We need ~ 3days of data to start plotting. We do a test then (Friday or Saturday) and see how the data looks Once we finalize the plots we want and we know how they look we can do a final run on Monday for example with about 6 data points. Generally I think a couple of plots showing state trends is enough then we focus on the correlations we talked about: medical aid and ICUs} Start with NM, NY, maybe GA
-
-\noindent
-Subplot1
-\begin{itemize}
-    \item Compare Positive Cases over Time By State
-    \item X-Axis: Date
-    \item Y-Axis: Positive (Positive Cases)
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot 2
-\begin{itemize}
-    \item Compare Negative Tests Over Time By State
-    \item X-Axis: Date
-    \item Y-Axis: Negative (Negative Tests)
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot3
-\begin{itemize}
-    \item Compare Total Tests over Time By State
-    \item X-Axis: Date
-    \item Y-Axis: Total (Total Tests)
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot4
-\begin{itemize}
-    \item Compare Deaths Over Time By State
-    \item X-Axis: Date
-    \item Y-Axis: Deaths
-    \item Legend: State Names
-\end{itemize}
-
-\pagebreak
-
-\noindent
-\textbf{Group 2}: 4 Subplots \\
-
-\noindent
-Subplot1
-\begin{itemize}
-    \item Compare Daily Positive Cases over States
-    \item X-Axis: Date
-    \item Y-Axis: Daily Positive (Daily Positive Cases)
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot2
-\begin{itemize}
-    \item Compare Daily Negative Cases Over States
-    \item X-Axis: Date
-    \item Y-Axis: Daily Negative (Negative Tests)
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot3
-\begin{itemize}
-    \item Compare Daily Positive Percentage over States
-    \item X-Axis: Date
-    \item Y-Axis: Daily Positive Percentage (Daily Positive Cases / Daily Total Cases)
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot4
-\begin{itemize}
-    \item Compare Overall Positive Percentage Over States
-    \item X-Axis: Date
-    \item Y-Axis: Overall Positive Percentage (Positive Cases / Total Cases)
-    \item Legend: State Names
-\end{itemize}
-
-\pagebreak
-
-\noindent
-\textbf{Group 3}: 4 Subplots \\
-
-\noindent
-Subplot1
-\begin{itemize}
-    \item Compare Daily Recovered over States
-    \item X-Axis: Date
-    \item Y-Axis: Daily Recovered
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot2
-\begin{itemize}
-    \item Compare Overall Recovered Over States
-    \item X-Axis: Date
-    \item Y-Axis: Overal Recovered
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot3
-\begin{itemize}
-    \item Compare Hospitalized over States
-    \item X-Axis: Date
-    \item Y-Axis: Hospitalized
-    \item Legend: State Names
-\end{itemize}
-
-\noindent
-Subplot4
-\begin{itemize}
-    \item Compare In ICU Over States
-    \item X-Axis: Date
-    \item Y-Axis: In ICU
-    \item Legend: State Names
-\end{itemize}
-
-\subsubsection{Discussion}
-
+\end{figure}
 \pagebreak
 
 \subsection{Correlation of Tests with Medical Aid at the State Level}
-
-\noindent
-Quick Description: correlation between tests/medical aid (we know what tables we use) ...
-
-\subsubsection{Approach}
-
-\noindent
-JDT: I Would use the STATE, USCASEBYSTATE(But not its children) and the USMEDAIDAGGREGATE Data, and I would look at about a dozen or more states to actually get a good correlation. Pretty much join USCASEBYSTATE and STATE by State = StateAbbreviation, and then join USMEDAIDAGGREGATE and STATE by State = StateAbbreviation, and then join the two resulting Tables on DateRecorded = DateRecorded and State = State. And then I would only extra the positive, negative, total, Death, deliveries, cost, and weight columns. \\
-
-\noindent
-The final table for a state should look like the following, with an entry for every day we have recorded:
-
-\begin{figure}[H]
-\begin{adjustwidth*}{}{-8em}
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[relation/.style={rectangle split, rectangle split parts=#1, rectangle split part align=base, draw, anchor=center, align=center, text height=3mm, text centered}]\hspace*{-0.5cm}
-
-% RELATIONS
-
-\node (statetitle) {\textbf{RESULTBYSTATE}};
-
-\node [relation=9, rectangle split horizontal, rectangle split part fill={lightgray!50}, anchor=north west, below=0.6cm of statetitle.west, anchor=west] (state)
-{State%
-\nodepart{two}   DateRecorded
-\nodepart{three} positive
-\nodepart{four} negative
-\nodepart{five} total
-\nodepart{six} Death
-\nodepart{seven} deliveries
-\nodepart{eight} cost
-\nodepart{nine} weight};
-\end{tikzpicture}
-}%
-\end{adjustwidth*}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{diagrams/analysis/test_cost_fit.png}
+    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
+    \label{fig:test_cost_fit}
 \end{figure}
 
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{diagrams/analysis/medaid_corr_no_outliers.png}
+    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
+    \label{fig:test_cost_fit}
+\end{figure}
+\FloatBarrier
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{diagrams/analysis/medaid_corr_outliers.png}
+    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
+    \label{fig:test_cost_fit}
+\end{figure}
+\FloatBarrier
+
 \noindent
-Save to csv files for each state and then plot results in python. 
+We looked the historical test and medical aid data in our database to look for the relationship between the amount of medical aid a state receives and the number of tests the state performs. 
+
+\subsubsection{Approach}
+We joined two tables `' and `', on the timestamp and statename and returned 
+
 
 \noindent
 \textbf{Plot Group 1}: Probably deliveries on the x-axis and deaths on the y-axis. And then cost on the x-axis and deaths on the y-axis. And the weight on the x-axis and deaths on the y-axis. Is there correlation?
@@ -733,8 +603,10 @@ Save to csv files for each state and plot some correlations in python.
 \pagebreak
 
 \section{Conclusions}
-
+..We demonstrated that our design is flexible enough to ingest data from heterogeneous sources and allow for statistical studies on historical Covid19 data...
 \section{Future Work}
+\bibliographystyle{acm}
+\bibliography{refs.bib}
 
 \appendix
 
@@ -893,7 +765,6 @@ FacilityCapacity CSV Columns:
 %\end{itemize}
 
 
-\bibliographystyle{acm}
-\bibliography{refs.bib}
+
 
 \end{document}
