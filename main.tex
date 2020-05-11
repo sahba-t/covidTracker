@@ -134,7 +134,7 @@ Due to the fact that the 3 data sources, fatality by age, fatality by sex, and f
 \section{Introduction}
 \label{sec:Intro}
 \noindent
-Data on global coronavirus statistics and demographics will be gathered and organized into a relational database for the eventual purpose of analysis in order to understand the trends and relationships between demographics, testing, geography, hospital systems/availability, medical aid, and political response to the spread and deadliness of the coronavirus. To do this, several sites and APIs that gather and provided updated timeseries data about the coronavirus were studied and evaluated, including \MYhref{https://www.worldometers.info/coronavirus/}{Worldometer}, \MYhref{https://coronavirus.jhu.edu/map.html}{John Hopkins Coronavirus Resource Center}, \MYhref{https://covidtracking.com/api}{The Covid Tracking Project}, and an open source \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}.
+Data on global and United States coronavirus (COVID-19) statistics, medical aid, facilities, and demographics will be gathered and organized into a relational database for the eventual purpose of analysis in order to understand the trends and relationships between demographics, testing, geography, hospital systems/availability, medical aid, and political response to the spread and deadliness of the coronavirus. To do this, several sites and APIs that gather and provided updated timeseries data about the coronavirus were studied and evaluated, including \MYhref{https://www.worldometers.info/coronavirus/}{Worldometer}, \MYhref{https://coronavirus.jhu.edu/map.html}{John Hopkins Coronavirus Resource Center}, \MYhref{https://covidtracking.com/api}{The Covid Tracking Project}, and an open source \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}.
 
 \section{Approach}
 
@@ -153,7 +153,7 @@ After analyzing the various data sources available, it was decided that the data
 \pagebreak
 
 \noindent 
-Documentation of the various endpoints and data items is included on the \MYhref{https://covid19-docs.chrismichael.now.sh/}{Covid-19 API} website, but we have included a brief outline of the endpoints \textbf{(data itema that we are planning to use:}
+Documentation of the various endpoints and data items is included on the \MYhref{https://covid19-docs.chrismichael.now.sh/}{Covid-19 API} website, but we have included a brief outline of the endpoints \textbf{(data items that we are planning to use:}
 
 \begin{itemize}
 %    \item \MYhref{https://covidtracking.com/api}{The Covid Tracking Project}
@@ -165,11 +165,11 @@ Documentation of the various endpoints and data items is included on the \MYhref
 %    \end{itemize}
     \item \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}
         \begin{itemize}
-        \item \textbf{John Hopkins Data Daily Report}: Data for the 2019 Novel Coronavirus Visual sourced from the Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering. Updated daily. \comment{}
+        \item \textbf{John Hopkins Data Daily Report}: Data for the 2019 Novel Coronavirus Visual sourced from the Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering. Updated daily.
         \item \textbf{Tests in US}: Data from 48 states public health labs in the United States, in addition to New York City, USAF, and 9 California counties. Updated daily.
-        \item \textbf{Fatality Rate By Age}: Global fatality rate grouped by age groups. Updated daily.
-        \item \textbf{Fatality Rate By Sex}: Global fatality rate grouped by sex. Updated daily.
-        \item \textbf{Fatality Rate By Co-morbidity}: Global fatality rate for people with pre-existing conditions. Updated daily.
+        %\item \textbf{Fatality Rate By Age}: Global fatality rate grouped by age groups. Updated daily.
+        %\item \textbf{Fatality Rate By Sex}: Global fatality rate grouped by sex. Updated daily.
+        %\item \textbf{Fatality Rate By Co-morbidity}: Global fatality rate for people with pre-existing conditions. Updated daily.
         \item \textbf{USA Medical Aid Distribution}: Tracks medical aid to US hospitals and facilities, including package weight, cost, delivery date of aid to a location and/or hospital. Updated daily.
         \item \textbf{Aggregated Facility Capacity County}: Current population, (occupied) hospital beds, (occupied) ICU beds, healthcare staff, age demographics, grouped by county for the United States. Updated daily 
         \item \textbf{United States Cases By State}: For every state: the number of positive and negative cases, each state's score, number of patients in the ICU and on ventilators, and number of patients who have recovered (supplements the JHU Daily Report with additional fields).
@@ -238,15 +238,35 @@ It should be noted that the Python file used to collect and prepare the data for
 
 
 \noindent
-The data that we will be working with conveniently fits into a single machine. Therefore, one of the main motivations behind the NoSQL movement, which was the difficulty of distributing relational databases, does not apply to our scenario. In addition, we will not have the "impedance mismatch problem" between our storage and representation formats that NoSQL databases aim to solve \cite{nosqlTalk}. In other words, we do not need to artificially break down the units of information that we work with (Covid statistics) into multiple tables and do costly joins to present the results to the user. We can organically store and retrieve the info into our tables without the need for spurious decomposition and joins. Hence we do not need to use NoSQL solutions, such as document or column based databases, to ease our representation and operations. Moreover, the need for timestamps can be easily solved by adding a timestamp/date column (or a separate table that tracks the timestamps). So using a specialized time series database is simply not necessary and results in pointless complications in our approach. We also do not have a data ingestion problem. We will gather the data once per day at a specific time by writing a script to download the data from the website, parses the data, and insert the new data into the database. \\
+The data that we worked with fits into a single machine. Therefore, one of the main motivations behind the NoSQL movement, which was the the ability to distribute relational databases, does not apply to our scenario. In addition, we will not have the "impedance mismatch problem" between our storage and representation formats that NoSQL databases aim to solve \cite{nosqlTalk}. Hence we do not need to use NoSQL solutions, such as document or column based databases, to ease our representation and operations. Moreover, the need for timestamps can be easily solved by adding a timestamp/date column to each entry that keeps track of when the data was recorded and entered. So using a specialized time series database is simply not necessary and results in pointless complications in our approach. We also do not have a data ingestion problem. We will gather the data once per day at a specific time by writing a script to download the data from the website, parses the data, and insert the new data into the database, as described in Section \ref{subsec:insertextract}. For these reasons, a relational database design was chosen to represent the data relationships and to store the COVID-19 data. \\
 
-\noindent
-Overall, we anticipate that the data gathered can be modeled using a few relations and relationships in the ER model. For example, Medical Aid could be a relation with the relationship 'receives' with the Country/State/City relation. A similar paradigm could be used for a Facilities relation having a relationship with a Country/State/City relation. Additionally, Tests, Positive Cases, and Deaths data could be stored in their own relations, time stamped and given a foreign key that identifies the geographical region it pertains to (Country/State/City). Lastly, given the coarseness of the sampling of the data (daily updates), we do not anticipate that storing time series data in this fashion will pose a problem.
+%\noindent
+%Overall, we anticipate that the data gathered can be modeled using a few relations and relationships in the ER model. For example, Medical Aid could be a relation with the relationship 'receives' with the Country/State/City relation. A similar paradigm could be used for a Facilities relation having a relationship with a Country/State/City relation. Additionally, Tests, Positive Cases, and Deaths data could be stored in their own relations, time stamped and given a foreign key that identifies the geographical region it pertains to (Country/State/City). Lastly, given the coarseness of the sampling of the data (daily updates), we do not anticipate that storing time series data in this fashion will pose a problem.
 
 \subsection{Approach}
 \label{subsec:approach}
 
+\noindent
+Since we worked with 5 different data sources from the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}, we approached this problem by first representing each data source as an entity, all related to a parent STATE entity. Since the data provided from the API was largely data from the United States of America, and since the USA has the largest COVID-19 outbreak in the world. it was decided to focus solely on US data and decompose by State. Since the intent was to represent time series data, it was decided that an additional column would be added to each data source that indicated the access/record date. This would allow data to be stored over time in such a way that test data, case data, facility data, and medical aid data could be observed as it changed over time, and the state of the COVID-19 outbreak in the United States on any day could be extracted.
+
+
 Little approach blurb. Reference Appendix.
+
+
+\subsection{Database Design}
+\label{subsec:design}
+
+\noindent
+Little blurb. See next page w\textbf{A note on Normalization}
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/ER2.png}
+    \caption{Basic Entity-Relationship Diagram to Model our Data Sources and Relational Database Design}
+    \label{fig:er1}
+\end{figure}
+\FloatBarrier
 
 \FloatBarrier
 \begin{figure}[h]
@@ -256,12 +276,6 @@ Little approach blurb. Reference Appendix.
     \label{fig:er1}
 \end{figure}
 \FloatBarrier
-
-\subsection{Database Design}
-\label{subsec:design}
-
-\noindent
-Little blurb. See next page w\textbf{A note on Normalization}
 
 \subsection{Database Implementation}
 \label{subsec:implementation}
@@ -433,17 +447,26 @@ Little blurb. See next page w\textbf{A note on Normalization}
 \caption{COVID-19 Schema}
 \end{figure}	
 
-\subsection{Data Insertion}
+\subsection{Data Insertion and Extraction for Analysis}
 \label{subsec:insertextract}
 
 \noindent
-The data was collected between 5 MST and 7MST everyday from May 6, 2020 until May 13, 2020 using the REST API and a python script (GatherData.py). This process involved posting a GET request to the 5 endpoints described in Section \ref{subsec:sourcedata} and obtaining the data in JSON format. 
+The data was collected between 5 MST and 7MST everyday from May 6, 2020 until May 13, 2020 using the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} and a python script (GatherData.py). This process involved posting a GET request to the 5 endpoints described in Section \ref{subsec:sourcedata} and obtaining the data in JSON format. 
 
 \noindent
 Since some of the data included irrelevant and extraneous columns, the python script first removed those extra columns and converted the data to CSV format to begin prepping for upload to our database instance on Oracle Cloud. Next, since the data needed to be broken down into a file for each of the 11 tables (excluding that STATE table), the python script organized the data into 11 files, taking care that the columns of each CSV file corresponded with the columns of each table in the instance of the database.
 
 \noindent
-This allowed the users to run the python script once every evening to collect and organize data, and subsequently upload the data into the Oracle Cloud Database instance. Backups of the raw data obtained from the COVID-19 API endpoints, in addition to backups of the processed data that was prepared for database insertion were kept everyday to ensure that no data would be lost in the unlikely case of an accident or data loss. Additionally, the data, python scripts, and SQL scripts were all kept in sync and backed up on GitHub (which also allowed easy collaboration).
+This allowed the users to run the python script once every evening to collect and organize data, and subsequently upload the data into the Oracle Cloud Database instance. Backups of the raw data obtained from the COVID-19 API endpoints, in addition to backups of the processed data. This process and the results of the analyses from the data entered and extracted from the database is covered in Section \ref{sec:analysis}.
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/DataInsertionExtraction.png}
+    \caption{Data Insertion and Extraction Workflow Overview}
+    \label{fig:my_label}
+\end{figure}
+\FloatBarrier
 
 \pagebreak
 
@@ -564,151 +587,151 @@ Quick Intro: deaths vs available hospital resources (we use the fragmented table
 \bibliographystyle{acm}
 \bibliography{refs.bib}
 
-\appendix
+%\appendix
 
-\section{Original Data From EndPoints}
+%\section{Original Data From EndPoints}
 
-\noindent
-JHU CSV Columns :
+%\noindent
+%JHU CSV Columns :
 %\comment{filter on country==us; keep villages, state is foreign key to other tables}:
 
-\begin{itemize}
-    \item Active
-    \item Combined\_Key
-    \item Confirmed
-    \item Country\_Region
-    \item Deaths
-    \item Last\_Update
-    \item Lat
-    \item Long\_
-    \item Province\_State
-    \item Recovered
-\end{itemize}
+%\begin{itemize}
+%    \item Active
+%    \item Combined\_Key
+%    \item Confirmed
+%    \item Country\_Region
+%    \item Deaths
+%    \item Last\_Update
+%    \item Lat
+%    \item Long\_
+%    \item Province\_State
+%    \item Recovered
+%\end{itemize}
 
-\noindent
-Tests in US CSV Columns (1 Entry for every day since January 18, 2020):
+%\noindent
+%Tests in US CSV Columns (1 Entry for every day since January 18, 2020):
 %\comment{own table}:
 
-\begin{itemize}
-    \item CDC Labs
-    \item DateCollected
-    \item USPublicHealthLabs
-\end{itemize}
+%\begin{itemize}
+%    \item CDC Labs
+%    \item DateCollected
+%    \item USPublicHealthLabs
+%\end{itemize}
 
-\noindent
-USCasesByState CSV Columns:
+%\noindent
+%USCasesByState CSV Columns:
 
-\begin{itemize}
-    \item checkTimeEt
-    \item commercialScore
-    \item dataGrade
-    \item dataQualityGrade
-    \item dateChecked
-    \item dataModified
-    \item death
-    \item fips
-    \item hospitalized
-    \item hospitalizedCumulative
-    \item hospitalizedCurrently
-    \item inIcuCumulative
-    \item inIcuCurrently
-    \item lastUpdateEt
-    \item negative
-    \item negativeRegularScore
-    \item negavtiveScore
-    \item onVentilatorCumulative
-    \item onVentilatorCurrently
-    \item pending
-    \item positive
-    \item positiveScore
-    \item posNeg
-    \item recovered
-    \item score
-    \item state
-    \item total
-    \item totalTestResults
-\end{itemize}
+%\begin{itemize}
+%    \item checkTimeEt
+%    \item commercialScore
+%    \item dataGrade
+%    \item dataQualityGrade
+%    \item dateChecked
+%    \item dataModified
+%    \item death
+%    \item fips
+%    \item hospitalized
+%    \item hospitalizedCumulative
+%    \item hospitalizedCurrently
+%    \item inIcuCumulative
+%    \item inIcuCurrently
+%    \item lastUpdateEt
+%    \item negative
+%    \item negativeRegularScore
+%    \item negavtiveScore
+%    \item onVentilatorCumulative
+%    \item onVentilatorCurrently
+%    \item pending
+%    \item positive
+%    \item positiveScore
+%    \item posNeg
+%    \item recovered
+%    \item score
+%    \item state
+%    \item total
+%    \item totalTestResults
+%\end{itemize}
 
 
-\noindent
-(Not doing this one) FatalityAge CSV Columns:
+%\noindent
+%(Not doing this one) FatalityAge CSV Columns:
 
-\begin{itemize}
-    \item 3 (Number of Deaths)
-    \item 4 (Without Underlying Conditions)
-    \item 5 (Unknown if with Underlying Conditions)
-    \item 6 (Share of Deaths of Unknown + w/o Conditions)
-    \item Age
-    \item DeathRateAllCases (Share of Deaths)
-    \item DeathRateConfirmed (Number of Deaths)
-\end{itemize}
+%\begin{itemize}
+%    \item 3 (Number of Deaths)
+%    \item 4 (Without Underlying Conditions)
+%    \item 5 (Unknown if with Underlying Conditions)
+%    \item 6 (Share of Deaths of Unknown + w/o Conditions)
+%    \item Age
+%    \item DeathRateAllCases (Share of Deaths)
+%    \item DeathRateConfirmed (Number of Deaths)
+%\end{itemize}
 
-\noindent
-(Not doing this one) FatalitySex CSV Columns:
+%\noindent
+%(Not doing this one) FatalitySex CSV Columns:
 
-\begin{itemize}
-    \item 3 (With Underlying Conditions)
-    \item 4 (Share within this Category)
-    \item 5 (Without Underlying Conditions)
-    \item 6 (Share within this Category)
-    \item 7 (Unknown if with Condition)
-    \item 8 (Share within this Category)
-    \item DeathRateAllCases (Share of Deaths)
-    \item DeathRateconfirmed (Deaths)
-    \item Sex
-\end{itemize}
+%\begin{itemize}
+%    \item 3 (With Underlying Conditions)
+%    \item 4 (Share within this Category)
+%    \item 5 (Without Underlying Conditions)
+%    \item 6 (Share within this Category)
+%    \item 7 (Unknown if with Condition)
+%    \item 8 (Share within this Category)
+%    \item DeathRateAllCases (Share of Deaths)
+%    \item DeathRateconfirmed (Deaths)
+%    \item Sex
+%\end{itemize}
 
-\noindent
-(Not doing this one) FatalityComorbidity CSV Columns:
+%\noindent
+%(Not doing this one) FatalityComorbidity CSV Columns:
 
-\begin{itemize}
-    \item DeathRateAllCases
-    \item DeathRateConfirmedCases
-    \item Pre-ExistingCondition (Age)
-\end{itemize}
+%\begin{itemize}
+%    \item DeathRateAllCases
+%    \item DeathRateConfirmedCases
+%    \item Pre-ExistingCondition (Age)
+%\end{itemize}
 
-\noindent
-USMedAid CSV Columns:
+%\noindent
+%USMedAid CSV Columns:
 
-\begin{itemize}
-    \item City
-    \item Cost
-    \item Country
-    \item County
-    \item facility\_type
-    \item first\_shipment
-    \item last\_shipment
-    \item number\_of\_deliveries
-    \item recipient\_Name
-    \item state
-    \item weight\_lbs
-\end{itemize}
+%\begin{itemize}
+%    \item City
+%    \item Cost
+%    \item Country
+%    \item County
+%    \item facility\_type
+%    \item first\_shipment
+%    \item last\_shipment
+%    \item number\_of\_deliveries
+%   \item recipient\_Name
+%    \item state
+%    \item weight\_lbs
+%\end{itemize}
 
-\noindent
-FacilityCapacity CSV Columns:
+%\noindent
+%FacilityCapacity CSV Columns:
 
-\begin{itemize}
-    \item AllBedOccupancyRate
-    \item CountyName
-    \item fips\_code
-    \item ICUBedOccupancyRate
-    \item LicensedAllBeds
-    \item LicensedAllBedsPero1000Adults20\_Plus
-    \item LicensedAllBedsPer1000Elderly65\_Plus
-    \item LicensedAllBedsPer1000People
-    \item Population
-    \item Population\_20\_Plus
-    \item Population\_65\_Plus
-    \item StaffedAllBeds
-    \item StaffedAllBedsPer1000Adults20\_Plus
-    \item StaffedAllBedsPer1000Elderly65\_Plus
-    \item StaffedAllBedsPer1000People
-    \item StaffedICUBeds
-    \item StaffedICUBedsPer1000Adults20\_Plus
-    \item StaffedICUBedsPer1000Elderly65\_PLus
-    \item StaffedICUBedsPer1000People
-    \item State
-\end{itemize}
+%\begin{itemize}
+%    \item AllBedOccupancyRate
+%    \item CountyName
+%    \item fips\_code
+%    \item ICUBedOccupancyRate
+%    \item LicensedAllBeds
+%    \item LicensedAllBedsPero1000Adults20\_Plus
+%    \item LicensedAllBedsPer1000Elderly65\_Plus
+%    \item LicensedAllBedsPer1000People
+%    \item Population
+%    \item Population\_20\_Plus
+%    \item Population\_65\_Plus
+%    \item StaffedAllBeds
+%    \item StaffedAllBedsPer1000Adults20\_Plus
+%    \item StaffedAllBedsPer1000Elderly65\_Plus
+%    \item StaffedAllBedsPer1000People
+%    \item StaffedICUBeds
+%    \item StaffedICUBedsPer1000Adults20\_Plus
+%    \item StaffedICUBedsPer1000Elderly65\_PLus
+%    \item StaffedICUBedsPer1000People
+%    \item State
+%\end{itemize}
 
 
 %\section{Brainstorm}
