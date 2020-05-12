@@ -23,8 +23,37 @@
 \usetikzlibrary{shapes,positioning,calc}
 \colorlet{lightgray}{gray!20}
 
+\usepackage{xcolor,listings}
 \usepackage[normalem]{ulem}
 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+    \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+    \definecolor{codepurple}{HTML}{C42043}
+    \definecolor{backcolour}{HTML}{F2F2F2}
+    \definecolor{bookColor}{cmyk}{0,0,0,0.90}  
+    \color{bookColor}
+
+    \lstset{upquote=true}
+
+    \lstdefinestyle{mystyle}{
+        backgroundcolor=\color{backcolour},   
+        commentstyle=\color{codegreen},
+        keywordstyle=\color{codepurple},
+        numberstyle=\footnotesize\color{codegray},
+        stringstyle=\color{codepurple},
+        basicstyle=\footnotesize,
+        breakatwhitespace=false,         
+        breaklines=true,                 
+        captionpos=b,                    
+        keepspaces=true,                 
+        numbers=left,                    
+        numbersep=-10pt,                  
+        showspaces=false,                
+        showstringspaces=false,
+        showtabs=false,      
+    }
+    \lstset{style=mystyle} 
+    
 \newlist{MyIndentedList}{itemize}{4}
 \setlist[MyIndentedList,1]{%
     label={},
@@ -127,13 +156,13 @@
 
 \section{Changes Since Proposal}
 \noindent
-Due to the fact that the 3 data sources, fatality by age, fatality by sex, and fatality by co-morbidity, were gathered only from New York State, not updated frequently, and not comprehensive, we decided to exclude them and instead focus on the remaining 5 data sources from the  \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}. They are listed below:
+Due to the fact that the 3 data sources, fatality by age, fatality by sex, and fatality by co-morbidity, were gathered only from New York State, not updated frequently, and not comprehensive, we decided to exclude them. Additionally, we decided to exclude the US Tests dataset provided by the API since it was redundant and only provided the total number of tests done nationally, which was found to be redundant and not useful for a state-level analysis. Instead, we focused on the remaining 4 data sources from the  \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}. They are listed below:
 
 \begin{itemize}
     \item \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}
         \begin{itemize}
         \item \textbf{John Hopkins Data Daily Report}: Data for the 2019 Novel Coronavirus Visual sourced from the Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering. Updated daily.
-        \item \textbf{Tests in US}: Data from 48 states public health labs in the United States, in addition to New York City, USAF, and 9 California counties. Updated daily.
+        %\item \textbf{Tests in US}: Data from 48 states public health labs in the United States, in addition to New York City, USAF, and 9 California counties. Updated daily.
         \item \textbf{USA Medical Aid Distribution}: Tracks medical aid to US hospitals and facilities, including package weight, cost, delivery date of aid to a location and/or hospital. Updated daily.
         \item \textbf{Aggregated Facility Capacity County}: Current population, (occupied) hospital beds, (occupied) ICU beds, healthcare staff, age demographics, grouped by county for the United States. Updated daily 
         \item \textbf{United States Cases By State}: For every state: the number of positive and negative cases, each state's score, number of patients in the ICU and on ventilators, and number of patients who have recovered (supplements the JHU Daily Report with additional fields).
@@ -183,7 +212,7 @@ Documentation of the various endpoints and data items is included on the \MYhref
     \item \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}
         \begin{itemize}
         \item \textbf{John Hopkins Data Daily Report}: Data for the 2019 Novel Coronavirus Visual sourced from the Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering. Updated daily.
-        \item \textbf{Tests in US}: Data from 48 states public health labs in the United States, in addition to New York City, USAF, and 9 California counties. Updated daily.
+        %\item \textbf{Tests in US}: Data from 48 states public health labs in the United States, in addition to New York City, USAF, and 9 California counties. Updated daily.
         %\item \textbf{Fatality Rate By Age}: Global fatality rate grouped by age groups. Updated daily.
         %\item \textbf{Fatality Rate By Sex}: Global fatality rate grouped by sex. Updated daily.
         %\item \textbf{Fatality Rate By Co-morbidity}: Global fatality rate for people with pre-existing conditions. Updated daily.
@@ -267,7 +296,7 @@ The data that we worked with fits into a single machine. Therefore, one of the m
 \label{subsec:approach}
 
 \noindent
-Since we worked with 5 different data sources from the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}, we approached this problem by first representing each data source as an entity, all related to a parent STATE entity, as seen in Figure \ref{fig:er2}. Since the data provided from the API was largely data from the United States of America, and since the USA has the largest COVID-19 outbreak in the world. it was decided to focus solely on US data and decompose by State. Since the intent was to represent time series data, it was decided that an additional column would be added to each data source that indicated the access/record date. This would allow data to be stored over time in such a way that test data, case data, facility data, and medical aid data could be observed as it changed over time, and the state of the COVID-19 outbreak in the United States on any day could be extracted.
+Since we worked with 4 different data sources from the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}, we approached this problem by first representing each data source as an entity, all related to a parent STATE entity, as seen in Figure \ref{fig:er2}. Since the data provided from the API was largely data from the United States of America, and since the USA has the largest COVID-19 outbreak in the world. it was decided to focus solely on US data and decompose by State. Since the intent was to represent time series data, it was decided that an additional column would be added to each data source that indicated the access/record date. This would allow data to be stored over time in such a way that test data, case data, facility data, and medical aid data could be observed as it changed over time, and the state of the COVID-19 outbreak in the United States on any day could be extracted.
 
 \vspace{3em}
 
@@ -286,7 +315,7 @@ Since we worked with 5 different data sources from the \MYhref{https://www.npmjs
 \label{subsec:design}
 
 \noindent
-The database design began with a simple ER diagram, where each data source was assigned a relationship to a parent STATE entity, as shown in Figure \ref{fig:er2}. As will be seen later on, in the actual implementation in section \ref{subsec:implementation}, the data was easily translated to the Third Normal Form (3NF), since only a State and a DateRecorded primary key were necessary for the functional dependence of all other columns (with the exception of the JHUDATA). However, to reduce the number of NULL values present in the database, the United States Cases By State (USCASEBYSTATE) data source was broken up into several entities (and later translated to several tables), such as recovery, ventilator, hospitalized, and ICU information. A similar decomposition was performed for the Aggregated Facility Capacity Count (USFACILITIES) data source into separate ICU bed information and overall bed information. This resulted in a revised ER diagram, seen in Figure \ref{fig:er1}. Finally, this ER diagram was translated to the relational model, and primary and foreign keys were assigned, as seen in Figure \ref{fig:tables}. As can be seen, and later discussed in Section \ref{subsec:implementation}, each of these tables is in fact in Third Normal Form (3NF), such that natural joins result in no spurious tuples and that all of the columns are functionally dependent on solely the primary key. 
+The database design began with a simple ER diagram, where each data source was assigned a relationship to a parent STATE entity, as shown in Figure \ref{fig:er2}. As will be seen later on, in the actual implementation in section \ref{subsec:implementation}, the data was easily translated to the Third Normal Form (3NF), since the only functional dependency present in the relation was that of the primary key (State, and DateRecorded) determining all other columns (with the exception of the JHUDATA, USFACILITIES, USALLBEDOCCUPANCY, and USICUBEDOCCUPANCY, which are 2NF). However, to reduce the number of NULL values present in the database, the United States Cases By State (USCASEBYSTATE) data source was broken up into several entities (and later translated to several tables), such as recovery, ventilator, hospitalized, and ICU information (with each of those tables only having entries if a state has at least one non-null entry for the day). A similar decomposition was performed for the Aggregated Facility Capacity Count (USFACILITIES) data source into separate ICU bed information and overall bed information. This resulted in a revised ER diagram, seen in Figure \ref{fig:er1}. Finally, this ER diagram was translated to the relational model, and primary and foreign keys were assigned, as seen in Figure \ref{fig:tables}. As can be seen, and later discussed in Section \ref{subsec:implementation}, each of these tables is in fact in Third Normal Form (3NF), such that natural joins result in no spurious tuples and that all of the columns are functionally dependent on solely the primary key. 
 
 \subsubsection{Conceptual Schema}
 \label{subsubsec:concept}
@@ -298,7 +327,7 @@ The conceptual schema for the COVID-19 Database is presented as follows:
     \item Entities and Attributes
     \item Relationships
     \item Final ER Conceptual Schema Diagram (Figure \ref{fig:er1})
-    \item Integrity Constraints
+    \item Explicit Integrity Constraints
 \end{itemize}
 
 \noindent
@@ -315,7 +344,6 @@ The entities defined for this databse are: \\
 \begin{itemize}
     \item STATE
     \item JHUDATA
-    \item USTESTS
     \item USMEDAIDAGGREGATE
     \item USFACILITIES
     \item USICUBEDOCCUPANCY
@@ -329,6 +357,153 @@ The entities defined for this databse are: \\
 \noindent
 A more detailed description of each entity follows:
 
+\begin{description}
+\item{\em\bf STATE:} One of the 50 political entities, 5 territories, and the District of Columbia that together make up the U.S. Each state can contain 0, 1,or more national parks (either partially or completely). \\ \\
+
+Some example instances are: New Mexico, New York, California, Georgia. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{StateAbbreviation}} &  (SSPF) \\
+	    & StateName &  (SSPF) \\
+\end{tabular} \\
+\\
+
+\pagebreak
+
+\item{\em\bf JHUDATA:} John Hopkins Daily COVID-19 Data. \\ \\
+
+An example instance is: JHU Data from Albuquerque, New Mexico for May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{Country}} &  (SSPF) \\
+	    & {\bf \underline{State}} & (SSPF) \\
+	    & {\bf \underline{City}} & (SSPF) \\
+	    & Confirmed & (SSPF) \\
+	    & Deaths & (SSPF) \\
+	    & Recovered & (SSPF) \\
+	    & Active & (SSPF) \\
+	    & Latitude & (SSPF) \\
+	    & Longitude & (SSPF) \\
+\end{tabular} \\
+\\
+
+\item{\em\bf USCASEBYSTATE:} Daily COVID-19 Data broken down by State. \\ \\
+
+An example instance is: Number of positive, negative, and total tests performed in New Mexico for May 10, 2020, in addition to the number of deaths and the quality of the data for the day. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & Positive & (SSPF) \\
+	    & Negative & (SSPF) \\
+	    & Death & (SSPF) \\
+	    & Total & (SSPF) \\
+	    & DataQualityGrade & (SSPF) \\
+	    & DataGrade & (SSPF) \\
+\end{tabular} \\
+\\
+\textbf{Notes}
+\begin{enumerate}
+    \item DataQualityGrade: The grade on an A-F scale, of the quality of data provided by the state for a specific day.
+    \item DataGrade: The grade on an A-F scale of the data (i.e. how severe is the outbreak in the state) of a state for a specific day.
+\end{enumerate} \\
+
+\item{\em\bf HOSPITALIZED:} Number of hospitalizations per state on a daily basis. \\ \\
+
+An example instance is: Number hospitalized patients currently and cumulatively (since the beginning of the pandemic) in New Mexico for May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & HospitalizedCurrently & (SSPF) \\
+	    & HospitalizedCumulative & (SSPF) \\
+\end{tabular} \\
+
+\item{\em\bf ICU:} Number of patients in the ICU per state on a daily basis. \\ \\
+
+An example instance is: Number of ICU patients currently and cumulatively (since the beginning of the pandemic) in New Mexico for May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & InICUCurrently & (SSPF) \\
+	    & InICUCumulative & (SSPF) \\
+\end{tabular} \\
+
+\item{\em\bf VENTIALTOR:} Number of patients on a ventilator per state on a daily basis. \\ \\
+
+An example instance is: Number of patients currently on a ventilator and the number of cumulative patients who have required a ventilator since the beginning of the pandemic in New Mexico for May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & OnVentilatorCurrently & (SSPF) \\
+	    & OnVentilatorCumulative & (SSPF) \\
+\end{tabular} \\
+
+\pagebreak
+
+\item{\em\bf RECOVERED:} Number of recovered COVID-19 patients per state on a daily basis. \\ \\
+
+An example instance is: Number of recovered patients since the beginning of the pandemic in New Mexico for May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & Recovered & (SSPF) \\
+\end{tabular} \\
+
+\item{\em\bf USFACILITIES:} Population, age distribution, and bed/ICU availability on a per county granularity. \\ \\
+
+An example instance is: Population, demographics, and number of beds in Bernalillo County, New Mexico on May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & {\bf \underline{CountyName}} & (SSPF) \\
+	    & Population & (SSPF) \\
+	    & Population20Plus & (SSPF) \\
+	    & Population65Plus & (SSPF) \\
+	    & StaffedAllBeds & (SSPF) \\
+	    & StaffedICUBeds & (SSPF) \\
+	    & LicensedAllBeds & (SSPF) \\
+\end{tabular} \\
+
+\item{\em\bf USALLBEDOCCUPANCY:} Current occupancy of hospital beds on a per country granularity. \\ \\
+
+An example instance is: Number between 0 and 1 indicating the level of hospital beds that are occupied in Bernalillo County on May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & {\bf \underline{CountyName}} & (SSPF) \\
+	    & AllBedOccupancyRate & (SSPF) \\
+\end{tabular} \\
+
+\item{\em\bf USICUBEDOCCUPANCY:} Current occupancy of ICU beds/units on a per country granularity. \\ \\
+
+An example instance is: Number between 0 and 1 indicating the level of ICU beds/units that are occupied in Bernalillo County on May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & {\bf \underline{CountyName}} & (SSPF) \\
+	    & ICUBedOccupancyRate & (SSPF) \\
+\end{tabular} \\
+
+\item{\em\bf USMEDAIDAGGREGATE:} Cumulative amount of medical aid sent to a state since the start of the pandemic. Includes number of packages, cost of material, and weight of received packages. \\ \\
+
+An example instance is: Cumulative number of packages, the cost of the packages, and the weight of the packages received by New Mexico up to May 10, 2020. \\
+ 
+\begin{tabular}{llc}
+ Attributes: & {\bf \underline{DateRecorded} (Month-Day-Year)} &  (CSPF) \\
+	    & {\bf \underline{State}} &  (SSPF) \\
+	    & Deliveries & (SSPF) \\
+	    & Cost & (SSPF) \\
+	    & Weight & (SSPF) \\
+\end{tabular} \\
+\end{description}
 \pagebreak
 
 \noindent
@@ -338,16 +513,16 @@ A more detailed description of each entity follows:
 The relationships in this schema are listed and described below. \\
 
 \begin{description}
-\item [tests] \\
+\item [tests]
 
 \noindent
 A state performs COVID-19 tests, each of which may be positive or negative. This relationship keeps track of the daily tests in the United States and their associated data.
 
 \begin{tabular}{lllc}  
   Attributes: None \\
-\end{tabular} \\
+\end{tabular}
 
-\item [receives] \\
+\item [receives]
 
 \noindent
 A state receives medical aid from industry or the federal government. This relationship keeps track of the aid received by states in terms of the cost of the aid, the number of received packages, and the weight of the received packages.
@@ -388,20 +563,70 @@ A facility provides a certain number of ICU units, and each facility has a certa
 \noindent
 A facility also supplies a certain number of staffed beds. This relationship keeps track of how many beds a facility provides and how many beds a facility is currently using (as a rate).
 
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
+
 \item [currentlyHas]
 
 \noindent
-A state currently has a certain number of positive cases and deaths, in addition to recovered patients, patients on ventilators, patients in the ICU, hospitalized patients. This relationship keeps track of all of those metrics daily.
+Each state currently has a certain number of COVID-19 cases. This relationship keeps track of those cases by state, in addition to allowing the information from them child relationship and entities, such as recovered patients, patients in the ICU, patients on ventilators, and hospitalized patients, to propagate upwards and be associated with particular states.
+
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
+
+\item [patients]
 
 \noindent
-\textbf{Notes}
-\begin{enumerate}
-    \item The status attribute indicates if an amenity is ready to be used by the visitors or not. If the availability needs more clarification, e.g. partial internet access throughout the park, the status should be set to available and extra details should go in the AMENITY entity type under ADescription.
-\end{enumerate}
+Each set of cases has a number of recovered patients, which this relationship keeps track of daily.
+
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
+
+\item [connectTo]
+
+\noindent
+Each set of cases in a state has a number of patients connected to ventilators. This relationship keeps track of that statistic at the state-wide level on a daily basis.
+
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
+
+\item [occupied]
+
+\noindent
+Each set of cases in a state has a count of the number of patients that are currently occupying ICU units. This relationship keeps track of and updates that statistic daily.
+
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
+
+\item [checkedIn]
+
+\noindent
+Each set of cases in a state has a current count of the number of hospitalized COVID-19 patients, and this relationship tracks that daily.
+
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
 
 \end{description}
 
+\noindent
+\textbf{Explicit Integrity Constraints} \\
 
+\noindent
+Some examples of integrity constrains in our COVID-19 database follow:
+
+\begin{enumerate}
+    \item In the STATE entity, there should be exactly 59 entries (50 states, 5 territories and DC, and the Diamond Princess, Grand Princess, and Recovered) in order to accommodate the data from the API.
+    \item The USCASEBYSTATE entity should have 56 new entries for each day it is updated (one for each of the 50 states, 5 territories and DC). For example, if data collection has been occurring for 6 days, there should be exactly 336 entries.
+    \item The USCASEBYSTATE entity must have consistency, such that the number of recovered patients + the number of deaths + the number of positive cases + the number of negative cases = the total number of tests.
+\end{enumerate}
+
+\pagebreak
 
 \noindent
 \textbf{Final ER Conceptual Schema Diagram}
@@ -415,9 +640,6 @@ A state currently has a certain number of positive cases and deaths, in addition
 \end{figure}
 \FloatBarrier
 
-\noindent
-\textbf{Integrity Constraints}
-
 \pagebreak
 
 \subsection{Database Implementation}
@@ -427,12 +649,10 @@ A state currently has a certain number of positive cases and deaths, in addition
 The database was constructed by translating the final ER Diagram in Figure \ref{fig:er1} to the relational model, as seen on the next page in Figure \ref{fig:tables}. A SQL script was then written (CreateDB.sql) to implement the schema in the Oracle Cloud DBMS, and the database was then used to collect data to provide the ability to perform useful queries that aided in the analysis presented in Section \ref{sec:analysis}.
 
 \noindent
-Note that every table in the relational database shown in Figure \ref{fig:tables} is in fact in 3NF, except for the JHUDATA table (the JHUDATA table was not further normalized or decomposed as it seemed unnecessary since we are solely focusing on US data and an additional CITY and/or COUNTRY tables would have been unneeded). For the STATE table, the StateName is functionally dependent solely on the StateAbbreviation private key, while for the remaining tables, their columns are functionally dependent solely on the primary key of DateRecorded and State.
+Note that every table in the relational database shown in Figure \ref{fig:tables} is in fact in 3NF, except for the JHUDATA, USFACILITIES (and its children USALLBEDOCCUPANCY and USICUBEDOCCUPANCY) tables (the JHUDATA table was not further normalized or decomposed as it seemed unnecessary since we are solely focusing on US data and an additional CITY and/or COUNTRY tables would have been unneeded - the same can be said for the other tables since CountyName proved to be unneeded for our purposes). For the STATE table, the StateName is functionally dependent solely on the StateAbbreviation private key, while for the remaining tables, their columns are functionally dependent solely on the primary key of DateRecorded and State.
 
 \noindent
-Also note that DateRecorded was an added column to the raw data to allow for the storage of a snapshot of the state of the COVID-19 pandemic in the United States on each day. This provided the time series capability of the database, and resulted in the peculiar property that each tuple once entered, is not modified - the database only continues to grow each day as new entries for the day are entered (i.e. only INSERT operations and no UPDATE operations).
-
-\pagebreak
+Also note that DateRecorded was an added column to the raw data to allow for the storage of a snapshot of the state of the COVID-19 pandemic in the United States on each day. This provided the time series capability of the database, and resulted in the peculiar property that each tuple once entered, is not modified such that the database only continues to grow each day as new entries for the day are entered (i.e. only INSERT operations and no UPDATE operations).
 
 \begin{figure}[H]
 \begin{adjustwidth*}{}{-4em}
@@ -607,7 +827,7 @@ The data was collected between 5 MST and 7MST everyday from May 6, 2020 until Ma
 Since some of the data included irrelevant and extraneous columns, the python script first removed those extra columns and converted the data to CSV format to begin prepping for upload to our database instance on Oracle Cloud. Next, since the data needed to be broken down into a file for each of the 11 tables (excluding that STATE table), the python script organized the data into 11 files, taking care that the columns of each CSV file corresponded with the columns of each table in the instance of the database.
 
 \noindent
-This allowed the users to run the python script once every evening to collect and organize data, and subsequently upload the data into the Oracle Cloud Database instance. Backups of the raw data obtained from the COVID-19 API endpoints, in addition to backups of the processed data. This process and the results of the analyses from the data entered and extracted from the database is covered in Section \ref{sec:analysis}.
+This allowed the users to run the python script once every evening to collect and organize data, and subsequently upload the data into Oracle Cloud. Backups of the raw data obtained from the COVID-19 API endpoints, in addition to backups of the processed data. This process and the results of the analyses from the data entered and extracted from the database is covered in Section \ref{sec:analysis}. An overview of this process can be found in Figures \ref{fig:my_label} - \ref{fig:tbl_bd}.
 
 \FloatBarrier
 \begin{figure}[h]
@@ -629,12 +849,12 @@ We performed a number of analyses to demonstrate the viability of our design and
 \subsection{Data Preparation}
 
 \noindent
-We decided to divide the large tuples of raw data retrieved from our sources into multiple tables as shown in Figure \ref{fig:tbl_bd}. In addition to resulting in a much more logical representation, this approach resulted in far fewer null values in the table. The Python script to retrieve and divide the data resides in the `GatherData.py' file.
+We divided the large tuples of raw data retrieved from our sources into multiple tables (Figure \ref{fig:tbl_bd}). In addition to resulting in a much more logical representation, this approach resulted in far fewer NULL values in the table. The Python script to retrieve and divide the data resides in the GatherData.py file.
 
 \FloatBarrier
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{diagrams/data_breakdown.png}
+    \includegraphics[width=0.8\textwidth]{diagrams/data_breakdown.png}
     \caption{Breaking down the raw data into multiple tables. Note that the arrows simply represent the flow of data and do not connote any database design related concept}
     \label{fig:tbl_bd}
 \end{figure}
@@ -649,10 +869,13 @@ We explored the following items in the data:
 \end{itemize}
 In order to perform these analyses, we used simple SQL queries against our database to retrieve the data and simple python scripts to analyze the data and visualize the results. The queries used to retrieve the historic data from our database can be found in the `Queries' folder and the Python scripts for analyzing and visualizing the data can be found in the `analysis.ipynb' Jupyter Notebook.
 
+\pagebreak
+
 \subsection{Tests, Cases, and Deaths at the State Level}
+\label{subsec:StateLevel}
 
 \noindent
-We started by looking at some of the trends in the data. Figure \ref{fig:pos_trends} shows the number of positive cases in four states and the predictions based on those point projected two days into the feature using regression analysis.
+Figure \ref{fig:pos_trends} shows the number of positive cases in four states and the predictions projected two days into the feature using regression analysis.
 \subsubsection{Approach}
 We used the `USTESTBYSTATES' table to retrieve historical trends for the states. The result of the query was exported to a \textit{csv} file and imported into the python script for plotting and regression analysis.
 
@@ -681,12 +904,23 @@ We used the `USTESTBYSTATES' table to retrieve historical trends for the states.
          \caption{Positive cases trends for NM}
          \label{fig:three sin x}
      \end{subfigure}
-        \caption{The actual number of positive cases for CA, GA, NY, NM plus predictions for two days into the future using linear(LS) and plynomal regression (PR3)}
+        \caption{The number of positive cases for CA, GA, NY, NM and predictions for two days into the future using linear(LS) and polynomial regression (PR3)}
         \label{fig:pos_trends}
 
 \end{figure}
 \FloatBarrier
 
+\noindent
+The SQL command used to obtain this data is presented below:
+\begin{lstlisting}[language=SQL,
+        deletekeywords={IDENTITY,INT},
+        morekeywords={clustered},    
+        framesep=10pt,
+        framextopmargin=10pt]
+    SELECT DateRecorded, State, Positive, Negative, Total, Death 
+    FROM USCASEBYSTATE
+    ORDER BY State;\end{lstlisting}
+    
 \pagebreak
 
 \subsection{Correlation of Tests with Medical Aid at the State Level}
@@ -696,49 +930,170 @@ We looked the historical test and medical aid data in our database to look for t
 \subsubsection{Approach}
 We joined two tables `USCASEBYSTATE' and `USMEDAIDAGGREGATE', on the timestamp and state attributes and returned the total monetary value of the aid received and the number of tests performed. 
 
-\FloatBarrier
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.5]{diagrams/analysis/medaid_corr_no_outliers.png}
-    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
-    \label{fig:test_cost_fit}
-\end{figure}
-\FloatBarrier
+%\FloatBarrier
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[scale=0.5]{diagrams/analysis/medaid_corr_no_outliers.png}
+%    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
+%    \label{fig:test_cost_fit}
+%\end{figure}
+%\FloatBarrier
+
+%\FloatBarrier
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[scale=0.5]{diagrams/analysis/medaid_corr_outliers.png}
+%    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
+%    \label{fig:test_cost_fit}
+%\end{figure}
+%\FloatBarrier
 
 \FloatBarrier
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.5]{diagrams/analysis/medaid_corr_outliers.png}
-    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares}
+    \begin{subfigure}[h]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{diagrams/analysis/medaid_corr_no_outliers.png}
+        \caption{Without outliers.}
+        \label{fig:test_cost_fit}
+    \end{subfigure}%
+    \begin{subfigure}[h]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{diagrams/analysis/medaid_corr_outliers.png}
+        \caption{With outliers.}
+    \end{subfigure}
     \label{fig:test_cost_fit}
+    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares.}
 \end{figure}
 \FloatBarrier
+
+\noindent
+The SQL command used to obtain this data is presented below:
+\begin{lstlisting}[language=SQL,
+        deletekeywords={IDENTITY,INT},
+        morekeywords={clustered},    
+        framesep=10pt,
+        framextopmargin=10pt]
+    SELECT u.DateRecorded, u.State, u.Positive, u.Negative, u.Total AS test_total, u.Death, ma.Deliveries, ma.Cost, ma.Weight
+    FROM USCASEBYSTATE u, USMEDAIDAGGREGATE ma
+    WHERE u.State = ma.State AND u.DateRecorded = ma.DateRecorded 
+    ORDER BY u.State, u.DateRecorded;\end{lstlisting}
+\pagebreak
 
 \subsection{Hospital Resources as a Predictor of Cases and Deaths}
 
 \noindent
-In order to demonstrate a more complex query, we decided to look at the occupancy rate of ICUs and the number of deaths per capita. 
+In order to demonstrate the viability of our database for more ambitious analyses, we decided to look at the occupancy rate of ICUs and the number of deaths per capita. 
 
 \subsubsection{Approach}
-We performed a 3-way join on JHUDATA, USICUBEDOCCUPANCY, and USFACILITIES to obtain the average ICU occupancy rate and total number of fatalities and the population for each state. We normalized the total number of fatalities and plotted them as shown in Figure \ref{fig:death_pop_icu}.
+We performed a 3-way join on JHUDATA, USICUBEDOCCUPANCY, and USFACILITIES and performed some aggregate operations to obtain the average ICU occupancy rate and total number of fatalities and the population for each state. We normalized the total number of fatalities and plotted them as shown in Figure \ref{fig:death_pop_icu}.
+
+\FloatBarrier
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.5]{diagrams/analysis/death_icu.png}
-    \caption{Caption}
+    \includegraphics[scale=0.50]{diagrams/analysis/death_icu.png}
+    \caption{The rate of death per capita vs the ICU occupancy rate with a line fit through the data using least squares}
     \label{fig:death_pop_icu}
 \end{figure}
+\FloatBarrier
 
+\pagebreak
+
+\noindent
+The SQL command used to obtain this data is presented below:
+\begin{lstlisting}[language=SQL,
+        deletekeywords={IDENTITY,INT},
+        morekeywords={clustered},    
+        framesep=10pt,
+        framextopmargin=10pt]
+    SELECT f.State, f.DateRecorded, total_pop, icu_avg, j.death_tot 
+    FROM(
+        SELECT f.State, f.DateRecorded, sum(Population) AS total_pop 
+        FROM USFACILITIES f 
+        WHERE  DateRecorded=to_date('05/09/2020','MM/DD/YYYY')  
+        GROUP BY State, DateRecorded
+        ) f , 
+        (SELECT o.State, o.DateRecorded, round(avg(ICUBedOccupancyRate),3) AS     icu_avg 
+        FROM USICUBEDOCCUPANCY o 
+        WHERE o.DateRecorded=to_date('05/09/2020','MM/DD/YYYY')  
+        GROUP BY o.State, DateRecorded
+        ) o, 
+        (SELECT sum(Deaths) AS death_tot, j.State, j.DateRecorded 
+        FROM JHUDATA j 
+        WHERE DateRecorded=to_date('05/09/2020','MM/DD/YYYY')   
+        GROUP BY State, DateRecorded) j 
+    WHERE f.State=o.State AND j.State=o.State;\end{lstlisting}
 
 \pagebreak
 
 \section{Conclusions}
-...We demonstrated that our design is flexible enough to ingest data from multiple Covid-19 data sources and allow for statistical studies on historical Covid-19 data. As we planned and executed different phases of this project, we realized that the most involved and sensitive part of the project was designing the database. In other words, once a good database design was achieved, retrieving data and performing analyses on the data was fairly straightforward...
+In this work we designed a database for keeping a history of COVID-19 data (revise). We demonstrated that in order to build the history, our design is able to incorporate data from multiple sources. We also showed that the data we store allows for statistical studies to unveil COVID-19 related trends and correlations. Adding the timestamps and using natural identifiers for the records allowed us to easily combine data gathered from different sources in our sample analyses. If in order to perform an analysis, it becomes necessary to incorporate other sources into the database, the new data can be easily integrated into our database to be used in conjunction with the existing data.\\
 
-\section{Future Work}
+\noindent
+As we planned and executed different phases of this project, we realized that the most involved and sensitive part of the project was designing the database. In other words, once a good database design was achieved, retrieving data and performing analyses on the data was fairly straightforward. 
+
+%\section{Future Work}
 \bibliographystyle{acm}
 \bibliography{refs.bib}
 
-%\appendix
+\appendix
+
+\section{Other Analyses and Visualizations}
+
+\noindent
+Lastly, we provide a few visualizations of the progression of the COVID-19 pandemic from May 6, 2020 - May 13, 2020 with the charts below. The data required for the visualizations below was obtained with the same SQL command as was used in section \ref{subsec:StateLevel}.
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/analysis/total_cases_bar.png}
+    \caption{Total Cases and Deaths in California, Georgia, New Mexico, Nevada, and New York, as of May 13, 2020.}
+    \label{fig:overall}
+\end{figure}
+\FloatBarrier
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/analysis/total_cases_capita_bar.png}
+    \caption{Cases and Deaths per 1 million residents in California, Georgia, New Mexico, Nevada, and New York, as of May 13, 2020.}
+    \label{fig:capita}
+\end{figure}
+\FloatBarrier
+
+\noindent
+As can be seen in Figure \ref{fig:overall}, by the raw values, New York is performing the most tests, has the most cases, and has the most deaths by a large margin (California has performed a similar number of tests). However, once normalized by population (Figure \ref{fig:capita}, we see that New Mexico is also performing a substantial number of tests per capita, while Georgia has the second most cases and deaths per capita of the 5 states, behind New York.
+
+\pagebreak
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/analysis/daily_tests.png}
+    \caption{Daily Tests from May 6 - May 13 in California, Georgia, New Mexico, Nevada, and New York.}
+    \label{fig:dailytests}
+\end{figure}
+\FloatBarrier
+
+\noindent
+As can be seen in Figure \ref{fig:dailytests}, it is apparent that New York is on the down slope, as their number of positive tests and deaths continues to decrease. However, due to only gathering data for a week and knowing that the data reports have a weekly oscillation (typically peaks on Tuesday and is low Saturday-Monday), it is hard to draw many conclusions from only a week of data that we have been able to gather.
+
+\pagebreak
+
+\FloatBarrier
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{diagrams/analysis/percent_positive.png}
+    \caption{Daily Positive Test Ratio from May 6 - May 13 in California, Georgia, New Mexico, Nevada, and New York.}
+    \label{fig:percentpositive}
+\end{figure}
+\FloatBarrier
+
+\noindent
+As can be seen in Figure \ref{fig:percentpositive}, as the volume of testing continues to increase and more people continue to stay at home, the daily positive testing ratio continues to decrease across all 5 states, with New York having the worst ratio and New Mexico having the best ratio. \\
+
+\noindent
+The code used to generate these plots can be found in Analysis.ipynb.
 
 %\section{Original Data From EndPoints}
 
