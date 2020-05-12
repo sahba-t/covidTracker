@@ -19,7 +19,23 @@ ORDER BY FAC.State, FAC.DateRecorded
 ) where daterecorded IN(select max(daterecorded) from USCASebystate)
 ORDER BY state;
 
-/* getting ICU occupancy rate, population and death rates*/
-select f.state, f.daterecorded, total_pop, icu_avg, j.death_tot from(select f.state, f.daterecorded, sum(population) as total_pop from USFACILITIES f where  daterecorded=to_date('05/09/2020','MM/DD/YYYY')  group by state, daterecorded) f , (select o.state, o.daterecorded, round(avg(icubedoccupancyrate),3) as icu_avg from usicubedoccupancy o where o.daterecorded=to_date('05/09/2020','MM/DD/YYYY')  group by o.state, daterecorded) o, (select sum(deaths) as death_tot, j.state, j.daterecorded from jhudata j where daterecorded=to_date('05/09/2020','MM/DD/YYYY')   group by state, daterecorded) j where f.state=o.state and j.state=o.state;
+/* Getting ICU occupancy rate, population and death rates */
+SELECT f.state, f.daterecorded, total_pop, icu_avg, j.death_tot 
+FROM(
+    SELECT f.state, f.daterecorded, sum(population) AS total_pop 
+    FROM USFACILITIES f 
+    WHERE  daterecorded=to_date('05/09/2020','MM/DD/YYYY')  
+    GROUP BY state, daterecorded
+    ) f , 
+    (SELECT o.state, o.daterecorded, round(avg(icubedoccupancyrate),3) AS icu_avg 
+    FROM usicubedoccupancy o 
+    WHERE o.daterecorded=to_date('05/09/2020','MM/DD/YYYY')  
+    GROUP BY o.state, daterecorded
+    ) o, 
+    (SELECT sum(deaths) AS death_tot, j.state, j.daterecorded 
+    FROM jhudata j 
+    WHERE daterecorded=to_date('05/09/2020','MM/DD/YYYY')   
+    GROUP BY state, daterecorded) j 
+WHERE f.state=o.state AND j.state=o.state;
 
 
