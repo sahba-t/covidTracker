@@ -813,7 +813,7 @@ Also note that DateRecorded was an added column to the raw data to allow for the
 \end{tikzpicture}
 }%
 \end{adjustwidth*}
-\caption{COVID-19 Schema}
+\caption{COVID-19 Relational Schema}
 \label{fig:tables}
 \end{figure}	
 
@@ -821,7 +821,7 @@ Also note that DateRecorded was an added column to the raw data to allow for the
 \label{subsec:insertextract}
 
 \noindent
-The data was collected between 5 MST and 7MST everyday from May 6, 2020 until May 13, 2020 using the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} and a python script (GatherData.py). This process involved posting a GET request to the 5 endpoints described in Section \ref{subsec:sourcedata} and obtaining the data in JSON format. 
+The data was collected between 5 MST and 7 MST everyday from May 6, 2020 until May 13, 2020 using the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} and a python script (GatherData.py). This process involved posting a GET request to the 5 endpoints described in Section \ref{subsec:sourcedata} and obtaining the data in JSON format. 
 
 \noindent
 Since some of the data included irrelevant and extraneous columns, the python script first removed those extra columns and converted the data to CSV format to begin prepping for upload to our database instance on Oracle Cloud. Next, since the data needed to be broken down into a file for each of the 11 tables (excluding that STATE table), the python script organized the data into 11 files, taking care that the columns of each CSV file corresponded with the columns of each table in the instance of the database.
@@ -963,7 +963,7 @@ We joined two tables `USCASEBYSTATE' and `USMEDAIDAGGREGATE', on the timestamp a
         \caption{With outliers.}
     \end{subfigure}
     \label{fig:test_cost_fit}
-    \caption{Number of tests conducted vs the amount of medical aid received by states with a line fit through the data using least squares.}
+    \caption{Number of tests conducted vs the amount of medical aid received by states (for all 50 states, 5 territories, and DC) with a line fit through the data using least squares.}
 \end{figure}
 \FloatBarrier
 
@@ -991,12 +991,14 @@ We performed a 3-way join on JHUDATA, USICUBEDOCCUPANCY, and USFACILITIES and pe
 \FloatBarrier
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.50]{diagrams/analysis/death_icu.png}
-    \caption{The rate of death per capita vs the ICU occupancy rate with a line fit through the data using least squares}
+    \includegraphics[width=0.65\linewidth]{diagrams/analysis/death_icu.png}
+    \caption{The rate of death per capita vs the ICU occupancy rate (of all 50 states, 5 territories, and DC) with a line fit through the data using least squares}
     \label{fig:death_pop_icu}
 \end{figure}
 \FloatBarrier
 
+\noindent
+Obviously, according to Figure \ref{fig:death_pop_icu}, there does not seem to be a strong correlation between ICU occupancy rate (as reported) and the number of deaths per capita. However, there are always issues of whether the reported data is accurate, and there are many other variables that could influence the death rate in specific regions.
 \pagebreak
 
 \noindent
