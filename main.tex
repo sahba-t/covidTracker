@@ -474,7 +474,7 @@ This allowed the users to run the python script once every evening to collect an
 \label{sec:analysis}
 
 \noindent
-In this section, we performed a number of queries and analyses to demonstrate the We mainly used SQL queries and Python's data science toolset (Pandas\cite{citepandas}, NumPy\cite{citenumpy}, ScikitLearn\cite{cite_scikit-learn}) to retrieve, prepare,  and analyze the our data. The following sections provides details on our approach in preparing the data and performing the analysis.
+We performed a number of analyses to demonstrate the viability of our design and collected data for the kind of analyses that both experts and enthusiasts might be interested in performing. We mainly used SQL queries and Python's data science toolset (Pandas\cite{citepandas}, NumPy\cite{citenumpy}, ScikitLearn\cite{cite_scikit-learn}) to retrieve, prepare, and analyze our data. The following sections provides details on our approach in preparing the data and performing the analysis.
 
 \subsection{Data Preparation}
 
@@ -491,11 +491,11 @@ We decided to divide the large tuples of raw data retrieved from our sources int
 \FloatBarrier
 
 \noindent
-As mentioned previously, we performed a number of analyses to demonstrate the viability of our design and collected data for the kind of analyses that both experts and enthusiasts might be interested in performing. We explored the following items in the data:
+We explored the following items in the data:
 \begin{itemize}
     \item Trends in tests, positive and negative cases, and deaths at the State Level
     \item Correlation of Tests with Medical Aid at the State Level
-    \item Hospital Resources as a Predictor of Cases and Deaths
+    \item Hospital Resources as a Predictor of Death Rate
 \end{itemize}
 In order to perform these analyses, we used simple SQL queries against our database to retrieve the data and simple python scripts to analyze the data and visualize the results. The queries used to retrieve the historic data from our database can be found in the `Queries' folder and the Python scripts for analyzing and visualizing the data can be found in the `analysis.ipynb' Jupyter Notebook.
 
@@ -528,7 +528,7 @@ We used the `USTESTBYSTATES' table to retrieve historical trends for the states.
      \begin{subfigure}[b]{0.49\textwidth}
          \centering
          \includegraphics[width=\textwidth]{diagrams/analysis/positive_trend_NM.png}
-         \caption{Positive cases trends for NY}
+         \caption{Positive cases trends for NM}
          \label{fig:three sin x}
      \end{subfigure}
         \caption{The actual number of positive cases for CA, GA, NY, NM plus predictions for two days into the future using linear(LS) and plynomal regression (PR3)}
@@ -572,7 +572,13 @@ We joined two tables `USCASEBYSTATE' and `USMEDAIDAGGREGATE', on the timestamp a
 \subsection{Hospital Resources as a Predictor of Cases and Deaths}
 
 \noindent
-Quick Intro: deaths vs available hospital resources (we use the fragmented tables based on us facilities,  ... etc.
+In order to demonstrate a more complex query, we decided to look at the occupancy rate of ICUs and the number of deaths per capita.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/analysis/death_icu.png}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
 
 \subsubsection{Approach}
 
