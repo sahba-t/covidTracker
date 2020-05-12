@@ -110,14 +110,6 @@ CREATE TABLE USICUBEDOCCUPANCY (
   FOREIGN KEY(DateRecorded, State, CountyName) REFERENCES USFACILITIES(DateRecorded, State, CountyName)
   );
 
-CREATE TABLE USTESTS (
-  DateRecorded DATE,
-  DateCollected DATE,
-  CDCLabs NUMBER,
-  USPublicHealthLabs NUMBER,
-  PRIMARY KEY(DateRecorded, DateCollected)
-  );
-
 CREATE TABLE USMEDAIDAGGREGATE (
   DateRecorded DATE,
   State VARCHAR(20),
