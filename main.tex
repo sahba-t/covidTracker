@@ -25,6 +25,17 @@
 
 \usepackage[normalem]{ulem}
 
+\newlist{MyIndentedList}{itemize}{4}
+\setlist[MyIndentedList,1]{%
+    label={},
+    noitemsep,
+    leftmargin=0pt,
+    }
+\setlist[MyIndentedList]{%
+    label={},
+    noitemsep,
+    }
+    
 \depstyle{lvl}{%
     edge height=2.5ex,
     % edge unit distance=#1*2.5ex, % Another way of controlling the appearance of the edges.
@@ -134,26 +145,32 @@ Due to the fact that the 3 data sources, fatality by age, fatality by sex, and f
 \section{Introduction}
 \label{sec:Intro}
 \noindent
-Data on global and United States coronavirus (COVID-19) statistics, medical aid, facilities, and demographics will be gathered and organized into a relational database for the eventual purpose of analysis in order to understand the trends and relationships between demographics, testing, geography, hospital systems/availability, medical aid, and political response to the spread and deadliness of the coronavirus. To do this, several sites and APIs that gather and provided updated timeseries data about the coronavirus were studied and evaluated, including \MYhref{https://www.worldometers.info/coronavirus/}{Worldometer}, \MYhref{https://coronavirus.jhu.edu/map.html}{John Hopkins Coronavirus Resource Center}, \MYhref{https://covidtracking.com/api}{The Covid Tracking Project}, and an open source \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}.
+Data on global and United States coronavirus (COVID-19) statistics, medical aid, facilities, and demographics will be gathered and organized into a relational database for the eventual purpose of analysis in order to understand the trends and relationships between demographics, testing, geography, hospital systems/availability, medical aid, and political response to the spread and deadliness of the coronavirus. To do this, several sites and APIs that gather and provided updated timeseries data about the coronavirus were studied and evaluated, including \MYhref{https://www.worldometers.info/coronavirus/}{Worldometer}, \MYhref{https://coronavirus.jhu.edu/map.html}{John Hopkins Coronavirus Resource Center}, \MYhref{https://covidtracking.com/api}{The Covid Tracking Project}, and an open source \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}. 
 
-\section{Approach}
+\noindent
+The open source \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} was chosen, and several data items from the API were utilized to design a database to store time series data relating to COVID-19, and the database was then used for some basic analysis and demonstration of queries. The approach taken in choosing which data to source and how it was sourced is presented in Section \ref{sec:approachsec}. The process of database design, from conceptual schema, to ER diagram, and finally the translation of the ER diagram to the relational model and implementation in Oracle Cloud DBMS is described in Section \ref{sec:designimplementation}. Finally, some analysis and regression models were developed using data extracted from the designed database and implementation on the Oracle Cloud DBMS, and are presented and described in Section \ref{sec:analysis}.
 
-\subsection{Sourcing of Data}
-\label{subsec:sourcedata}
+\section{Data Selection}
+\label{sec:approachsec}
 
 \noindent
 The data sources outlined in \textbf{Section \ref{sec:Intro}} each had unique data: \MYhref{https://www.worldometers.info/coronavirus/}{Worldometer} provides updated positive cases and deaths on a rolling 24-hour basis grouped by country, \MYhref{https://coronavirus.jhu.edu/map.html}{John Hopkins Coronavirus Resource Center} provides geographical data updated frequently, \MYhref{https://covidtracking.com/api}{The Covid Tracking Project} provides data in an easily accessible json format that includes all historical United States positive cases, tests, and deaths data grouped by state, while \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} provides easily accessibly json data that includes worldwide tests, death, fatality rates, health care system data, and medical aid distribution data that is updated daily and grouped by country, state, city, and county.
 
 \noindent
-After analyzing the various data sources available, it was decided that the data will be sourced daily from \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} since it provides a super-set of the John Hopkins and Worldometer data (which include worldwide current tests, positive cases, and deaths data organized by country) in addition to information on fatality rates, health care systems, and medical aid distribution. This data will all be accessed with normal GET requests using a scripting language such as Python. The data will be accessed daily, after which it will then be parsed and re-organized to a format such a csv file that Oracle Database can easily read, and finally inserted into the final Database to generate a time series of data.
+After analyzing the data sources available, it was decided that the data would be sourced daily from \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API} since it provides a super-set of the John Hopkins and Worldometer testing and death data as well as information on health care system occupancy and medical aid distribution in the United States. 
+
+\subsection{Sourcing of Data}
+\label{subsec:sourcedata}
 
 %\noindent
 %The data will be sourced from one of the more popular \MYhref{https://covidtracking.com/api}{COVID APIs} \newline (\MYhref{https://covidtracking.com/api}{https://covidtracking.com/api}), which contains cumulative and historical data that will be accessed with normal GET requests using a scripting language such as Python. The data will be retrieved as JSON before being parsed, re-organized, and inserted into the database. 
 
-\pagebreak
+\noindent
+This data was accessed with normal GET requests using the Python scripting language. The data was accessed daily, after which it was parsed and re-organized to a csv format that the Oracle Cloud DBMS could easily read, and finally inserted into the DBMS to generate a time series of data. The python script GatherData.py was developed to perform the above task.
+
 
 \noindent 
-Documentation of the various endpoints and data items is included on the \MYhref{https://covid19-docs.chrismichael.now.sh/}{Covid-19 API} website, but we have included a brief outline of the endpoints \textbf{(data items that we are planning to use:}
+Documentation of the various endpoints and data items is included on the \MYhref{https://covid19-docs.chrismichael.now.sh/}{Covid-19 API} website, but we have included a brief outline of the 5 endpoints (data items) that we used to design our database and perform analysis with:
 
 \begin{itemize}
 %    \item \MYhref{https://covidtracking.com/api}{The Covid Tracking Project}
@@ -171,14 +188,14 @@ Documentation of the various endpoints and data items is included on the \MYhref
         %\item \textbf{Fatality Rate By Sex}: Global fatality rate grouped by sex. Updated daily.
         %\item \textbf{Fatality Rate By Co-morbidity}: Global fatality rate for people with pre-existing conditions. Updated daily.
         \item \textbf{USA Medical Aid Distribution}: Tracks medical aid to US hospitals and facilities, including package weight, cost, delivery date of aid to a location and/or hospital. Updated daily.
-        \item \textbf{Aggregated Facility Capacity County}: Current population, (occupied) hospital beds, (occupied) ICU beds, healthcare staff, age demographics, grouped by county for the United States. Updated daily 
+        \item \textbf{Aggregated Facility Capacity County}: Current population, (occupied) hospital beds, (occupied) ICU beds, healthcare staff, age demographics, grouped by county for the United States. Updated daily.
         \item \textbf{United States Cases By State}: For every state: the number of positive and negative cases, each state's score, number of patients in the ICU and on ventilators, and number of patients who have recovered (supplements the JHU Daily Report with additional fields).
     \end{itemize} 
 \end{itemize}
 
 
 \noindent
-The data will be gathered daily in order to provide historical data to aide in an analysis of trends over time. This will enable the tracking of tests, positive cases, deaths, fatality rate by age, sex, and pre-existing conditions worldwide over time. Additionally, data for the United States regarding medical aid distribution, facility capacity, state cases, ICU occupancy, and ventilator usage will be gathered and stored as a time-series.
+The data will be gathered daily in order to provide historical data to aide in an analysis of trends over time. This will enable the tracking of tests, positive cases, deaths, fatality rate by age, sex, and pre-existing conditions in the United States over time. Additionally, data for the United States regarding medical aid distribution, facility capacity, state cases, ICU occupancy, and ventilator usage will be gathered and stored as a time-series for later analysis, modeling, and regression in Section \ref{sec:analysis}.
 
 %\subsection{Data Items}
 
@@ -198,24 +215,27 @@ The data will be gathered daily in order to provide historical data to aide in a
 %My initial thought is to assign a timestamp to each data point that we read. We can probably use a table that has timestamp, newmexico\_id, otherstate\_id
 %and then a table that records the statistics for each state (or just incorporate timestamp in the state table). Then we can have some other tables that derive data from the state\_data table or something like that.
 
-\pagebreak
+%\pagebreak
 
-\subsection{Data Analysis}
+%\subsection{Data Analysis}
 
-\noindent
-The main function of our work is to create a record of Covid19 related information over time. We will demonstrate the application of the data we gather by performing some sample queries to extract interesting information and trends from the data. We will also use regression to estimate a few trends regarding the disease progression based on the historic data we collected and compare our predictions with the actual data that we ingest in the days after. Some of the trends we may be interested in analyzing include:
+%\noindent
+%The main function of our work is to create a record of COVID-19 related information over time. We will demonstrate the application of the data we gather by performing some sample queries to extract interesting information and trends from the data. We will also use regression to estimate a few trends regarding the disease progression based on the historic data we collected and compare our predictions with the actual data that we ingest in the days after. The results of this analysis can be found in Section \ref{sec:analysis}.
 
-\begin{itemize}
-    \item Correlation between testing, cases, and number of deaths, and the development over time in different countries/states
-    \item Correlation between positive cases, deaths, fatality rates and temperature in each city/state/country over time (i.e. observe how seasonal and geographical temperature changes affect the spread and fatality over time).
-    \item Evolution of the fatality rate over time and between demographics.
-    \item Correlation between medical aid over time and fatality rate in geographical regions.
-    \item Correlation between number of deaths and the number of available hospital beds, ICU beds, and ventilators.
-\end{itemize}
+%Some of the trends we may be interested in analyzing include:
+
+%\begin{itemize}
+%    \item Correlation between testing, cases, and number of deaths, and the development over time in different countries/states
+%    \item Correlation between positive cases, deaths, fatality rates and temperature in each city/state/country over time (i.e. observe how seasonal and geographical temperature changes affect the spread and fatality over time).
+%    \item Evolution of the fatality rate over time and between demographics.
+%    \item Correlation between medical aid over time and fatality rate in geographical regions.
+%    \item Correlation between number of deaths and the number of available hospital beds, ICU beds, and ventilators.
+%\end{itemize}
 
 \pagebreak
 
 \section{Database Design and Implementation}
+\label{sec:designimplementation}
 
 \noindent
 The database design and implementation for the COVID-19 Timeseries Data is presented as follows:
@@ -247,26 +267,144 @@ The data that we worked with fits into a single machine. Therefore, one of the m
 \label{subsec:approach}
 
 \noindent
-Since we worked with 5 different data sources from the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}, we approached this problem by first representing each data source as an entity, all related to a parent STATE entity. Since the data provided from the API was largely data from the United States of America, and since the USA has the largest COVID-19 outbreak in the world. it was decided to focus solely on US data and decompose by State. Since the intent was to represent time series data, it was decided that an additional column would be added to each data source that indicated the access/record date. This would allow data to be stored over time in such a way that test data, case data, facility data, and medical aid data could be observed as it changed over time, and the state of the COVID-19 outbreak in the United States on any day could be extracted.
+Since we worked with 5 different data sources from the \MYhref{https://www.npmjs.com/package/covid19-api}{Covid-19 API}, we approached this problem by first representing each data source as an entity, all related to a parent STATE entity, as seen in Figure \ref{fig:er2}. Since the data provided from the API was largely data from the United States of America, and since the USA has the largest COVID-19 outbreak in the world. it was decided to focus solely on US data and decompose by State. Since the intent was to represent time series data, it was decided that an additional column would be added to each data source that indicated the access/record date. This would allow data to be stored over time in such a way that test data, case data, facility data, and medical aid data could be observed as it changed over time, and the state of the COVID-19 outbreak in the United States on any day could be extracted.
 
-
-Little approach blurb. Reference Appendix.
-
-
-\subsection{Database Design}
-\label{subsec:design}
-
-\noindent
-Little blurb. See next page w\textbf{A note on Normalization}
+\vspace{3em}
 
 \FloatBarrier
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{diagrams/ER2.png}
-    \caption{Basic Entity-Relationship Diagram to Model our Data Sources and Relational Database Design}
-    \label{fig:er1}
+    \caption{Initial Entity-Relationship Diagram to Model our Data Sources and Relational Database Design}
+    \label{fig:er2}
 \end{figure}
 \FloatBarrier
+
+\pagebreak
+
+\subsection{Database Design}
+\label{subsec:design}
+
+\noindent
+The database design began with a simple ER diagram, where each data source was assigned a relationship to a parent STATE entity, as shown in Figure \ref{fig:er2}. As will be seen later on, in the actual implementation in section \ref{subsec:implementation}, the data was easily translated to the Third Normal Form (3NF), since only a State and a DateRecorded primary key were necessary for the functional dependence of all other columns (with the exception of the JHUDATA). However, to reduce the number of NULL values present in the database, the United States Cases By State (USCASEBYSTATE) data source was broken up into several entities (and later translated to several tables), such as recovery, ventilator, hospitalized, and ICU information. A similar decomposition was performed for the Aggregated Facility Capacity Count (USFACILITIES) data source into separate ICU bed information and overall bed information. This resulted in a revised ER diagram, seen in Figure \ref{fig:er1}. Finally, this ER diagram was translated to the relational model, and primary and foreign keys were assigned, as seen in Figure \ref{fig:tables}. As can be seen, and later discussed in Section \ref{subsec:implementation}, each of these tables is in fact in Third Normal Form (3NF), such that natural joins result in no spurious tuples and that all of the columns are functionally dependent on solely the primary key. 
+
+\subsubsection{Conceptual Schema}
+\label{subsubsec:concept}
+
+\noindent
+The conceptual schema for the COVID-19 Database is presented as follows:
+
+\begin{itemize}
+    \item Entities and Attributes
+    \item Relationships
+    \item Final ER Conceptual Schema Diagram (Figure \ref{fig:er1})
+    \item Integrity Constraints
+\end{itemize}
+
+\noindent
+As is typical, it should be noted that the keys of the entities have been indicated using \textbf{\underline{bold font and a regular underline}}.
+
+\pagebreak
+
+\noindent
+\textbf{Entities and Attributes}
+
+\noindent
+The entities defined for this databse are: \\
+
+\begin{itemize}
+    \item STATE
+    \item JHUDATA
+    \item USTESTS
+    \item USMEDAIDAGGREGATE
+    \item USFACILITIES
+    \item USICUBEDOCCUPANCY
+    \item USALLBEDOCCUPANCY
+    \item USCASEBYSTATE
+    \item RECOVERED
+    \item VENTILATOR
+    \item HOSPITALIZED
+\end{itemize}
+
+\noindent
+A more detailed description of each entity follows:
+
+\pagebreak
+
+\noindent
+\textbf{Relationships}
+
+\noindent
+The relationships in this schema are listed and described below. \\
+
+\begin{description}
+\item [tests] \\
+
+\noindent
+A state performs COVID-19 tests, each of which may be positive or negative. This relationship keeps track of the daily tests in the United States and their associated data.
+
+\begin{tabular}{lllc}  
+  Attributes: None \\
+\end{tabular} \\
+
+\item [receives] \\
+
+\noindent
+A state receives medical aid from industry or the federal government. This relationship keeps track of the aid received by states in terms of the cost of the aid, the number of received packages, and the weight of the received packages.
+
+\begin{tabular}{lllc}
+     Attributes: None \\
+\end{tabular}
+
+%\item [performs]
+
+%\noindent
+%The United States performs tests in each state every day. This relationship keeps track of the aggregate number of tests performed everyday, and from where the tests are coming from (a CDC lab or a Public Health lab)
+
+%\begin{tabular}{lllc}
+%     Attributes: None \\
+%\end{tabular}
+
+\item [contains]
+
+\noindent
+A state contains facilities, such as hospitals, beds, and ICU units. This relationship keeps track of the number of these available to each state, and the current occupancy level of the available facilities.
+
+\begin{tabular}{lllc}
+    Attributes: None \\
+\end{tabular}
+
+\item [provides]
+
+\noindent
+A facility provides a certain number of ICU units, and each facility has a certain occupancy rate of those units. This relationship keeps track of the occupancy rate and availability of those ICU units.
+
+\begin{tabular}{lllc}
+     Attributes: None \\
+\end{tabular}
+
+\item [supplies]
+
+\noindent
+A facility also supplies a certain number of staffed beds. This relationship keeps track of how many beds a facility provides and how many beds a facility is currently using (as a rate).
+
+\item [currentlyHas]
+
+\noindent
+A state currently has a certain number of positive cases and deaths, in addition to recovered patients, patients on ventilators, patients in the ICU, hospitalized patients. This relationship keeps track of all of those metrics daily.
+
+\noindent
+\textbf{Notes}
+\begin{enumerate}
+    \item The status attribute indicates if an amenity is ready to be used by the visitors or not. If the availability needs more clarification, e.g. partial internet access throughout the park, the status should be set to available and extra details should go in the AMENITY entity type under ADescription.
+\end{enumerate}
+
+\end{description}
+
+
+
+\noindent
+\textbf{Final ER Conceptual Schema Diagram}
 
 \FloatBarrier
 \begin{figure}[h]
@@ -277,11 +415,22 @@ Little blurb. See next page w\textbf{A note on Normalization}
 \end{figure}
 \FloatBarrier
 
+\noindent
+\textbf{Integrity Constraints}
+
+\pagebreak
+
 \subsection{Database Implementation}
 \label{subsec:implementation}
 
 \noindent
-Little blurb. See next page w\textbf{A note on Normalization}
+The database was constructed by translating the final ER Diagram in Figure \ref{fig:er1} to the relational model, as seen on the next page in Figure \ref{fig:tables}. A SQL script was then written (CreateDB.sql) to implement the schema in the Oracle Cloud DBMS, and the database was then used to collect data to provide the ability to perform useful queries that aided in the analysis presented in Section \ref{sec:analysis}.
+
+\noindent
+Note that every table in the relational database shown in Figure \ref{fig:tables} is in fact in 3NF, except for the JHUDATA table (the JHUDATA table was not further normalized or decomposed as it seemed unnecessary since we are solely focusing on US data and an additional CITY and/or COUNTRY tables would have been unneeded). For the STATE table, the StateName is functionally dependent solely on the StateAbbreviation private key, while for the remaining tables, their columns are functionally dependent solely on the primary key of DateRecorded and State.
+
+\noindent
+Also note that DateRecorded was an added column to the raw data to allow for the storage of a snapshot of the state of the COVID-19 pandemic in the United States on each day. This provided the time series capability of the database, and resulted in the peculiar property that each tuple once entered, is not modified - the database only continues to grow each day as new entries for the day are entered (i.e. only INSERT operations and no UPDATE operations).
 
 \pagebreak
 
@@ -393,13 +542,13 @@ Little blurb. See next page w\textbf{A note on Normalization}
 \nodepart{four} Cost
 \nodepart{five} Weight};
 
-\node [below=1.3cm of medaid.west, anchor=west] (testtitle) {\textbf{USTESTS}};
+%\node [below=1.3cm of medaid.west, anchor=west] (testtitle) {\textbf{USTESTS}};
 
-\node [relation=4, rectangle split horizontal, rectangle split part fill={lightgray!50}, below=0.6cm of testtitle.west, anchor=west] (test)
-{\underline{DateRecorded}%
-\nodepart{two} \underline{DateCollected}
-\nodepart{three} CDCLabs
-\nodepart{four} USPublicHealthLabs};
+%\node [relation=4, rectangle split horizontal, rectangle split part fill={lightgray!50}, below=0.6cm of testtitle.west, anchor=west] (test)
+%{\underline{DateRecorded}%
+%\nodepart{two} \underline{DateCollected}
+%\nodepart{three} CDCLabs
+%\nodepart{four} USPublicHealthLabs};
 
 
   
@@ -445,6 +594,7 @@ Little blurb. See next page w\textbf{A note on Normalization}
 }%
 \end{adjustwidth*}
 \caption{COVID-19 Schema}
+\label{fig:tables}
 \end{figure}	
 
 \subsection{Data Insertion and Extraction for Analysis}
@@ -499,10 +649,10 @@ We explored the following items in the data:
 \end{itemize}
 In order to perform these analyses, we used simple SQL queries against our database to retrieve the data and simple python scripts to analyze the data and visualize the results. The queries used to retrieve the historic data from our database can be found in the `Queries' folder and the Python scripts for analyzing and visualizing the data can be found in the `analysis.ipynb' Jupyter Notebook.
 
-\subsection{Tests, Cases, and Deaths as the State Level}
+\subsection{Tests, Cases, and Deaths at the State Level}
 
 \noindent
-We started by looking at some of the trends in the data. Figure \ref{fig:pos_trends} shows the number of positive cases in four states for four days (May 6th-9th) and the predictions for two days into the feature using regression.
+We started by looking at some of the trends in the data. Figure \ref{fig:pos_trends} shows the number of positive cases in four states and the predictions based on those point projected two days into the feature using regression analysis.
 \subsubsection{Approach}
 We used the `USTESTBYSTATES' table to retrieve historical trends for the states. The result of the query was exported to a \textit{csv} file and imported into the python script for plotting and regression analysis.
 
@@ -564,31 +714,26 @@ We joined two tables `USCASEBYSTATE' and `USMEDAIDAGGREGATE', on the timestamp a
 \end{figure}
 \FloatBarrier
 
-
-\subsubsection{Discussion}
-
-\pagebreak
-
 \subsection{Hospital Resources as a Predictor of Cases and Deaths}
 
 \noindent
-In order to demonstrate a more complex query, we decided to look at the occupancy rate of ICUs and the number of deaths per capita.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\textwidth]{diagrams/analysis/death_icu.png}
-    \caption{Caption}
-    \label{fig:my_label}
-\end{figure}
+In order to demonstrate a more complex query, we decided to look at the occupancy rate of ICUs and the number of deaths per capita. 
 
 \subsubsection{Approach}
+We performed a 3-way join on JHUDATA, USICUBEDOCCUPANCY, and USFACILITIES to obtain the average ICU occupancy rate and total number of fatalities and the population for each state. We normalized the total number of fatalities and plotted them as shown in Figure \ref{fig:death_pop_icu}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{diagrams/analysis/death_icu.png}
+    \caption{Caption}
+    \label{fig:death_pop_icu}
+\end{figure}
 
-
-\subsubsection{Discussion}
 
 \pagebreak
 
 \section{Conclusions}
-..We demonstrated that our design is flexible enough to ingest data from heterogeneous sources and allow for statistical studies on historical Covid19 data...
+...We demonstrated that our design is flexible enough to ingest data from multiple Covid-19 data sources and allow for statistical studies on historical Covid-19 data. As we planned and executed different phases of this project, we realized that the most involved and sensitive part of the project was designing the database. In other words, once a good database design was achieved, retrieving data and performing analyses on the data was fairly straightforward...
+
 \section{Future Work}
 \bibliographystyle{acm}
 \bibliography{refs.bib}
