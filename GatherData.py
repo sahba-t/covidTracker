@@ -52,14 +52,6 @@ def fixJSON(outputfiles):
         if 'JHU' in item:
             df = pd.DataFrame(df['data']['table'])
 
-        elif 'USTESTS' in item:
-            df = pd.DataFrame(df['tests']['table'])
-            df['CDCLabs'] = df['CDCLabs'].str.encode('ascii', 'ignore').str.decode('ascii')
-            df['USPublicHealthLabs'] = df['USPublicHealthLabs'].str.encode('ascii', 'ignore').str.decode('ascii')
-
-        #elif 'Fatality' in item:
-        #    df = pd.DataFrame(df['table'].tolist())
-
         elif 'USMEDAIDAGGREGATE' or 'USFACILITIES' or 'USCASEBYSTATE' in item:
             df = pd.DataFrame(df['data'][0]['table'])
 
@@ -260,27 +252,6 @@ def prepDB(newfiles):
             item = 'DBInput/' + item.split('/')[1]
             with open(item, 'w') as f:
                 f.write(dfMedAid.to_csv(index=False))
-    
-        if 'USTESTS' in item:
-            # Date Recorded
-            df = df.assign(DateRecorded=today.strftime("%m/%d/%Y"))
-
-            # Format Date Correctly for Oracle DMBS
-            df['DateCollected'] = df['DateCollected'].apply(lambda x: parse(x).strftime("%m/%d"))
-
-            df['DateCollected'] = df['DateCollected'].apply(lambda x: x+"/2020")
-
-            # Re-Arranging Columns to Match DB Table
-            # TABLE USTESTS (DateRecorded, DateCollected, CDCLabs, USPublicHealthLabs)
-            cols = ['DateRecorded', 'DateCollected', 'CDCLabs', 'USPublicHealthLabs']
-            df = df.drop_duplicates(['DateRecorded', 'DateCollected'],keep= 'last')
-            dfTests = df[cols]
-            
-            # TABLE USTEST(DataRecorded, CDCLabs, USPublicHealthLabs)
-            # Save CSV File to Different Folder
-            item = 'DBInput/' + item.split('/')[1]
-            with open(item, 'w') as f:
-                f.write(dfTests.to_csv(index=False))
 
 
 # Main Routine to Gather Data with GET Requests and Prepare Data in CSV Format to be Fed into Oracle DBMS and our Database Design
@@ -299,15 +270,14 @@ def main():
     outputfiles = ['Data/JHU.json', 'Data/USTests.json', 'Data/FatalityAge.json', 'Data/FatalityBySex.json', 'Data/FatalityByComorbidities.json', 'Data/USMedAid.json', 'Data/FacilityCapacity.json', 'Data/USCases.json']
     '''
 
-    # 5 Endpoints Used
-    endpoints = ['https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport', 
-                'https://covid19api.io/api/v1/TestsInUS', 
+    # 4 Endpoints Used
+    endpoints = ['https://covid19api.io/api/v1/JohnsHopkinsDataDailyReport',
                 'https://covid19api.io/api/v1/USAMedicalAidDistribution',
                 'https://covid19-server.chrismichael.now.sh/api/v1/AggregatedFacilityCapacityCounty',
                 'https://covid19api.io/api/v1/UnitedStateCasesByStates']
 
     # Original Output Files
-    outputfiles = ['Data/JHU.json', 'Data/USTESTS.json', 'Data/USMEDAIDAGGREGATE.json', 'Data/USFACILITIES.json', 'Data/USCASEBYSTATE.json']
+    outputfiles = ['Data/JHU.json', 'Data/USMEDAIDAGGREGATE.json', 'Data/USFACILITIES.json', 'Data/USCASEBYSTATE.json']
 
     # Make Raw Data Directory
     os.system('mkdir -p Data')
