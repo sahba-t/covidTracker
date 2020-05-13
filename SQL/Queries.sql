@@ -24,17 +24,17 @@ SELECT f.State, f.DateRecorded, total_pop, icu_avg, j.death_tot
 FROM(
     SELECT f.State, f.DateRecorded, sum(Population) AS total_pop 
     FROM USFACILITIES f 
-    WHERE  DateRecorded=to_date('05/09/2020','MM/DD/YYYY')  
+    WHERE  DateRecorded=to_date('05/13/2020','MM/DD/YYYY')  
     GROUP BY State, DateRecorded
     ) f , 
     (SELECT o.State, o.DateRecorded, round(avg(ICUBedOccupancyRate),3) AS icu_avg 
     FROM USICUBEDOCCUPANCY o 
-    WHERE o.DateRecorded=to_date('05/09/2020','MM/DD/YYYY')  
+    WHERE o.DateRecorded=to_date('05/13/2020','MM/DD/YYYY')  
     GROUP BY o.State, DateRecorded
     ) o, 
     (SELECT sum(Deaths) AS death_tot, j.State, j.DateRecorded 
     FROM JHUDATA j 
-    WHERE DateRecorded=to_date('05/09/2020','MM/DD/YYYY')   
+    WHERE DateRecorded=to_date('05/13/2020','MM/DD/YYYY')   
     GROUP BY State, DateRecorded) j 
 WHERE f.State=o.State AND j.State=o.State;
 
